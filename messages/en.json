@@ -1,5 +1,191 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "PUBLIC": {
+    "NONE": "🍺🍺🍺 Static Content 🍺🍺🍺"
+  },
+  "Lang": {
+    "COMMENT_DESCRITION": "📢📢📢 Language 📢📢📢",
+    "lang": "ប្តូរភាសា"
+  },
+  "Navbar": {
+    "COMMENT_DESCRITION": "📢📢📢 Navbar 📢📢📢",
+    "home": "HOME",
+    "aboutus": "ABOUT US",
+    "business_unit": "BUSSINESS UNIT",
+    "unit_elh": "EAST LAND and HOME",
+    "unit_micro": "EAST MICRO",
+    "unit_resort": "EAST RESORT",
+    "new": "NEWS",
+    "new_promotions": "PROMOTIONS",
+    "new_news": "NEWS",
+    "csr": "CSR",
+    "new_blog": "BLOG",
+    "carrer": "CARRER",
+    "contactus": "CONTACT US"
+  },
+  "END_PUBLIC": {
+    "NONE": "🍺🍺🍺 END 🍺🍺🍺"
+  },
+
+  "HOME_PAGE": {
+    "NONE": "🍺🍺🍺 Home Page 🍺🍺🍺"
+  },
+  "HeroSection": {
+    "COMMENT_DESCRITION": "📢📢📢 Hero Section Home Page 📢📢📢",
+    "titleA": "Welcome To East Land and Home",
+    "titleB": "Find your dream home with East Land and Home",
+    "paragraphA": "East Land and Home Co., Ltd. is a full-range residential developer under the parent of BS Land and Home Co., Ltd. We are one of the largest real estate developers in Cambodia and we are the first and the biggest developer in Sihanoukville and Svay Chrum of Kandal Province. With our strong track records in developing multiple residential projects in affordable housing, condominiums, and vocational housing sector. We are present in various provincial towns of Cambodia consisting of Phnom Penh, Svay Chrum of Arey Ksat town of Kandal province, Kampot, Mondolkiri, and Sihanoukville. We always believe quality housing delivers great quality of life.",
+    "paragraphB": "To be the leading real estate development company in the country for its quality, design and affordability.",
+    "paragraphC": "Build a vibrant community by operating according to our core value of the company for sustainable development and growth."
+  },
+  "OurBusiness": {
+    "COMMENT_DESCRITION": "📢📢📢 Our Businness Home Page 📢📢📢",
+    "business": "Our Bussiness",
+    "east_title": "Welcome to East Resort",
+    "estate_title": "Welcome to Real Estate",
+    "mfi_title": "Welcome to MFI"
+  },
+  "CardPrjectUnit": {
+    "east_resort": {
+      "name": "EAST REOSRT PROJECTS",
+      "title": "@eastresort",
+      "description": "A delightful range of resorts, catering to all budgets and styles. Here are a few options to inspire your Cambodian getaway"
+    },
+    "real_estate": {
+      "name": "REAL ESTATE PROJECTS",
+      "title": "@realestate",
+      "description": "The Cambodian real estate market is experiencing exciting growth, offering opportunities for both buyers and investors."
+    },
+    "mfi": {
+      "name": "MFI PROJECTS",
+      "title": "@microfinacial",
+      "description": "Microfinance Institutions (MFIs) provide financial services to those who wouldn't qualify for traditional bank loans"
+    }
+  },
+  "Footer": {
+    "COMMENT_DESCRITION": "📢📢📢 Footer 📢📢📢",
+    "topTitle": "We appreciate you taking the time to visit our website.",
+    "elhHeadOffice": "EastLandandHome Head Office",
+    "elhLocation": "B2-109, B2-110, Island, Tonle Bassac, Chamkarmon Phnom Penh",
+    "phone": "(+855) 78 342 168",
+    "gmail": "info@eastlandandhome.com",
+    "website": "https://eastlandandhome.com",
+    "license": "2024 EastLandandHome All rights reserved.",
+    "brandName": "EastLand and Home"
+  },
+  "END_HOME_PAGE": {
+    "NONE": "🍺🍺🍺 End Home Page 🍺🍺🍺"
+  },
+
+  "ABOUT_US_PAGE": {
+    "NONE": "🍺🍺🍺 Aboutus Page 🍺🍺🍺"
+  },
+  "AboutUs": {
+    "message_chairman": "MESSAGE FROM CHAIRMAN",
+    "chairmain_des": "Our founder and chairman, Neak Oknha Ly Seng Kheang, has been in real estate and property development business since 2008. Having over 15 years of practical and successful experiences in real estate development, understanding the need of the market, and growing demand in housing in the market.East Land and Home Co. Ltd. came to existence under BS Land & Home Co., Ltd. as a parent company since the inception of our real estate development venture. We have committed to developing residential units with the high quality, the best style of designs for our clients,  and with the affordable price.",
+    "chairmain_name": "Neak Oknha Ly Seng Kheang",
+    "chairmain_pos": "Chairman of East Land and Home Co.,Ltd"
+  },
+  "AboutUs_History": {
+    "history_nth_1": {
+      "year": "2023",
+      "com": "EAST BUY",
+      "invest": {
+        "nth_1": "Established EAST MFI",
+        "nth_2": "Initiate EAST Industrial Zone",
+        "nth_3": "Initiate EAST BUY – e-Commerce Platform and online shopping",
+        "nth_4": "Established EAST Resort"
+      }
+    },
+    "history_nth_2": {
+      "year": "2020",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "Project Completion and continue corporate governance strengthening"
+      }
+    },
+    "history_nth_3": {
+      "year": "2019",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "Process improvement and Transformation on financial reporting and construction management."
+      }
+    },
+    "history_nth_4": {
+      "year": "2017",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "EAST launched additional 6 real estate projects and acquire more land in Sihanoukville, Kandal, and Phnom Penh.",
+        "nth_2": "Standardization and Corporate Governance were emplaced.. "
+      }
+    },
+    "history_nth_5": {
+      "year": "2016",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "More residential development projects were launched at Prek Ampil Under EAST"
+      }
+    },
+    "history_nth_6": {
+      "year": "2015",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "BS Land & Home Co., Ltd. launch more real estate projects in Arey Ksat Area "
+      }
+    },
+    "history_nth_7": {
+      "year": "2008",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "Venture into residential development market by co-founding single 410 unit project in Sihanouk Ville."
+      }
+    },
+    "history_nth_8": {
+      "year": "2004",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "BS Department Store Co., Ltd was established and opened its first department store called BS Department Store on Monivong Boulevard."
+      }
+    },
+    "history_nth_9": {
+      "year": "2003",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "The business expanded to 5 fashion stores."
+      }
+    },
+    "history_nth_10": {
+      "year": "2002",
+      "com": "INDUSTRIAL",
+      "invest": {
+        "nth_1": "Okhna Ly Seng Kheang start whole sale and retail clothing business based in Phnom Penh."
+      }
+    }
+  },
+  "PROJECT_PLAN_PAGE": {
+    "NONE": "🍺🍺🍺 Project 🍺🍺🍺"
+  },
+  "project_plans": {
+    "our_prject": "OUR PROJECT",
+    "east_land": "Borey East Land & Home",
+    "east_sensok": "East Sen Sok Condominium",
+    "east_keansvay": "East Keansvay City",
+    "east_primeland": "East Prime Land",
+    "east_svaychrum": "East Land Svay Chrum",
+    "east_minicondo1": "East Mini Condo 1",
+    "east_minicond2": "East Mini Condo 2",
+    "east_minicondo3": "East Mini Condo 3",
+    "east_natural": "East Natural City",
+    "east_sihanouk": "East Sihanouk City",
+    "east_sihanoukpark": "East Sihanouk Park"
+  },
+  "CONTACT US": {
+    "NONE": "🍺🍺🍺 Contact Us 🍺🍺🍺"
+  },
+  "contactus": {
+    "conact": "CONTACT US",
+    "office": "Office Location",
+    "location": "B2-109, B2-110, Diamond Island, Tonle Bassac, Chamkarmon Phnom Penh",
+    "phone": "Phone Number",
+    "email": "Email"
   }
 }
