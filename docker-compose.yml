@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      target: development
+    ports:
+      - "50005:3000"
+    volumes:
+      - .:/app:cached
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+
+  # Optional: For production use the following instead
+  # web:
+  #   build:
+  #     context: .
+  #     target: production
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - NODE_ENV=production
+
+
+      
