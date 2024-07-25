@@ -10,7 +10,7 @@
 
   /* COLOR */
   --COLOR-PRIMARY: #199249;
-  --COLOR-SECONDARY: #ffd12f;
+  --COLOR-SECONDARY: #c49c3d;
   --COLOR-ACCENT: #d8e2dc;
   /* SUCCES-WARNING-DANGER-ACTIVE */
   --DANGER-COLOR: #ef233c;
@@ -33,9 +33,10 @@ html {
 }
 body {
   height: 100%;
-  font-family: var(--font-viga), var(--font-koulen),var(--font-inter), var(--font-battambong) !important
+  font-family: var(--font-viga), var(--font-koulen), var(--font-inter),
+    var(--font-battambong) !important;
 }
-.text-as-logo{
+.text-as-logo {
   color: #199249 !important;
 }
 p,
@@ -64,7 +65,7 @@ span {
   z-index: 99;
 }
 span {
-  font-family: var(--font-inter), var(---font-battambong)  !important;
+  font-family: var(--font-inter), var(---font-battambong) !important;
   font-weight: 400;
   font-style: normal;
   color: var(--COLOR-ACCENT);
@@ -89,15 +90,18 @@ span {
   font-weight: bold; /* Optional: make the text bold */
 }
 
-.hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+.hvr-bounce-to-top:hover,
+.hvr-bounce-to-top:focus,
+.hvr-bounce-to-top:active {
   color: white !important;
 }
-.hvr-bounce-to-top:hover .text-as-logo,.hvr-bounce-to-top:hover p{
+.hvr-bounce-to-top:hover .text-as-logo,
+.hvr-bounce-to-top:hover p {
   color: white !important;
 }
-.hvr-bounce-to-top:before{
-   background: #199249 !important;
-   color: white !important;
+.hvr-bounce-to-top:before {
+  background: #199249 !important;
+  color: white !important;
 }
 /* .aa:hover{
   background: rgb(25, 146, 73);
@@ -143,45 +147,47 @@ span {
 .hvr-shutter-out-horizontal-bg-ourproject:before {
   background: rgb(25, 146, 73);
 }
-.hvr-underline-from-left:before{
+.hvr-underline-from-left:before {
   color: #e1dfe9;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.795);
 }
-.hvr-underline-from-left{
+.hvr-underline-from-left {
   padding-bottom: 2px;
   -webkit-transform: perspective(0px) translateZ(0);
   transform: perspective(0px) translateZ(0);
 }
-.hvr-underline-from-left:hover{
+.hvr-underline-from-left:hover {
   color: rgba(255, 255, 255, 0.795);
 }
 /* Speicial color gold gradient */
-.txt-gold-text{
-
-
-  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fff;
-    position: relative;
-
-
+.txt-gold-text {
+  background: linear-gradient(
+    to bottom,
+    #cfc09f 22%,
+    #634f2c 24%,
+    #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
 }
 .txt-gold-text:after {
-    background: none;
-    content: attr(data-heading);
-    left: 0;
-	top: 0;
-    z-index: -1;
-    position: absolute;
-    text-shadow: 
-		-1px 0 1px #c6bb9f, 
-		0 1px 1px #c6bb9f, 
-		3px 2px 2px rgba(0, 0, 0, 0.4),
-		-1px -1px 1px rgba(0, 0, 0, 0.4);
+  background: none;
+  content: attr(data-heading);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
+    3px 2px 2px rgba(0, 0, 0, 0.4), -1px -1px 1px rgba(0, 0, 0, 0.4);
 }
-.a{width: 80%;
+.a {
+  width: 80%;
   margin: auto;
   background-color: green !important;
 }
