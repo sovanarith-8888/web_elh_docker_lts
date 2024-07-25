@@ -6,12 +6,11 @@ const NotFoundPage = () => {
   // router to push home page
   const router = useRouter()
 
-  // after 3.5s will back ho home page
+  // After 4s will back ho home page
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/en")
-    }, 3500);
-
+    }, 3700);
     return () => clearTimeout(timer);
   }, [router]);
 

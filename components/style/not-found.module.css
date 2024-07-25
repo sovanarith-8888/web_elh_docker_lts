@@ -1,0 +1,29 @@
+.container{
+  width: fit-content;
+  margin: auto;
+}
+.loaderStyle {
+  width: 120px;
+  height: 22px;
+  border-radius: 20px;
+  color: #199249;
+  border: 2px solid;
+  position: relative;
+  margin: auto;
+}
+
+.loaderStyle::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: #199249;
+  animation: p6 4s infinite;
+}
+
+@keyframes p6 {
+  100% {
+    inset: 0
+  }
+}
