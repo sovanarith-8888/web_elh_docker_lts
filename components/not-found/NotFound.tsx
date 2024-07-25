@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "@nextui-org/react";
 import { DOMAIN_NAME } from "@/lib/domain";
-import notFoundStyle from "../style/not-found.module.css";
+import notFoundStyle from "./style/not-found.module.css";
 const NotFound = () => {
   return (
     <div className={`${notFoundStyle.container}`}>

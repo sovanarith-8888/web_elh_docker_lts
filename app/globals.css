@@ -2,15 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ------------------------------------------------------------------------------------ */
+:root{
   /* FONT */
   --TEXT-DISPLAY-SIZE: 3.6rem;
   --TEXT-BODY-SIZE: 1.45rem;
   --TEXT-SUB-BODY-SIZE: 1.3rem;
-
   /* COLOR */
   --COLOR-PRIMARY: #199249;
-  --COLOR-SECONDARY: #c49c3d;
+  --COLOR-SECONDARY: #ffd12f;
   --COLOR-ACCENT: #d8e2dc;
   /* SUCCES-WARNING-DANGER-ACTIVE */
   --DANGER-COLOR: #ef233c;
@@ -18,26 +84,26 @@
   --SUCCESS-COLOR: #00a6fb;
   --ACTIVE-COLOR: #48cae4;
   /* TEXT COLOR */
-  --TEXT-COLOR: #3b3b3d;
+  --TEXT-COLOR: #141414;
   --TEXT-LABEL: #4c4c4e;
   --TEXT-DISABLED: #e1dfe9;
 }
 html {
   font-size: 62.5%;
-  letter-spacing: 1.1px;
+  letter-spacing: 1px;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 body {
   height: 100%;
-  font-family: var(--font-viga), var(--font-koulen), var(--font-inter),
-    var(--font-battambong) !important;
+  font-family: var(--font-viga), var(--font-inter),var(--font-koulen), var(--font-battambong);
 }
-.text-as-logo {
-  color: #199249 !important;
+h1,h2,h2,h4,h5,h6 {
+  font-family: var(--font-viga), var(--font-koulen) ;
 }
 p,
 input,
@@ -59,25 +125,17 @@ h1 {
 }
 span {
   font-size: var(--TEXT-SUB-BODY-SIZE);
-  color: var(--TEXT-LABEL);
+  color: var(--TEXT-COLOR);
 }
 .aaaa {
   z-index: 99;
 }
-span {
-  font-family: var(--font-inter), var(---font-battambong) !important;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--COLOR-ACCENT);
-  font-size: var(--TEXT-SUB-BODY-SIZE);
-  font-weight: bold;
-}
+
 .text-gradientKH {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
   font-weight: bold; /* Optional: make the text bold */
 }
 .text-gradientEN {
@@ -85,27 +143,18 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
   /* font-size: 48px; Adjust the font size as needed */
   font-weight: bold; /* Optional: make the text bold */
 }
-
-.hvr-bounce-to-top:hover,
-.hvr-bounce-to-top:focus,
-.hvr-bounce-to-top:active {
-  color: white !important;
-}
-.hvr-bounce-to-top:hover .text-as-logo,
-.hvr-bounce-to-top:hover p {
-  color: white !important;
-}
 .hvr-bounce-to-top:before {
-  background: #199249 !important;
-  color: white !important;
-}
-/* .aa:hover{
   background: rgb(25, 146, 73);
-} */
+  background: linear-gradient(
+    0deg,
+    rgba(25, 146, 73, 0.23012955182072825) 0%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(252, 252, 252, 0) 100%
+  );
+}
 .hvr-bounce-to-top-gray::before {
   background: rgb(0, 23, 49);
   background: linear-gradient(
@@ -115,7 +164,6 @@ span {
     rgba(252, 252, 252, 0.11528361344537819) 100%
   );
 }
-
 .img-slice-fix {
   width: 300px;
   height: 220px;
@@ -147,47 +195,42 @@ span {
 .hvr-shutter-out-horizontal-bg-ourproject:before {
   background: rgb(25, 146, 73);
 }
-.hvr-underline-from-left:before {
+.hvr-underline-from-left:before{
   color: #e1dfe9;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.795);
 }
-.hvr-underline-from-left {
+.hvr-underline-from-left{
   padding-bottom: 2px;
   -webkit-transform: perspective(0px) translateZ(0);
   transform: perspective(0px) translateZ(0);
 }
-.hvr-underline-from-left:hover {
+.hvr-underline-from-left:hover{
   color: rgba(255, 255, 255, 0.795);
 }
 /* Speicial color gold gradient */
-.txt-gold-text {
-  background: linear-gradient(
-    to bottom,
-    #cfc09f 22%,
-    #634f2c 24%,
-    #cfc09f 26%,
-    #cfc09f 27%,
-    #ffecb3 40%,
-    #3a2c0f 78%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #fff;
-  position: relative;
+.txt-gold-text{
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    position: relative;
 }
 .txt-gold-text:after {
-  background: none;
-  content: attr(data-heading);
-  left: 0;
-  top: 0;
-  z-index: -1;
-  position: absolute;
-  text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
-    3px 2px 2px rgba(0, 0, 0, 0.4), -1px -1px 1px rgba(0, 0, 0, 0.4);
+    background: none;
+    content: attr(data-heading);
+    left: 0;
+	top: 0;
+    z-index: -1;
+    position: absolute;
+    text-shadow: 
+		-1px 0 1px #c6bb9f, 
+		0 1px 1px #c6bb9f, 
+		3px 2px 2px rgba(0, 0, 0, 0.4),
+		-1px -1px 1px rgba(0, 0, 0, 0.4);
 }
-.a {
-  width: 80%;
+.a{width: 80%;
   margin: auto;
   background-color: green !important;
 }
+

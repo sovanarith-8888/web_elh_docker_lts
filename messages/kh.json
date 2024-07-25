@@ -4,7 +4,8 @@
   },
   "Lang": {
     "COMMENT_DESCRITION": "📢📢📢 Language 📢📢📢",
-    "lang": "Prefer Language"
+    "lang": "Prefer Language",
+    "preferlang": "ប្តូរភាសា"
   },
   "Navbar": {
     "COMMENT_DESCRITION": "📢📢📢 Navbar 📢📢📢",
