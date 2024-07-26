@@ -7,7 +7,12 @@ import { vigaHeader, interParagraph, koulenHeader, battambongParagraph } from ".
 import HeaderTitleContainer from "@/components/header/HeaderContainer";
 import NavbarContainer from "@/components/navbar/NavbarContainer";
 import MediaContainer from "@/components/video-show/MediaContainer";
+import { Suspense } from "react";
+import VideoLoader from "@/components/video-show/VideoLoader";
+import Loading from "./loading";
 const inter = Inter({ subsets: ["latin"] });
+
+
 
 export const metadata: Metadata = {
   title: "East Land and Home",
@@ -32,7 +37,13 @@ export default async function RootLayout({
           {/* Container Header  Navbar */}
           <header className={`w-full `}>
             <HeaderTitleContainer />
-            <MediaContainer />
+            <Suspense fallback="loading...">
+              <MediaContainer />
+            </Suspense>
+            {/* <Suspense fallback={<Loading/>}>
+              <VideoLoader />
+            </Suspense> */}
+
             <NavbarContainer />
           </header>
           {children}

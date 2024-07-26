@@ -65,7 +65,7 @@ export default function NavbarContainer() {
             </NavbarBrand>
 
             <NavbarItem isActive>
-              <Link href="#" aria-current="page" color="warning">
+              <Link href="/" aria-current="page" color="warning">
                 <h3 className={`${langHeader} hover:text-[#199249]`}>
                   {translator("home")}
                 </h3>

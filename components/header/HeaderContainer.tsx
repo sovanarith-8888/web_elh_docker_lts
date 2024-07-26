@@ -36,7 +36,7 @@ const HeaderTitleContainer = () => {
     <main
       className={` ${
         isHided === true ? "hidden" : "block"
-      } w-full bg-[#C9A9E9] h-[35px] flex items-center fixed bg-fixed`}
+      } w-full bg-[#C9A9E9] h-[35px] flex items-center`}
     >
       <div className={`w-[74%] flex justify-between m-auto bg-transparent`}>
         <div>
