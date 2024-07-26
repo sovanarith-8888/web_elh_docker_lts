@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { vigaHeader, interParagraph, koulenHeader, battambongParagraph } from "./fonts";
 import HeaderTitleContainer from "@/components/header/HeaderContainer";
+import NavbarContainer from "@/components/navbar/NavbarContainer";
+import MediaContainer from "@/components/video-show/MediaContainer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -30,6 +32,8 @@ export default async function RootLayout({
           {/* Container Header  Navbar */}
           <header className={`w-full `}>
             <HeaderTitleContainer />
+            <MediaContainer />
+            <NavbarContainer />
           </header>
           {children}
         </NextIntlClientProvider>

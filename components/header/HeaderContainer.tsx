@@ -18,7 +18,6 @@ const HeaderTitleContainer = () => {
   const [isHided, setIsHided] = useState<boolean>(false);
   const [isKh,setIsKh] = useState<boolean>(false);
   const param = useParams();
-  console.log(param);
   const locale = param.locale;
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
@@ -37,9 +36,9 @@ const HeaderTitleContainer = () => {
     <main
       className={` ${
         isHided === true ? "hidden" : "block"
-      } w-full bg-[#C9A9E9] py-2`}
+      } w-full bg-[#C9A9E9] h-[35px] flex items-center fixed bg-fixed`}
     >
-      <div className={`w-[74%] flex justify-between m-auto`}>
+      <div className={`w-[74%] flex justify-between m-auto bg-transparent`}>
         <div>
           <AnimatedGradientText>
             <span
@@ -62,8 +61,12 @@ const HeaderTitleContainer = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute right-8 top-[7px]">
-        <Button onClick={handleHideHeader} className="p-0 outline-none">
+      <div className="absolute right-8 ">
+        <Button
+          onClick={handleHideHeader}
+          variant="light"
+          className="p-0 outline-none"
+        >
           <CloseSvg />
         </Button>
       </div>

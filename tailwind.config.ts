@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss"
-
+const { nextui } = require("@nextui-org/react");
 const config = {
   darkMode: ["class"],
   content: [
@@ -7,6 +7,7 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -67,7 +68,7 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "gradient": {
+        gradient: {
           to: {
             backgroundPosition: "var(--bg-size) 0",
           },
@@ -80,7 +81,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),nextui()],
 } satisfies Config;
 
 export default config

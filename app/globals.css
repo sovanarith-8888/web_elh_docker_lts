@@ -102,8 +102,23 @@ body {
   height: 100%;
   font-family: var(--font-viga), var(--font-inter),var(--font-koulen), var(--font-battambong);
 }
+.bg-logo{
+  background-color: var(--COLOR-PRIMARY) !important;
+}
+.bg-transparent-navbar{
+/* From https://css.glass */
+background: rgba(100, 0, 0, 0);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+}
+.nav{
+  background-color: transparent !important;
+}
 h1,h2,h2,h4,h5,h6 {
   font-family: var(--font-viga), var(--font-koulen) ;
+}
+h3{
+  font-size: 1.8rem;
 }
 p,
 input,
