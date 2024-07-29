@@ -43,9 +43,24 @@
   "OurBusiness": {
     "COMMENT_DESCRITION": "📢📢📢 Our Businness Home Page 📢📢📢",
     "business": "Our Bussiness",
-    "east_title": "Welcome to East Resort",
-    "estate_title": "Welcome to Real Estate",
-    "mfi_title": "Welcome to MFI"
+    "east_title": "Welcome to East Land and Home",
+    "mfi_title": "Welcome to East Micro Financial",
+    "resort_title": "Welcome to East Resort",
+    "elh_unit": {
+      "title": "East Land and Home",
+      "sub": "Leading Property Developers",
+      "des": "Developing multiple residential projects in affordable housing, condominiums, and vocational housing sector. We are present in various provincial towns of Cambodia consisting of Phnom Penh, Svay Chrum of Arey Ksat town of Kandal province, Kampot, and Sihanoukville."
+    },
+    "micro_unit": {
+      "title": "East Micro",
+      "sub": "Financial Services",
+      "des": "Provide financial services for all needs."
+    },
+    "resort_unit": {
+      "title": "East Resort",
+      "sub": "Resort",
+      "des": "A relaxing bungalow for your holiday."
+    }
   },
   "CardPrjectUnit": {
     "east_resort": {

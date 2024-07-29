@@ -1,7 +1,7 @@
 
 import HeroContainer from "@/components/hero/HeroContainer";
 import { battambongParagraph, interParagraph, koulenHeader, vigaHeader } from "./fonts";
-
+import "hover.css/css/hover.css";
 export default function Home() {
   return (
     <>

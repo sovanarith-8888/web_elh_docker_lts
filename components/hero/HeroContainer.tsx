@@ -5,6 +5,8 @@ import { useParams } from 'next/navigation';
 import React, { useState } from 'react'
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import "animate.css";
+import { Image } from '@nextui-org/react';
+import BusinessUnit from '../business/BusinessUnit';
 
 const HeroContainer = () => {
   const translator = useTranslations("HeroSection");
@@ -32,6 +34,25 @@ const HeroContainer = () => {
         <br />
         <p className={`${langParagraph}`}>{translator("paragraphB")}</p>
         <p className={`${langParagraph}`}>{translator("paragraphC")}</p>
+        <section className="flex gap-12 mt-12">
+          <div className="w-2/3">
+            <Image
+              isZoomed
+              src={"/resources/images/company/projectB.jpg"}
+              alt="project B"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="w-1/3">
+            <Image
+              isZoomed
+              src={"/resources/images/company/projectA.jpg"}
+              alt="project A"
+              style={{ width: "100%" }}
+            />
+          </div>
+        </section>
+        <BusinessUnit/>
       </main>
     </>
   );
