@@ -23,7 +23,9 @@
     "csr": "CSR",
     "new_blog": "BLOG",
     "carrer": "CARRER",
-    "contactus": "CONTACT US"
+    "contactus": "CONTACT US",
+
+    "company": "Company"
   },
   "END_PUBLIC": {
     "NONE": "🍺🍺🍺 END 🍺🍺🍺"
@@ -82,12 +84,12 @@
   "Footer": {
     "COMMENT_DESCRITION": "📢📢📢 Footer 📢📢📢",
     "topTitle": "We appreciate you taking the time to visit our website.",
-    "elhHeadOffice": "EastLandandHome Head Office",
+    "elhHeadOffice": "East Land and Home Head Office",
     "elhLocation": "B2-109, B2-110, Island, Tonle Bassac, Chamkarmon Phnom Penh",
     "phone": "(+855) 78 342 168",
     "gmail": "info@eastlandandhome.com",
-    "website": "https://eastlandandhome.com",
-    "license": "2024 EastLandandHome All rights reserved.",
+    "website": "https://wwww.eastlandandhome.com",
+    "license": "© 2024 East Land and Home All rights reserved.",
     "brandName": "EastLand and Home"
   },
   "END_HOME_PAGE": {

@@ -89,7 +89,7 @@ export default function NavbarContainer() {
                     radius="sm"
                     variant="light"
                   >
-                    <h3 className={`${langHeader}`}>
+                    <h3 className={`${langHeader} hover:text-[#199249]`}>
                       {translator("business_unit")}
                     </h3>
                   </Button>

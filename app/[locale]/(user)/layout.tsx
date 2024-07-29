@@ -10,6 +10,7 @@ import MediaContainer from "@/components/video-show/MediaContainer";
 import { Suspense } from "react";
 import VideoLoader from "@/components/video-show/VideoLoader";
 import Loading from "./loading";
+import FooterContainer from "@/components/footer/FooterContainer";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -40,13 +41,11 @@ export default async function RootLayout({
             <Suspense fallback="loading...">
               <MediaContainer />
             </Suspense>
-            {/* <Suspense fallback={<Loading/>}>
-              <VideoLoader />
-            </Suspense> */}
-
             <NavbarContainer />
           </header>
           {children}
+          {/* Footer */}
+          <FooterContainer/>
         </NextIntlClientProvider>
       </body>
     </html>
