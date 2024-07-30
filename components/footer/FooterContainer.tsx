@@ -30,7 +30,7 @@ const FooterContainer = () => {
       <hr className="border-white w-[74%] m-auto mt-12" />
       {/* Main footer buttom */}
       <main className="w-[74%] m-auto flex justify-center mt-8 ">
-        <small className="text-center">
+        <small className={`text-center ${langParagraph}`}>
           {translator("license")} 
           {" "}|{" "}<span className="underline underline-offset-1">Terms of Service</span>
           {" "}|{" "}<span className="underline underline-offset-1">Privacy</span>

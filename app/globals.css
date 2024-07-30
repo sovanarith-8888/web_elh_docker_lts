@@ -202,7 +202,7 @@ backdrop-filter: blur(5px);
 
 
 
-
+/* 
 
 
 .aaaa {
@@ -214,15 +214,15 @@ backdrop-filter: blur(5px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: bold; /* Optional: make the text bold */
+  font-weight: bold; 
 }
 .text-gradientEN {
   background: linear-gradient(to right, #199249, #feb47b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* font-size: 48px; Adjust the font size as needed */
-  font-weight: bold; /* Optional: make the text bold */
+ 
+  font-weight: bold; 
 }
 .hvr-bounce-to-top:before {
   background: rgb(25, 146, 73);
@@ -270,7 +270,8 @@ backdrop-filter: blur(5px);
     rgba(227, 240, 255, 0) 100%
   );
 }
-/* Our Project Component */
+
+
 .hvr-shutter-out-horizontal-bg-ourproject:before {
   background: rgb(25, 146, 73);
 }
@@ -287,7 +288,7 @@ backdrop-filter: blur(5px);
 .hvr-underline-from-left:hover{
   color: rgba(255, 255, 255, 0.795);
 }
-/* Speicial color gold gradient */
+
 .txt-gold-text{
   background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
     -webkit-background-clip: text;
@@ -311,5 +312,6 @@ backdrop-filter: blur(5px);
 .a{width: 80%;
   margin: auto;
   background-color: green !important;
-}
+} 
 
+*/

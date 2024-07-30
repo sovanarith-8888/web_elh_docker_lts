@@ -72,7 +72,7 @@ export default function NavbarContainer() {
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link color="foreground" href="#">
+              <Link color="foreground" as={Link} href={`/${locale}/about-us`}>
                 <h3 className={`${langHeader} hover:text-[#199249]`}>
                   {translator("aboutus")}
                 </h3>

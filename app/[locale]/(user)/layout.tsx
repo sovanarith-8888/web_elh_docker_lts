@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
@@ -45,9 +46,10 @@ export default async function RootLayout({
           </header>
           {children}
           {/* Footer */}
-          <FooterContainer/>
+          <FooterContainer />
         </NextIntlClientProvider>
       </body>
+      {/* <script type="text/javascript" src="/script/timeline.js"></script> */}
     </html>
   );
 }

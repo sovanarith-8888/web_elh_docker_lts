@@ -19,7 +19,7 @@
     "new": "NEWS",
     "new_promotions": "PROMOTIONS",
     "new_news": "NEWS",
-    "gallery": "Gallery",
+    "gallery": "GALLERY",
     "csr": "CSR",
     "new_blog": "BLOG",
     "carrer": "CARRER",
@@ -105,80 +105,89 @@
     "chairmain_name": "Neak Oknha Ly Seng Kheang",
     "chairmain_pos": "Chairman of East Land and Home Co.,Ltd"
   },
+  "Vision": {
+    "vision": "VISIONARY",
+    "mission": "MISSION",
+    "value": "CORE VALUE",
+    "vision_description": "To be the leading real estate development company in the country for its quality, design and affordability.",
+    "mission_description": "Build a vibrant community by operating according to our core value of the company for sustainable development and growth.",
+    "value_description": "Values ​​focus on key points such as: Integrity, Entrepreneurship, Quality, Responsibility,Services, Team work ",
+    "value_lists": {
+      "1": "Integrity",
+      "2": "Entrepreneurial",
+      "3": "Quality",
+      "4": "Responsibility",
+      "5": "Service",
+      "6": "Team Work"
+    }
+  },
   "AboutUs_History": {
+    "milestones": "Milestones",
     "history_nth_1": {
       "year": "2023",
-      "com": "EAST BUY",
-      "invest": {
-        "nth_1": "Established EAST MFI",
-        "nth_2": "Initiate EAST Industrial Zone",
-        "nth_3": "Initiate EAST BUY – e-Commerce Platform and online shopping",
-        "nth_4": "Established EAST Resort"
-      }
-    },
+      "title": "East Micro",
+      "subtitle": "Financial Services",
+      "description":"Provide financial services for all needs."
+      },
     "history_nth_2": {
-      "year": "2020",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "Project Completion and continue corporate governance strengthening"
-      }
+      "year": "2023",
+      "title": "East Resort ",
+      "subtitle": "Resort",
+      "description": "A relaxing bungalow"
     },
     "history_nth_3": {
-      "year": "2019",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "Process improvement and Transformation on financial reporting and construction management."
-      }
+      "year": "2020",
+      "title": "BS & EAST Company",
+      "subtitle": "Leading Property Developers",
+      "description": "Continuous corporate governance strengthening"
     },
     "history_nth_4": {
-      "year": "2017",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "EAST launched additional 6 real estate projects and acquire more land in Sihanoukville, Kandal, and Phnom Penh.",
-        "nth_2": "Standardization and Corporate Governance were emplaced.. "
-      }
+      "year": "2019",
+      "title": "BS & EAST Company",
+      "subtitle": "Leading Property Developers",
+      "description": "Process improvement and Transformation on Fin. & construction management"
     },
     "history_nth_5": {
-      "year": "2016",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "More residential development projects were launched at Prek Ampil Under EAST"
-      }
+      "year": "2017",
+      "title": "East Land and Home",
+      "subtitle": "Leading Property Developers",
+      "description": "EAST launched additional 6 projects and acquire more land​ & Continues follow Standardization and Corporate Governance"
     },
     "history_nth_6": {
-      "year": "2015",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "BS Land & Home Co., Ltd. launch more real estate projects in Arey Ksat Area "
-      }
+      "year": "2016",
+      "title": "East Land and Home",
+      "subtitle": "Leading Property Developers",
+      "description": "More development projects were launched at Prek Ampil Under EAST"
     },
     "history_nth_7": {
-      "year": "2008",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "Venture into residential development market by co-founding single 410 unit project in Sihanouk Ville."
-      }
+      "year": "2015",
+      "title": "BS Land & Home Co., Ltd. ",
+      "subtitle": "Leading Property Developers",
+      "description": "BS Land & Home Co., Ltd. launch more real estate projects in Arey Ksat Area"
     },
     "history_nth_8": {
-      "year": "2004",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "BS Department Store Co., Ltd was established and opened its first department store called BS Department Store on Monivong Boulevard."
-      }
+      "year": "2008",
+      "title": "BS 1st Project in Sihanoukville",
+      "subtitle": "Leading Property Developers",
+      "description": "Venture into residential development market. 1st Project in Sihanoukville with 410 units"
     },
     "history_nth_9": {
-      "year": "2003",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "The business expanded to 5 fashion stores."
-      }
+      "year": "2004",
+      "title": "BS Department Store Co., Ltd.",
+      "subtitle": "Leading Property Developers",
+      "description": "BS Department Store Co., Ltd. was established"
     },
     "history_nth_10": {
+      "year": "2003",
+      "title": "East Fashion ",
+      "subtitle": "Fashion store",
+      "description": "The business expanded to 5 fashion stores"
+    },
+    "history_nth_11": {
       "year": "2002",
-      "com": "INDUSTRIAL",
-      "invest": {
-        "nth_1": "Okhna Ly Seng Kheang start whole sale and retail clothing business based in Phnom Penh."
-      }
+      "title": "East Fashion ",
+      "subtitle": "Fashion store",
+      "description": "Start Apparel trading business in Phnom Penh"
     }
   },
   "PROJECT_PLAN_PAGE": {

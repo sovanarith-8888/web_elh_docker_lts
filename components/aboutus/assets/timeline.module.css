@@ -1,0 +1,111 @@
+
+.timeline {
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: #227c9d;
+}
+
+.timeline ol {
+  position: relative;
+  list-style: none;
+}
+
+.timeline ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #17c3b2;
+}
+
+.timeline ol li .itemInner {
+  padding: 20px 180px;
+  margin-bottom: 8vh;
+}
+
+.timeline ol li .timeWrapper {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+.timeline ol li .timeWrapper::before,
+.timeline ol li .timeWrapper::after {
+  content: "";
+  position: absolute;
+  background: #17c3b2;
+}
+
+.timeline ol li .timeWrapper::before {
+  top: 50%;
+  left: -180px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 3px;
+  transition: width 0.8s linear;
+}
+
+.timeline ol li .timeWrapper::after {
+  top: calc(50% - 8px);
+  left: -60px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: left center;
+  transition: all 0.4s linear;
+}
+
+.timeline ol li time,
+.timeline ol li .details > * {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.timeline ol li time {
+  display: inline-block;
+  transform: translateY(-30px);
+}
+
+.timeline ol li .details > * {
+  transform: translateY(30px);
+}
+
+.timeline ol li .details h3 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 15px 0;
+}
+/* ANIMATION STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ol li.inView .timeWrapper::before {
+  width: 120px;
+}
+
+.timeline ol li.inView .timeWrapper::after {
+  transition-delay: 0.8s;
+  transform: scale(1.5);
+}
+
+.timeline ol li.inView time,
+.timeline ol li.inView .details > * {
+  opacity: 1;
+  transform: none;
+}
+
+.timeline ol li.inView time {
+  transition-delay: 1.3s;
+}
+
+.timeline ol li.inView .details h3 {
+  transition-delay: 1.5s;
+}
+
+.timeline ol li.inView .details p {
+  transition-delay: 1.7s;
+}
