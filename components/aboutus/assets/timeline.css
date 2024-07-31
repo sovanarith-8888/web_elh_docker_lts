@@ -79,6 +79,7 @@
   opacity: 0;
   transition: 0.5s;
 }
+.timeline ol li .img {background-color: transparent;}
 .timeline ol li time,
 .timeline ol li Image {
   display: inline-block;

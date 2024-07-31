@@ -13,6 +13,7 @@ import { Image } from "@nextui-org/react";
 // import classNamees from "./assets/timeline.module.css";
 import "./assets/timeline.css";
 import Head from "next/head";
+import TimelineCard from "./TimelineCard";
 const Timeline = () => {
   const translator = useTranslations("AboutUs_History");
   const param = useParams();
@@ -30,45 +31,93 @@ const Timeline = () => {
         <section className="mt-12 w-[64%] m-auto">
           <section className="timeline">
             <ol>
-              <li>
-                <div className="item-inner">
-                  <div className="time-wrapper">
-                    <time className=" block items-center">
-                      <Image
-                        className="img"
-                        src="/assets/images/credits/2023.png"
-                        alt="2023"
-                        width={70}
-                      />
-                    </time>
-                    <time>2033</time>
-                  </div>
-                  <div className="details">
-                    <h3>Heading Here</h3>
-                    <p>
-                      : ក្រុមហ៊ុនអភិវឌ្ឍន៏អចលនទ្រព្យ Details: ក្រុមហ៊ុន EAST
-                      បានបន្ថែមគម្រោង ចំនួន 6 និងពង្រីកដីបន្ថែមទៀត
-                      និងបន្តគោរពតាមស្តង់ដារ និងសាជីវកម្មអភិបាលកិច្ច
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="item-inner">
-                  <div className="time-wrapper">
-                    <time>1934</time>
-                  </div>
-                  <div className="details">
-                    <h3>Heading Here</h3>
-                    <p>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium At vero eos et accusamus et
-                      iusto odio dignissimos ducimus qui blanditiis praesentium
-                    </p>
-                  </div>
-                </div>
-              </li>
+              {/* 1 */}
+              <TimelineCard
+                avatar="/assets/images/logo/eastmicro.png"
+                year={translator("history_nth_1.year")}
+                title={translator("history_nth_1.title")}
+                subtitle={translator("history_nth_1.subtitle")}
+                description={translator("history_nth_1.description")}
+              />
+              {/* 2 */}
+              <TimelineCard
+                avatar="/assets/images/logo/eastresort.png"
+                year={translator("history_nth_2.year")}
+                title={translator("history_nth_2.title")}
+                subtitle={translator("history_nth_2.subtitle")}
+                description={translator("history_nth_2.description")}
+              />
+              {/* 3 */}
+              <TimelineCard
+                avatar="/assets/images/logo/bsandeast.png"
+                year={translator("history_nth_3.year")}
+                title={translator("history_nth_3.title")}
+                subtitle={translator("history_nth_3.subtitle")}
+                description={translator("history_nth_3.description")}
+              />
+              {/* 4 */}
+              <TimelineCard
+                avatar="/assets/images/logo/bsandeast.png"
+                year={translator("history_nth_4.year")}
+                title={translator("history_nth_4.title")}
+                subtitle={translator("history_nth_4.subtitle")}
+                description={translator("history_nth_4.description")}
+              />
+              {/* 5 */}
+              <TimelineCard
+                avatar="/assets/images/logo/eastnew.png"
+                year={translator("history_nth_5.year")}
+                title={translator("history_nth_5.title")}
+                subtitle={translator("history_nth_5.subtitle")}
+                description={translator("history_nth_5.description")}
+              />
+              {/* 6 */}
+              <TimelineCard
+                avatar="/assets/images/logo/eastnew.png"
+                year={translator("history_nth_6.year")}
+                title={translator("history_nth_6.title")}
+                subtitle={translator("history_nth_6.subtitle")}
+                description={translator("history_nth_6.description")}
+              />
+              {/* 7 */}
+              <TimelineCard
+                avatar="/assets/images/logo/bs.png"
+                year={translator("history_nth_7.year")}
+                title={translator("history_nth_7.title")}
+                subtitle={translator("history_nth_7.subtitle")}
+                description={translator("history_nth_7.description")}
+              />
+              {/* 8 */}
+              <TimelineCard
+                avatar="/assets/images/credits/sihanoukville.png"
+                year={translator("history_nth_8.year")}
+                title={translator("history_nth_8.title")}
+                subtitle={translator("history_nth_8.subtitle")}
+                description={translator("history_nth_8.description")}
+              />
+              {/* 9 */}
+              <TimelineCard
+                avatar="/assets/images/logo/bs.png"
+                year={translator("history_nth_9.year")}
+                title={translator("history_nth_9.title")}
+                subtitle={translator("history_nth_9.subtitle")}
+                description={translator("history_nth_9.description")}
+              />
+              {/* 10 */}
+              <TimelineCard
+                avatar="/assets/images/credits/fashion2.png"
+                year={translator("history_nth_10.year")}
+                title={translator("history_nth_10.title")}
+                subtitle={translator("history_nth_10.subtitle")}
+                description={translator("history_nth_10.description")}
+              />
+              <TimelineCard
+                avatar="/assets/images/credits/fashion.png"
+                year={translator("history_nth_11.year")}
+                title={translator("history_nth_11.title")}
+                subtitle={translator("history_nth_11.subtitle")}
+                description={translator("history_nth_11.description")}
+              />
             </ol>
           </section>
         </section>
