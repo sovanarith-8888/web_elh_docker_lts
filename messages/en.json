@@ -196,25 +196,44 @@
   "project_plans": {
     "our_prject": "OUR PROJECT",
     "east_land": "Borey East Land & Home",
+    "east_land_location": "Daun Hem, Prek Ampil, Khsach Kandal, Arey Ksat, Kandal",
     "east_sensok": "East Sen Sok Condominium",
+    "east_sensok_location": "Oknha Vaeng, Phnom Penh Tmey, Sen Sok, Phnom Penh",
     "east_keansvay": "East Keansvay City",
+    "east_keansvay_location": "Chroy Tabao, Kokki, Kean Svay, Kandal",
     "east_primeland": "East Prime Land",
+    "east_primeland_location": "Svay Chrum, Svay Chrum, Khsach Kandal, Kandal",
     "east_svaychrum": "East Land Svay Chrum",
+    "east_svaychrum_location": "Arey Ksat, Arey Ksat, Arey Ksat, Kandal",
     "east_minicondo1": "East Mini Condo 1",
+    "east_minicondo1_location": "Ler, Svay Chrum, Khsach Kandal, Kandal",
     "east_minicond2": "East Mini Condo 2",
+    "east_minicond2_location": "Ler, Svay Chrum, Khsach Kandal, Kandal",
     "east_minicondo3": "East Mini Condo 3",
+    "east_minicondo3_location": "Ler, Svay Chrum, Khsach Kandal, Kandal",
     "east_natural": "East Natural City",
+    "east_natural_location": "Prek Pros, Teuk Tla, Prey Nob, Preah Sihanouk",
     "east_sihanouk": "East Sihanouk City",
-    "east_sihanoukpark": "East Sihanouk Park"
+    "east_sihanouk_location": "Prek Pros, Teuk Tla, Prey Nob, Preah Sihanouk",
+    "east_sihanoukpark": "East Sihanouk Park",
+    "east_sihanoukpark_location": "Otres, Steung Hav, Preah Sihanouk"
   },
   "CONTACT US": {
     "NONE": "🍺🍺🍺 Contact Us 🍺🍺🍺"
   },
   "contactus": {
     "conact": "CONTACT US",
+    "get": "Get In Touch",
+    "contact_description":"Have some big idea or brand to develop and need help? Then reach out we would love to hear about your project and provide help.",
+    "connect": "Connect With Us",
+    "contact_num": "Tell (+855) 78 342 168 for General Inquiry.",
+    "query": "For your convenience, we have introduced once support lines, available to you 24/7.",
     "office": "Office Location",
     "location": "B2-109, B2-110, Diamond Island, Tonle Bassac, Chamkarmon Phnom Penh",
     "phone": "Phone Number",
-    "email": "Email"
+    "email": "Email",
+    "gmail": "info@eastlandandhome.com",
+    "address": "Address",
+    "send": "Send Us Message"
   }
 }

@@ -195,26 +195,44 @@
   },
   "project_plans": {
     "our_prject": "អំពី​ គម្រោងរបស់យើង",
-    "east_land": "Borey East Land & Home",
-    "east_sensok": "East Sen Sok Condominium",
-    "east_keansvay": "East Keansvay City",
-    "east_primeland": "East Prime Land",
-    "east_svaychrum": "East Land Svay Chrum",
-    "east_minicondo1": "East Mini Condo 1",
-    "east_minicond2": "East Mini Condo 2",
-    "east_minicondo3": "East Mini Condo 3",
-    "east_natural": "East Natural City",
-    "east_sihanouk": "East Sihanouk City",
-    "east_sihanoukpark": "East Sihanouk Park"
+    "east_land": "គម្រោង បុរី អុីស្ត លេន អេន ហូម",
+    "east_land_location": "ដូនហែម ព្រែកអំពិល ខ្សាច់កណ្តាល អរិយក្សត្រ កណ្តាល",
+    "east_sensok": "គម្រោង អ៊ីស្ត សែនសុខ ខុនដូមីនៀម",
+    "east_sensok_location": "ឧកញ៉ាវាំង ភ្នំពេញថ្មី​ សែន​សុខ រាជធានី​​ភ្នំពេញ",
+    "east_keansvay": "គម្រោង អ៊ីស្ត សែនសុខ ស៊ីធី",
+    "east_keansvay_location": "ជ្រោយតាបៅ គគីរ កៀនស្វាយ កណ្តាល",
+    "east_primeland": "គម្រោង ​អុីស្ត​ ប្រាម៍ លែន",
+    "east_primeland_location": "ទស្វាយជ្រុំ ស្វាយជ្រុំ ខ្សាច់កណ្តាល កណ្តាល",
+    "east_svaychrum": "គម្រោង ​អុីស្ត លែន ស្វាយជ្រុំ",
+    "east_svaychrum_location": "អរិយក្សត្រ អរិយក្សត្រ អរិយក្សត្រ កណ្តាល",
+    "east_minicondo1": "គម្រោង ​អ៊ីស្ត មីនី ខុនដូ មីនៀម (MF)",
+    "east_minicondo1_location": "លើ ស្វាយជ្រុំ ខ្សាច់កណ្តាល កណ្តាល",
+    "east_minicond2": "គម្រោង ​អ៊ីស្ត មីនី ខុនដូ មីនៀម (MC)",
+    "east_minicond2_location": "លើ ស្វាយជ្រុំ ខ្សាច់កណ្តាល កណ្តាល",
+    "east_minicondo3": "គម្រោង ​អ៊ីស្ត មីនី ខុនដូ មីនៀម (MP)",
+    "east_minicondo3_location": "លើ ស្វាយជ្រុំ ខ្សាច់កណ្តាល កណ្តាល",
+    "east_natural": "គម្រោង បុរី អ៊ីស្ត ណេឆឺរ៉ល ស៊ីធី",
+    "east_natural_location": "ព្រែកប្រស់ ទឹកថ្លា ព្រៃនប់ ព្រះសីហនុ",
+    "east_sihanouk": "គម្រោង អ៊ីស្ត សីហនុ ស៊ីធី",
+    "east_sihanouk_location": "អូតាសេក ឧកញ៉ាហេង ព្រៃនប់ ព្រះសីហនុ",
+    "east_sihanoukpark": "គម្រោង អ៊ីស្ត សីហនុ ផាក",
+    "east_sihanoukpark_location": "អូរត្រេះ ស្ទឹងហាវ ព្រះសីហនុ"
   },
   "CONTACT US": {
     "NONE": "🍺🍺🍺 Contact Us 🍺🍺🍺"
   },
   "contactus": {
     "conact": "ពត័មានទាក់ទង​មក​​យើងខ្ញុំ",
+    "get": "សូមទាក់ទងតាមរយេះ",
+    "contact_description": "Have some big idea or brand to develop and need help? Then reach out we would love to hear about your project and provide help.",
+    "connect": "សូមភ្ជាប់ជាមួយយើងតាមប្រព័ន្ធទូរស័ព្ទខាងក្រោម",
+    "contact_num": "ប្រព័ន្ធទូរស័ព្ទ (+855) 78 342 168 សម្រាប់​ព័ត៌មាន​ទូទៅ។",
+    "query": "​ដើម្បី​ភាព​ងាយស្រួល​សម្រាប់​អតិថិជន​ យើង​បាន​ដាក់​ឲ្យ​ប្រើប្រាស់​ទូរស័ព្ទ​ចំនួន​មួយខ្សែ​ ដែល​លោក​អ្នក​អាច​ទាក់ទង​មក​បាន​ គ្រប់ពេលវេលា​ 24​ ម៉ោង​លើ​ 24​ ម៉ោង​ ។",
     "office": "ការិយាល័យ​ក​ណ្តា​ល",
     "location": "B2-109 B2-110 កោះពេជ្រ ទន្លេបាសាក់ ចំការមន ភ្នំពេញ",
     "phone": "លេខទូរសព្ទ",
-    "email": "អ៊ីមែល"
+    "email": "អ៊ីមែល",
+    "address": "អាស័យដ្ឋាន",
+    "send": "សូមផ្ញើសារមកយើងខ្ញុំ"
   }
 }

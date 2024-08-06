@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import {
   Navbar,
@@ -8,8 +8,8 @@ import {
   NavbarMenuItem,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
+  Link,
   DropdownItem,
   Dropdown,
   DropdownMenu,
@@ -72,7 +72,7 @@ export default function NavbarContainer() {
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link color="foreground" as={Link} href={`/${locale}/about-us`}>
+              <Link color="foreground" href={`/${locale}/about-us`}>
                 <h3 className={`${langHeader} hover:text-[#199249]`}>
                   {translator("aboutus")}
                 </h3>
@@ -103,11 +103,13 @@ export default function NavbarContainer() {
                 }}
               >
                 <DropdownItem className={`py-1`}>
-                  <h3
-                    className={`${langHeader} px-1 py-6 hover:text-[#199249]`}
-                  >
-                    {translator("unit_elh")}
-                  </h3>
+                  <Link href={`/${locale}/projects`}>
+                    <h3
+                      className={`${langHeader} px-1 py-6 hover:text-[#199249]`}
+                    >
+                      {translator("unit_elh")}
+                    </h3>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem className={`py-1`}>
                   <h3
@@ -176,13 +178,18 @@ export default function NavbarContainer() {
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link color="foreground" href="#" className={`${langHeader}`}>
+              <Link
+                color="foreground"
+                href={`/${locale}/contact-us`}
+                className={`${langHeader}`}
+              >
                 <h3 className={`${langHeader}  hover:text-[#199249]`}>
                   {translator("contactus")}
                 </h3>
               </Link>
             </NavbarItem>
           </NavbarContent>
+
 
           <NavbarMenu>
             {menuItems.map((item, index) => (
@@ -209,8 +216,3 @@ export default function NavbarContainer() {
     </>
   );
 }
-
-
-
-
-
