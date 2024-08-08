@@ -5,6 +5,7 @@ import { battambongParagraph, interParagraph, koulenHeader, vigaHeader } from '.
 import { useTranslations } from 'next-intl';
 import ContactCall from "@/components/contactus/ContactCall";
 import ContactEmail from "@/components/contactus/ContactEmail";
+import MapLive from "@/components/contactus/MapLive";
 
 const ContactUs = () => {
   const param = useParams();
@@ -20,6 +21,7 @@ const ContactUs = () => {
       <p className={``}>{translator("query")}</p>
       <ContactCall/>
       <ContactEmail/>
+      <MapLive/>
     </main>
   );
 }

@@ -11,6 +11,7 @@ import {
   vigaHeader,
 } from "@/app/[locale]/(user)/fonts";
 import { useParams } from "next/navigation";
+import { Link } from "@nextui-org/react";
 
 const FooterContainer = () => {
   const translator = useTranslations("Footer");
@@ -31,9 +32,12 @@ const FooterContainer = () => {
       {/* Main footer buttom */}
       <main className="w-[74%] m-auto flex justify-center mt-8 ">
         <small className={`text-center ${langParagraph}`}>
-          {translator("license")} 
-          {" "}|{" "}<span className="underline underline-offset-1">Terms of Service</span>
-          {" "}|{" "}<span className="underline underline-offset-1">Privacy</span>
+          {translator("license")} |{" "}
+          <Link href={`/${locale}/privacy-policy`}>
+            <span className="underline underline-offset-1">
+              Terms of Service & Privacy
+            </span>{" "}
+          </Link>
         </small>
       </main>
     </footer>

@@ -127,8 +127,8 @@
       "year": "2023",
       "title": "East Micro",
       "subtitle": "Financial Services",
-      "description":"Provide financial services for all needs."
-      },
+      "description": "Provide financial services for all needs."
+    },
     "history_nth_2": {
       "year": "2023",
       "title": "East Resort ",
@@ -224,7 +224,7 @@
   "contactus": {
     "conact": "CONTACT US",
     "get": "Get In Touch",
-    "contact_description":"Have some big idea or brand to develop and need help? Then reach out we would love to hear about your project and provide help.",
+    "contact_description": "Have some big idea or brand to develop and need help? Then reach out we would love to hear about your project and provide help.",
     "connect": "Connect With Us",
     "contact_num": "Tell (+855) 78 342 168 for General Inquiry.",
     "query": "For your convenience, we have introduced once support lines, available to you 24/7.",
@@ -235,5 +235,30 @@
     "gmail": "info@eastlandandhome.com",
     "address": "Address",
     "send": "Send Us Message"
+  },
+  "elh_catalog": {
+    "flat": "Flat",
+    "land​": "Land",
+    "villa": "Villa"
+  },
+  "locations": {
+    "location": "Location"
+  },
+  "features": {
+    "feature":"Feature",
+    "water": "Water system",
+    "electric": "Electrical system",
+    "road": "Road system",
+    "lu": "Drainage system",
+    "clean": "Cleaner",
+    "secur": "Security & safety system"
+  },
+  "home_items":{
+    "land": "Land Size",
+    "kitchen": "Kitchen",
+    "living_rooms": "Living Room",
+    "house_size":"House Size",
+    "bedroom":"BedRooms",
+    "bath_room":"BathRoom"
   }
 }
