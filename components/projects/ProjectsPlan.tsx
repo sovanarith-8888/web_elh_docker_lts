@@ -9,7 +9,7 @@ const ProjectsPlan = () => {
   const translator = useTranslations("project_plans");
   return (
     <main className={`w-full flex flex-wrap`}>
-      {/* 1 */}
+      {/* 1 ELH */}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ELH.png" />
@@ -18,11 +18,12 @@ const ProjectsPlan = () => {
           <ProjectcardTitle
             title={translator("east_land")}
             location={translator("east_land_location")}
+            url="projects/eastland-and-home"
           />
         </div>
       </div>
 
-      {/* 2 */}
+      {/* 2 ESC */}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ESC.jpg" />
@@ -31,6 +32,7 @@ const ProjectsPlan = () => {
           <ProjectcardTitle
             title={translator("east_sihanouk")}
             location={translator("east_sihanouk_location")}
+            url="projects/east-sihanouk-city"
           />
         </div>
       </div>

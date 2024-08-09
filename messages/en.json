@@ -241,11 +241,20 @@
     "land​": "Land",
     "villa": "Villa"
   },
+  "esc_catalog": {
+    "bungalow": "Bungalow",
+    "flat": "Flat",
+    "land": "Land",
+    "villa": "Lilla"
+  },
   "locations": {
     "location": "Location"
   },
+  "properties": {
+    "property": "Our Property"
+  },
   "features": {
-    "feature":"Feature",
+    "feature": "Feature",
     "water": "Water system",
     "electric": "Electrical system",
     "road": "Road system",
@@ -253,12 +262,19 @@
     "clean": "Cleaner",
     "secur": "Security & safety system"
   },
-  "home_items":{
+  "nearby": {
+    "nearby": "Nearby Potential",
+    "market": "Market and Mail",
+    "uni": "University",
+    "hospital": "Hospital",
+    "bank": "Bank"
+  },
+  "home_items": {
     "land": "Land Size",
     "kitchen": "Kitchen",
     "living_rooms": "Living Room",
-    "house_size":"House Size",
-    "bedroom":"BedRooms",
-    "bath_room":"BathRoom"
+    "house_size": "House Size",
+    "bedroom": "BedRooms",
+    "bath_room": "BathRoom"
   }
 }

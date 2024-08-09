@@ -10,13 +10,16 @@ import {
   koulenHeader,
   vigaHeader,
 } from "@/app/[locale]/(user)/fonts";
+import Link from 'next/link';
+
 
 type ProjectTitleType = {
   title?: string | undefined;
   location?: string | undefined;
+  url?: string | undefined;
 }
 
-const ProjectcardTitle = ({title,location}: ProjectTitleType) => {
+const ProjectcardTitle = ({title,location,url}: ProjectTitleType) => {
   const param = useParams();
   const locale = param.locale;
   const langHeader =
@@ -43,10 +46,14 @@ const ProjectcardTitle = ({title,location}: ProjectTitleType) => {
         </div>
         <div className="flex gap-1  items-center  ml-[-2px]">
           <LocatIcon />
-          <p className={`${classes.subText} ${langParagraph} text-[6px]`}>{location}</p>
+          <p className={`${classes.subText} ${langParagraph} text-[6px]`}>
+            {location}
+          </p>
         </div>
       </div>
-      <ShareIcon />
+      <Link href={`/${locale}/${url}`} target='_blank'>
+        <ShareIcon />
+      </Link>
     </div>
   );
 }

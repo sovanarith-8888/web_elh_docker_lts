@@ -20,6 +20,11 @@ const config = withMT( {
       },
     },
     extend: {
+     zIndex: {
+      '0': "10",
+      '1': "20",
+      '2': "30",
+     },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
