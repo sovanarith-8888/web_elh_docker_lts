@@ -17,3 +17,13 @@ export type NearbyDefinitions = {
   alt?: string;
   des?: string;
 }
+export type SubUnitItemCardDefinition = {
+  iconItem?: string;
+  descriptionItem?: string;
+}
+export type  SubUnitTpyDefinitions = {
+  key?: string;
+  subUnitName?: string;
+  properties: SubUnitItemCardDefinition[]
+}
+
