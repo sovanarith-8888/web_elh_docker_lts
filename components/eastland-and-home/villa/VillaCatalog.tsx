@@ -1,12 +1,14 @@
 import React from 'react'
 import RoomItems from '../land/RoomItems';
 import Catalog from '@/components/component-build/catalog/Catalog';
-import { ImageCarouselDefinition, ImageTypeDefinition } from '@/lib/definitions';
+import { ImageCarouselDefinition, ImageTypeDefinition, SubUnitTpyDefinitions } from '@/lib/definitions';
 import CarouseSlide from '@/components/component-build/CarouselSlide/CarouseSlide';
 import VillaItemsRoom from './VillaItemsRoom';
+import Houseware from '@/components/component-build/housewares/Houseware';
+import { useTranslations } from 'next-intl';
 
 const VillaCatalog = () => {
-  
+  const translateVillaElh = useTranslations("elh")
   const villaCatalogImages: ImageTypeDefinition[] = [
     {
       src: "/allprojects/elh/villa/ELHVH1.jpg",
@@ -59,7 +61,188 @@ const VillaCatalog = () => {
       alt: "VH5D",
     },
   ];
-
+  const subUnitItems:SubUnitTpyDefinitions[] = [
+    {
+      key:"VH1",
+      subUnitName:"VH1",
+      properties: [
+        {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateVillaElh("villa.vh1.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateVillaElh("villa.vh1.size")
+        },
+        {
+          iconItem: "/home-items/images/bedroom.png",
+          descriptionItem: translateVillaElh("villa.vh1.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateVillaElh("villa.vh1.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateVillaElh("villa.vh1.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateVillaElh("villa.vh1.kitchen")
+        },
+      ]
+    },
+    {
+      key:"VH2",
+      subUnitName:"VH2",
+      properties: [
+        {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateVillaElh("villa.vh2.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateVillaElh("villa.vh2.size")
+        },
+        {
+          iconItem: "/home-items/images/bedroom.png",
+          descriptionItem: translateVillaElh("villa.vh2.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateVillaElh("villa.vh2.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateVillaElh("villa.vh2.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateVillaElh("villa.vh2.kitchen")
+        },
+      ]
+    },
+    {
+      key:"vh2a",
+      subUnitName:"VH2A",
+      properties: [
+        {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateVillaElh("villa.vh2a.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateVillaElh("villa.vh2a.size")
+        },
+        {
+          iconItem: "/home-items/images/bedroom.png",
+          descriptionItem: translateVillaElh("villa.vh2a.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateVillaElh("villa.vh2a.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateVillaElh("villa.vh2a.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateVillaElh("villa.vh2a.kitchen")
+        },
+      ]
+    },
+    {
+      key:"vh3",
+      subUnitName:"VH3",
+      properties: [
+        {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateVillaElh("villa.vh3.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateVillaElh("villa.vh3.size")
+        },
+        {
+          iconItem: "/home-items/images/bedroom.png",
+          descriptionItem: translateVillaElh("villa.vh3.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateVillaElh("villa.vh3.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateVillaElh("villa.vh3.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateVillaElh("villa.vh3.kitchen")
+        },
+      ]
+    },
+    {
+      key:"vh3a",
+      subUnitName:"VH3A",
+      properties: [
+        {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateVillaElh("villa.vh3a.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateVillaElh("villa.vh3a.size")
+        },
+        {
+          iconItem: "/home-items/images/bedroom.png",
+          descriptionItem: translateVillaElh("villa.vh3a.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateVillaElh("villa.vh3a.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateVillaElh("villa.vh3a.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateVillaElh("villa.vh3a.kitchen")
+        },
+      ]
+    },
+    {
+      key:"vh3b",
+      subUnitName:"VH3B",
+      properties: [
+        {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateVillaElh("villa.vh3b.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateVillaElh("villa.vh3b.size")
+        },
+        {
+          iconItem: "/home-items/images/bedroom.png",
+          descriptionItem: translateVillaElh("villa.vh3b.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateVillaElh("villa.vh3b.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateVillaElh("villa.vh3b.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateVillaElh("villa.vh3b.kitchen")
+        },
+      ]
+    }
+  ]
   return (
     <div className=" mt-2">
       <section className={`mt-12 flex`}>
@@ -67,7 +250,7 @@ const VillaCatalog = () => {
           <CarouseSlide images={villaSlides} />
         </div>
         <div className={`w-1/2 flex justify-center`}>
-          <VillaItemsRoom />
+          <Houseware items={subUnitItems}/>
         </div>
       </section>
       <main className="flex flex-wrap m-auto mt-32 gap-16">

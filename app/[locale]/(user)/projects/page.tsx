@@ -20,7 +20,7 @@ const Projects = () => {
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
     <main className={`mt-16 w-[74%] m-auto flex flex-col items-center gap-16 text-logo`}>
-      <h1 className={`${langHeader}`}>{translator("our_prject")}</h1>
+      <h1 className={`${langHeader} text-logo`}>{translator("our_prject")}</h1>
       <ProjectsPlan/>
     </main>
   );

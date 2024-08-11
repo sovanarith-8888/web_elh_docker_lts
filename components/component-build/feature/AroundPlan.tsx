@@ -19,14 +19,15 @@ type NearByListType = {
 const AroundPlan = ({images}: NearByListType) => {
   const param = useParams();
   const translator = useTranslations("features");
+  const nearBy = useTranslations("nearby")
   const locale = param.locale;
   const langHeader =
     locale === "kh" ? koulenHeader.className : vigaHeader.className;
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <div className={`w-[74%] m-auto mt-32`}>
-      <h2 className={`${langHeader} text-logo`}>{translator("feature")}</h2>
+    <div className={`w-[100%] m-auto mt-32`}>
+      <h2 className={`${langHeader} text-logo`}>{nearBy("nearby")}</h2>
       <div className={`${classes.card}`}>
         <ul>
           {/* Road */}

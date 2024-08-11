@@ -1,9 +1,22 @@
-/* From Uiverse.io by Sourcesketch */ 
+/* From Uiverse.io by Sourcesketch */
+.container{
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Adjust gap between boxes */
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
 .card {
   /* display: flex; */
-  
-  height: 500px;
-  /* width: 430px; */
+  height: 450px;
+  width: 400px !important;
   background-color: #2b223f;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #00000044;
@@ -11,21 +24,20 @@
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
- gap: 2rem;
-  flex: 1 1 30%; /*grow | shrink | basis */
+  /*grow | shrink | basis */
 }
 
 .card:not(:first-child) {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .card:hover {
-  transform: translateY(-50px);
+  transform: translateY(50px);
   transition: 0.4s ease-out;
   text-shadow: 2px 2px 8px #6e5b94;
 }
 
-.card:hover ~ .card {
+.card:hover~.card {
   position: relative;
   left: 50px;
   transform: rotateX(-15deg) rotateY(10deg);
@@ -33,40 +45,14 @@
 }
 
 .title1 {
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 800;
   position: absolute;
   left: 0px;
   top: 0px;
 }
 
-.btn {
-  position: absolute;
-  top: 195px;
-  margin: 0 20px;
-  width: 120px;
-  height: 32px;
-  border-radius: 8px;
-  border: none;
-  background-color: #4a2f7c;
-  color: #fff;
-  transition: 0.4s ease-out;
-}
-
-.btn:hover {
-  transition: 0.4s ease-out;
-  background-color: #8a4ff8;
-  color: #ffffff;
-  box-shadow: 0px 0px 20px rgba(157, 71, 255, 0.5),
-    0px 5px 5px -1px rgba(163, 58, 233, 0.25),
-    inset 4px 4px 8px rgba(219, 175, 255, 0.5),
-    inset -4px -4px 8px rgba(137, 19, 216, 0.35);
-}
-
 .bar {
   position: relative;
-  top: 470px;
+  top: 430px;
 
   height: 5px;
   width: 100%;

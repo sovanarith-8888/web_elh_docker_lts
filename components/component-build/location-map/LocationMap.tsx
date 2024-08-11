@@ -18,7 +18,7 @@ const LocationMap = ({ location, imageMap }: LocationMapType) => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <main className={`w-[74%] m-auto mt-32`}>
+    <main className={`w-[100%] m-auto mt-32`}>
       <h2 className={`${langHeader} text-logo`}>{translator("location")}</h2>
       <br />
       <ImageNextUI src="/featureAround/images/location150.png" alt="location" />
@@ -27,11 +27,11 @@ const LocationMap = ({ location, imageMap }: LocationMapType) => {
         {location}
       </p>
       <br />
-      <div className={`w-[100%] m-auto mt-12 flex items-center justify-center`}>
+      <div className={`w-[100%] mt-12`}>
         <ImageNextUI
           src={imageMap}
           alt="Map ELH"
-          className="h-[640px]"
+          className="w-[84%] m-auto p-2 bg-[#199249] object-cover"
         />
       </div>
     </main>

@@ -9,8 +9,8 @@ type SubUnitItemType = {
 
 const Houseware = ({items}: SubUnitItemType) => {
   return (
-    <div className={`border `}>
-      <div className="flex w-full flex-col">
+    <div className={``}>
+      <div className="flex w-full flex-col items-center">
       <Tabs aria-label="Options" placement='bottom' color='success'>
         {
           items.map((item) => (

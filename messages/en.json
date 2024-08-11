@@ -255,6 +255,8 @@
   },
   "features": {
     "feature": "Feature",
+    "swiming": "Swimming Pool",
+    "garden": "Garden",
     "water": "Water system",
     "electric": "Electrical system",
     "road": "Road system",
@@ -276,5 +278,129 @@
     "house_size": "House Size",
     "bedroom": "BedRooms",
     "bath_room": "BathRoom"
+  },
+  "ELH": "=========================================================################======================================================",
+  "elh":{
+    "flat": {
+      "efh":{
+        "land": "Land Size 5.2m X 16m",
+        "size": "House Size 4.2m X 12m",
+        "bedroom": "bedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
+        "kitchen": "Kitchen X 1"
+      },
+      "efh2":{
+        "land": "Land Size 4.2m X 17m",
+        "size": "House Size 4.2m X 12m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
+        "kitchen": "Kitchen X 1"
+      },
+      "efh3":{
+        "land": "Land Size 4.2m X 17m",
+        "size": "House Size 4.2m X 12m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
+        "kitchen": "Kitchen X 1"
+      }
+    },
+    "land":{
+      "land_flat": "Land Size 5m X 20m",
+      "land_villa":"Land Size 20m X 20m",
+      "land_flat_vy":"Land Size 5m X 20m"
+    },
+    "villa":{
+      "vh1":{
+        "land": "Land Size 5.2m X 16m",
+        "size": "House Size 4.2m X 8m",
+        "bedroom": "BedRooms X 3",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
+        "kitchen": "Kitchen X 1"
+      },
+      "vh2":{
+        "land": "Land Size 4.5m X 14m",
+        "size": "House Size 4.5m X 7.7m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
+        "kitchen": "Kitchen X 1"
+      },
+      "vh2a":{
+        "land": "Land Size 4.5m X 14m",
+        "size": "House Size 4.5m X 7.7m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
+        "kitchen": "Kitchen X 1"
+      },
+      "vh3":{
+        "land": "Land Size 4.2m X 12m",
+        "size": "House Size 4.2m X 8m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 2",
+        "kitchen": "Kitchen X 1"
+      },
+      "vh3a":{
+        "land": "Land Size 4.2m X 12m",
+        "size": "House Size 4.2m X 8m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 2",
+        "kitchen": "Kitchen X 1"
+      },
+      "vh3b":{
+        "land": "Land Size 4.2m X 12m",
+        "size": "House Size 4.2m X 8m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 2",
+        "kitchen": "Kitchen X 1"
+      }
+    }
+  },
+  "EPL": "##############################################################################################################################################",
+  "epl_tap":{
+    "land_flat": "Land for Flat",
+    "land_villa": "Land for Villa"
+  },
+  "epl_land":{
+    "epl_flat": "Land Size 4.2m X 20m",
+    "epl_villa": "Land Size 20m X 20m"
+  },
+  "dh":{
+    "dh_tap":{
+      "land_flat": "Land for Flat",
+      "land_villa": "Land for Villa"
+    },
+    "dh_size":{
+      "dh_flat": "Land Size 4.2m X 20m",
+      "dh_villa": "Land Size 8m X 14m"
+    }
+  },
+  "EMC_3": "##############################################################################################################################################",
+  "emc3":{
+    "emc3_tap":{
+      "1bed": "1 Bedroom",
+      "2bed": "2 Bedroom"
+    },
+    "emc3_1bed":{
+      "land": "Room Size 40.13sqm",
+      "bedroom": "BedRooms X 1",
+      "living_rooms": "Living Room X 1",
+      "bath_room": "BathRoom X 1",
+      "kitchen": "Kitchen X 1"
+    },
+    "emc3_2bed":{
+      "land": "Room Size 80.28sqm",
+      "bedroom": "BedRooms X 2",
+      "living_rooms": "Living Room X 1",
+      "bath_room": "BathRoom X 2",
+      "kitchen": "Kitchen X 1"
+    }
   }
 }

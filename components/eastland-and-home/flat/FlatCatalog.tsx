@@ -5,7 +5,10 @@ import Catalog from '@/components/component-build/catalog/Catalog';
 import { ImageCarouselDefinition, ImageTypeDefinition, SubUnitTpyDefinitions } from '@/lib/definitions';
 import CarouseSlide from '@/components/component-build/CarouselSlide/CarouseSlide';
 import Houseware from '@/components/component-build/housewares/Houseware';
+import { useTranslations } from 'next-intl';
+
 const FlatCatalog = () => {
+  const translateElhFlat = useTranslations("elh");
   const flatCatalogImages: ImageTypeDefinition[] = [
     {
       src: "/cataloge/images/mix-elh/EFH.jpg",
@@ -41,13 +44,33 @@ const FlatCatalog = () => {
   ];
   const subUnitItems:SubUnitTpyDefinitions[] = [
     {
-      key:"vh1",
-      subUnitName:"VH1",
+      key:"EFH",
+      subUnitName:"EFH",
       properties: [
         {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateElhFlat("flat.efh.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateElhFlat("flat.efh.size")
+        },
+        {
           iconItem: "/home-items/images/bedroom.png",
-          descriptionItem:"Home is done"
-        }
+          descriptionItem: translateElhFlat("flat.efh.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateElhFlat("flat.efh.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateElhFlat("flat.efh.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateElhFlat("flat.efh.kitchen")
+        },
       ]
     },
     {
@@ -55,9 +78,29 @@ const FlatCatalog = () => {
       subUnitName:"VH2",
       properties: [
         {
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateElhFlat("flat.efh2.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateElhFlat("flat.efh2.size")
+        },
+        {
           iconItem: "/home-items/images/bedroom.png",
-          descriptionItem:"Home is done 222222"
-        }
+          descriptionItem: translateElhFlat("flat.efh2.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateElhFlat("flat.efh2.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateElhFlat("flat.efh2.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateElhFlat("flat.efh2.kitchen")
+        },
       ]
     },
     {
@@ -65,13 +108,29 @@ const FlatCatalog = () => {
       subUnitName:"VH3",
       properties: [
         {
-          iconItem: "/home-items/images/bedroom.png",
-          descriptionItem:"Home is done"
+          iconItem: "/home-items/images/land.png",
+          descriptionItem: translateElhFlat("flat.efh3.land")
+        },
+        {
+          iconItem: "/home-items/images/house.png",
+          descriptionItem: translateElhFlat("flat.efh3.size")
         },
         {
           iconItem: "/home-items/images/bedroom.png",
-          descriptionItem:"Home is done asdfasdf"
-        }
+          descriptionItem: translateElhFlat("flat.efh3.bedroom")
+        },
+        {
+          iconItem: "/home-items/images/livingroom.png",
+          descriptionItem: translateElhFlat("flat.efh3.living_rooms")
+        },
+        {
+          iconItem: "/home-items/images/bathroom.png",
+          descriptionItem: translateElhFlat("flat.efh3.bath_room")
+        },
+        {
+          iconItem: "/home-items/images/kitchen.png",
+          descriptionItem: translateElhFlat("flat.efh3.kitchen")
+        },
       ]
     }
   ]

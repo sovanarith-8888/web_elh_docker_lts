@@ -16,20 +16,21 @@ type ImageListType = {
 };
 const Catalog = ({ images }: ImageListType) => {
   return (
-    <>
+    <div className={`${classes.container}`}>
+      <div className={`${classes.wrapper}`}>
       {images.map((image, index) => (
-        <div key={index} className={`${classes.card} flex-1  z-${index}`}>
+        <div key={index} className={`${classes.card} w-[400px]  z-${index}`}>
           <div className={`${classes.title1}`}>
-            <ImageNextUI src={image.src} alt={image.alt} />
+            <ImageNextUI src={image.src} alt={image.alt} className=""/>
           </div>
           <div className={`${classes.bar}`}>
             <div className={`${classes.emptybar}`}></div>
             <div className={`${classes.filledbar}`}></div>
           </div>
         </div>
-   
       ))}
-    </>
+    </div>
+    </div>
   );
 };
 
