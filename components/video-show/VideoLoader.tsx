@@ -6,7 +6,7 @@ const VideoStream = React.lazy(
 );
 const VideoLoader = () => {
   return (
-    <Suspense fallback={<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, debitis!</h1>}>
+    <Suspense fallback={<p className="text-red-600">Video stream are processing...!</p>}>
       <VideoStream/>
     </Suspense>
   );

@@ -48,7 +48,7 @@ const EscProjectPage = () => {
             <Tab
               key="flat"
               title={translatCatalog("flat")}
-              style={{ height: "45px", width: "90px", fontSize: "14px" }}
+              style={{ height: "45px", width: "90px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <FlatCatalog />
@@ -56,7 +56,7 @@ const EscProjectPage = () => {
             <Tab
               key="land"
               title={translatCatalog("land")}
-              style={{ height: "45px", width: "90px", fontSize: "14px" }}
+              style={{ height: "45px", width: "90px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <LandCatalog />
@@ -64,7 +64,7 @@ const EscProjectPage = () => {
             <Tab
               key="villa"
               title={translatCatalog("villa")}
-              style={{ height: "45px", width: "90px", fontSize: "14px" }}
+              style={{ height: "45px", width: "90px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <VillaCatalog />

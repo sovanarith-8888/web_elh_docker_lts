@@ -18,13 +18,15 @@ import { useParams } from "next/navigation";
 import buttonStyle from "./asset/button.module.css";
 // import Verify from "./Verify";
 import Verify from "./Verify";
+import Link from "next/link";
 type UnitType = {
   title: string | undefined,
   sub: string | undefined,
   des: string | undefined
-  avatar: string | undefined
+  avatar: string | undefined,
+  link: string | undefined
 }
-const CardUnit = ({title, sub, des, avatar}: UnitType) => {
+const CardUnit = ({title, sub, des, avatar,link}: UnitType) => {
   const param = useParams();
   const locale = param.locale;
   const langHeader =
@@ -51,7 +53,9 @@ const CardUnit = ({title, sub, des, avatar}: UnitType) => {
         </div>
         <div className="flex mt-8  justify-end">
           <button className={`${buttonStyle.button} ${langParagraph} mr-0`}>
-            <small>See more</small>
+            <small>
+              <Link href={`${link}`} target="_blank">Reed more</Link>
+            </small>
           </button>
         </div>
       </div>

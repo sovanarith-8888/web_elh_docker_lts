@@ -19,7 +19,7 @@ const Catalog = ({ images }: ImageListType) => {
     <div className={`${classes.container}`}>
       <div className={`${classes.wrapper}`}>
       {images.map((image, index) => (
-        <div key={index} className={`${classes.card} w-[400px]  z-${index}`}>
+        <div key={index} className={`${classes.card} w-[460px]  z-${index}`}>
           <div className={`${classes.title1}`}>
             <ImageNextUI src={image.src} alt={image.alt} className=""/>
           </div>

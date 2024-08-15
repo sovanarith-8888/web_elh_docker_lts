@@ -12,7 +12,7 @@ const ProjectsPlan = () => {
       {/* 1 ELH */}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/ELH.png" />
+          <ProjectImage src="/resources/images/projects/ELH.png" url="projects/eastland-and-home"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -26,7 +26,7 @@ const ProjectsPlan = () => {
       {/* 2 ESC */}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/ESC.jpg" />
+          <ProjectImage src="/resources/images/projects/ESC.jpg" url="projects/east-sihaknouk-city"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -40,7 +40,7 @@ const ProjectsPlan = () => {
       {/* 3 East Natural City*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/ENC.jpg" />
+          <ProjectImage src="/resources/images/projects/ENC.jpg" url="projects/east-natural-city"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -54,7 +54,7 @@ const ProjectsPlan = () => {
       {/* 4 East Keansvay City*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/EKC.png" />
+          <ProjectImage src="/resources/images/projects/EKC.png" url="projects/east-keansvay-city"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -68,7 +68,7 @@ const ProjectsPlan = () => {
       {/* 5 East Sihaknouk Park*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/ESP.jpg" />
+          <ProjectImage src="/resources/images/projects/ESP.jpg" url="projects/east-sihaknouk-park"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -82,7 +82,7 @@ const ProjectsPlan = () => {
       {/* 6 East SenSok Condominium*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/ESC.jpg" />
+          <ProjectImage src="/resources/images/projects/ESC.jpg" url="projects/east-sensok-condominium"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -96,7 +96,7 @@ const ProjectsPlan = () => {
       {/* 7 East Mini Condo 1*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/MF.jpg" />
+          <ProjectImage src="/resources/images/projects/MF.jpg" url="projects/east-mini-condo-1"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -110,7 +110,7 @@ const ProjectsPlan = () => {
       {/* 8 East Mini Condo 2*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/MC.jpg" />
+          <ProjectImage src="/resources/images/projects/MC.jpg" url="projects/east-mini-condo-2"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -124,7 +124,7 @@ const ProjectsPlan = () => {
       {/* 9 East Mini Condo 3*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/MP.jpg" />
+          <ProjectImage src="/resources/images/projects/MP.jpg" url="projects/east-mini-condo-3"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -138,7 +138,7 @@ const ProjectsPlan = () => {
       {/* 10 East Land Svay Chrum*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/DH.jpg" />
+          <ProjectImage src="/resources/images/projects/DH.jpg" url="projects/east-land-svaychrum"/>
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
@@ -152,7 +152,7 @@ const ProjectsPlan = () => {
       {/* 11 East Prime Land*/}
       <div className={`w-1/3 h-[440px] px-4`}>
         <div className="w-[100%]">
-          <ProjectImage src="/resources/images/projects/EPL.jpg" />
+          <ProjectImage src="/resources/images/projects/EPL.jpg" url="projects/east-prime-land" />
         </div>
         <div className="w-[100%] mt-2">
           <ProjectcardTitle

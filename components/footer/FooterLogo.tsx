@@ -10,11 +10,14 @@ const FooterLogo = () => {
         <Image src="/resources/images/company/LogoLTS.png" width={170} />
       </div>
       <div className="flex gap-8 mt-4">
-        <Link href="#">
-          <Image src="/media/images/fb.png" width={24} />
+        <Link href="https://www.facebook.com/eastlandandhome" target="_blank">
+          <Image src="/media/images/fb.png" width={34} />
         </Link>
-        <Link href="#">
-          <Image src="/media/images/yt.png" width={24} />
+        <Link href="https://www.youtube.com/@eastlandandhomeofficial" target="_blank">
+          <Image src="/media/images/yt.png" width={34} />
+        </Link>
+        <Link href="https://www.facebook.com/bslandhomecareer" target="_blank">
+          <Image src="/media/images/in.png" width={34} />
         </Link>
       </div>
     </main>

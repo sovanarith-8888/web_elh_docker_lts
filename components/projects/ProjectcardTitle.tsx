@@ -11,6 +11,7 @@ import {
   vigaHeader,
 } from "@/app/[locale]/(user)/fonts";
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 
 type ProjectTitleType = {
@@ -22,6 +23,7 @@ type ProjectTitleType = {
 const ProjectcardTitle = ({title,location,url}: ProjectTitleType) => {
   const param = useParams();
   const locale = param.locale;
+  const translate = useTranslations("read_more");
   const langHeader =
     locale === "kh" ? koulenHeader.className : vigaHeader.className;
   const langParagraph =
@@ -39,21 +41,28 @@ const ProjectcardTitle = ({title,location,url}: ProjectTitleType) => {
         ></path>
       </svg>
 
-      <div className={`${classes.messageTextContainer}`}>
-        <div className="flex gap-1 items-center">
-          <p className={`${classes.messageText} ${langHeader}`}>{title}</p>
+      <div className={`${classes.messageTextContainer} p-2 py-4 cursor-pointer`}>
+      <Link href={`/${locale}/${url}`}  target='_blank' className='cursor-pointer'>
+        <div className="flex gap-1 items-center cursor-pointer">
+          <p className={`${classes.messageText} ${langHeader} cursor-pointer`}>{title}</p>
           <Verify />
         </div>
+        </Link>
         <div className="flex gap-1  items-center  ml-[-2px]">
           <LocatIcon />
-          <p className={`${classes.subText} ${langParagraph} text-[6px]`}>
+          <p className={`${classes.subText} ${langParagraph}`}>
             {location}
           </p>
         </div>
-      </div>
-      <Link href={`/${locale}/${url}`} target='_blank'>
-        <ShareIcon />
+        <div className='flex justify-end items-end w-full text-center mt-1'>
+      <Link href={`/${locale}/${url}`}  target='_blank' className='bg-[#c3e4f3] mb-1 rounded text-center '>
+        {/* <ShareIcon /> */}
+      <p className={`${classes.subText} text-center px-2 py-1 cursor-pointer`}>{translate("read")}</p>
       </Link>
+      </div>
+      </div>
+     
+      
     </div>
   );
 }

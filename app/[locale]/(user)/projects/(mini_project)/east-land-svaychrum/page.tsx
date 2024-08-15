@@ -85,7 +85,7 @@ const EastlandSvayChrumPage = () => {
             <Tab
               key="land_flat"
               title={translateDhTap("dh_tap.land_flat")}
-              style={{ height: "45px", width: "120px", fontSize: "14px" }}
+              style={{ height: "45px", width: "120px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               {/* khos name for flat */}
@@ -94,7 +94,7 @@ const EastlandSvayChrumPage = () => {
             <Tab
               key="land_vill"
               title={translateDhTap("dh_tap.land_villa")}
-              style={{ height: "45px", width: "120px", fontSize: "14px" }}
+              style={{ height: "45px", width: "120px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <LandForVillaTap/>

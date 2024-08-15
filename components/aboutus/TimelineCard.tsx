@@ -49,6 +49,7 @@ const TimelineCard = ({
             <h3 className={`${langHeader} text-logo `}>{title}</h3>
             {/* <small className={`${langParagraph} bg-black mb-4`}>{subtitle}</small> */}
             <p className={langParagraph}>{description}</p>
+            
           </div>
         </div>
       </li>

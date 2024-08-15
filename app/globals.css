@@ -115,12 +115,21 @@ body {
 }
 .bg-transparent-navbar{
 /* From https://css.glass */
-background: rgba(100, 0, 0, 0);
+/* background: rgba(100, 0, 0, 0);
 backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px); */
+
+background: rgb(62,88,99);
+background: linear-gradient(184deg, rgba(62,88,99,1) 0%, rgba(62,88,99,1) 0%, rgba(180,227,247,0.3071822478991597) 100%);
+/* 
+background: rgb(62,88,99);
+background: linear-gradient(184deg, rgba(62,88,99,1) 0%, rgba(62,88,99,1) 0%, rgba(62,88,99,0.33519345238095233) 100%); */
 }
 .nav{
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
+
+  background-color: rgb(44, 173, 47);
+  padding: 0;
 }
 h1,h2,h2,h4,h5,h6 {
   font-family: var(--font-viga), var(--font-koulen) ;

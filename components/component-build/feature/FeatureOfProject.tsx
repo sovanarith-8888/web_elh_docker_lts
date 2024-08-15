@@ -20,7 +20,7 @@ const FeatureOfProject = () => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <div className={`w-[74%] m-auto mt-32`}>
+    <div className={`w-[100%] m-auto mt-32`}>
       <h2 className={`${langHeader} text-logo`}>{translator("feature")}</h2>
       <div className={`${classes.card}`}>
         <ul>

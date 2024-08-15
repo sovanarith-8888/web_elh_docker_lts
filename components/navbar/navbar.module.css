@@ -1,0 +1,3 @@
+.NavbarItem:hover .DropdownMenu{
+display: block !important;
+}

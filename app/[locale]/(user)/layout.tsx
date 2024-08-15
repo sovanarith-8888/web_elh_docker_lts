@@ -9,8 +9,6 @@ import HeaderTitleContainer from "@/components/header/HeaderContainer";
 import NavbarContainer from "@/components/navbar/NavbarContainer";
 import MediaContainer from "@/components/video-show/MediaContainer";
 import { Suspense } from "react";
-import VideoLoader from "@/components/video-show/VideoLoader";
-import Loading from "./loading";
 import FooterContainer from "@/components/footer/FooterContainer";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,13 +35,17 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           {/* Container Header  Navbar */}
-          <header className={`w-full `}>
+          <header className={`w-full`}>
+            {/* Heaer */}
             <HeaderTitleContainer />
-            <Suspense fallback="loading...">
-              <MediaContainer />
-            </Suspense>
-            <NavbarContainer />
+            
+            {/* <MediaContainer /> */}
+       
+           
           </header>
+          <MediaContainer /> 
+           {/* Navbar */}
+           <NavbarContainer />
           {children}
           {/* Footer */}
           <FooterContainer />

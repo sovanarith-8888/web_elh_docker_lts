@@ -44,6 +44,7 @@ const BusinessUnit = () => {
               sub={translator("elh_unit.sub")}
               des={translator("elh_unit.des")}
               avatar="/resources/images/company/estate.png"
+              link={`/${locale}/projects`}
             />
           </div>
         </div>
@@ -61,6 +62,7 @@ const BusinessUnit = () => {
               sub={translator("micro_unit.sub")}
               des={translator("micro_unit.des")}
               avatar="/resources/images/company/mfi.png"
+              link={`/${locale}/web-underconstruction`}
             />
           </div>
         </div>
@@ -98,6 +100,7 @@ const BusinessUnit = () => {
               sub={translator("resort_unit.sub")}
               des={translator("resort_unit.des")}
               avatar="/resources/images/company/resort.png"
+              link={`/${locale}/web-underconstruction`}
             />
           </div>
         </div>

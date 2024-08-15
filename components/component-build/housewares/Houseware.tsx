@@ -14,7 +14,8 @@ const Houseware = ({items}: SubUnitItemType) => {
       <Tabs aria-label="Options" placement='bottom' color='success'>
         {
           items.map((item) => (
-            <Tab key={item.key} title={item.subUnitName}>
+            <Tab key={item.key} title={item.subUnitName}
+            style={{ height: "45px", width: "120px", fontSize: "16px" }}>
               {
                 item.properties.map((cardItem)=>(
                   <HousewareCard itemCard={[

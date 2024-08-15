@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
 import { Button } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import { useParams, useRouter } from "next/navigation";
+import { useParams,usePathname,useRouter, useSearchParams } from "next/navigation";
 import  CloseSvg  from "@/components/iconsvg/icon";
 import "@/app/globals.css";
 import {
@@ -14,9 +14,14 @@ import {
 import KhFlag from "../flag/KhFlag";
 import EnFlag from "../flag/EnFlag";
 import { useState } from "react";
+
+
 const HeaderTitleContainer = () => {
   const [isHided, setIsHided] = useState<boolean>(false);
   const [isKh,setIsKh] = useState<boolean>(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const urlFull = `${pathname}`
   const param = useParams();
   const locale = param.locale;
   const langParagraph =
@@ -27,7 +32,15 @@ const HeaderTitleContainer = () => {
   const translatorLang = useTranslations("Lang");
 
   function handleClickLang(isKh: boolean){
+    const url = urlFull.substring(4);
+    if(isKh) {
+      router.push(`/en/${url}`)
+    }else{
+      router.push(`/kh/${url}`)
+      
+    }
     setIsKh(!isKh);
+    
   }
   function handleHideHeader(){
     setIsHided(!isHided);

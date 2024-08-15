@@ -85,7 +85,7 @@ const EastMiniCondo3Page = () => {
             <Tab
               key="land_flat"
               title={translateEmc3Tap("emc3_tap.1bed")}
-              style={{ height: "45px", width: "120px", fontSize: "14px" }}
+              style={{ height: "45px", width: "120px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               {/* khos name for flat */}
@@ -94,7 +94,7 @@ const EastMiniCondo3Page = () => {
             <Tab
               key="land_vill"
               title={translateEmc3Tap("emc3_tap.2bed")}
-              style={{ height: "45px", width: "120px", fontSize: "14px" }}
+              style={{ height: "45px", width: "120px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <Emc2Bedroom />

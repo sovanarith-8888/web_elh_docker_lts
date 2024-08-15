@@ -20,7 +20,7 @@ const Vision = () => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <section className="w-full flex justify-around mt-16 py-2">
+    <section className="w-full flex justify-around mt-16 py-2 ">
       <VisionCard
         avatar="/vision/images/eye.png"
         title={translator("vision")}

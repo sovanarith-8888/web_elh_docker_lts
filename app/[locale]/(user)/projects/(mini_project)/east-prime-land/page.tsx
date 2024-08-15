@@ -86,7 +86,7 @@ const EastPrimeLandPage = () => {
             <Tab
               key="land_flat"
               title={translateEplTap("land_flat")}
-              style={{ height: "45px", width: "120px", fontSize: "14px" }}
+              style={{ height: "45px", width: "120px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               {/* khos name for flat */}
@@ -95,7 +95,7 @@ const EastPrimeLandPage = () => {
             <Tab
               key="land_vill"
               title={translateEplTap("land_villa")}
-              style={{ height: "45px", width: "120px", fontSize: "14px" }}
+              style={{ height: "45px", width: "120px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <LandForFlatTap/>

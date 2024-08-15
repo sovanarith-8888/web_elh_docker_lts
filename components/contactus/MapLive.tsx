@@ -1,41 +1,34 @@
 'use client'
 import React, { useCallback, useState } from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { title } from 'process';
 const MapLive = () => {
+const options = {
+  mapId: "f870b9ae79c58b9b",
+  title:"you are here"
+}
 const center = {
-  lat: -3.745,
-  lng: -38.523,
+  lat: 11.544067280876929,
+  lng: 104.93804282897477,
+  title: "you are here"
 };
   const {isLoaded} = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: 'YOUR_API_KEY'
+    googleMapsApiKey: "AIzaSyAm5nGiiONWGGGm6eDdtfzl_CgGWgN3oDo",
   })
 
-  const [map, setMap] = useState<undefined | any | null>(null);
-
-  const onLoad = useCallback(function callback(map: { fitBounds: (arg0: google.maps.LatLngBounds) => void; }){
-    // this is just example
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
-    setMap(map);
-  },[])
-
-  const onUnmount = useCallback(function(){
-    setMap(null);
-  },[])
 
 
   return isLoaded? (
     <GoogleMap
+    options={options}
       mapContainerStyle={{
-        height: '400px',
+        height: '600px',
         width: '100%',
       }}
       center={center}
       zoom={15}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
+      
+
     >
      <></>
     </GoogleMap>

@@ -12,6 +12,7 @@ import FeatureOfProject from '@/components/component-build/feature/FeatureOfProj
 import LocationMap from '@/components/component-build/location-map/LocationMap';
 import AroundPlan from '@/components/component-build/feature/AroundPlan';
 import { NearbyDefinitions } from '@/lib/definitions';
+import FetureDynamic from '@/components/component-build/feature/FetureDynamic';
 
 
 const ElhProjectPage = () => {
@@ -50,20 +51,20 @@ const ElhProjectPage = () => {
     ];
 
   return (
-    <main className={`flex flex-col mt-12 items-center `}>
+    <main className={`flex flex-col mt-12 items-center w-[74%] m-auto`}>
       {/* <BannerProject /> */}
-      <div className="m-auto w-[74%]  mt-16">
+      <div className="m-auto w-[100%]  mt-16">
         <h1 className={`text-logo ${langHeader}`}>
           {translatProperties("property")}
         </h1>
       </div>
-      <div className="m-auto w-[74%] py-2 mt-8">
+      <div className="m-auto w-[100%] py-2 mt-8">
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options" size="lg">
             <Tab
               key="photos"
               title={translator("flat")}
-              style={{ height: "45px", width: "90px", fontSize: "14px" }}
+              style={{ height: "45px", width: "90px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <FlatCatalog />
@@ -71,7 +72,7 @@ const ElhProjectPage = () => {
             <Tab
               key="music"
               title={translator("land​")}
-              style={{ height: "45px", width: "90px", fontSize: "14px" }}
+              style={{ height: "45px", width: "90px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <LandCatalog />
@@ -79,7 +80,7 @@ const ElhProjectPage = () => {
             <Tab
               key="villa"
               title={translator("villa")}
-              style={{ height: "45px", width: "90px", fontSize: "14px" }}
+              style={{ height: "45px", width: "90px", fontSize: "16px" }}
               className={`${langParagraph}`}
             >
               <VillaCatalog />

@@ -14,6 +14,7 @@ export const Logo = () => {
         height={200}
         src={`/static/images/LogoLTS.png`}
         alt="Logo company"
+        className="ml-[-24px]"
       />
     </div>
   );
