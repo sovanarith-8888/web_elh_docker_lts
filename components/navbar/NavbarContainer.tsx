@@ -26,6 +26,7 @@ export default function NavbarContainer() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isHoverUnit, setIsHoverUnit] = React.useState(false);
   const [isHoverMedia, setIsHoverMeia] = React.useState(false);
+  
   const menuItems = [
     "Profile",
     "Dashboard",
