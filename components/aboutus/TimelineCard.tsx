@@ -43,7 +43,7 @@ const TimelineCard = ({
                 width={125}
               />
             </time>
-            <time className={`${langHeader} text-[#17c3b2]`}>{year}</time>
+            <time className={`${langHeader} text-[#199249]`}>{year}</time>
           </div>
           <div className="details ">
             <h3 className={`${langHeader} text-logo `}>{title}</h3>
