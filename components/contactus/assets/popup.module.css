@@ -1,0 +1,14 @@
+.pop{
+    border: 1px solid #338EF7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    color: rgb(114, 109, 109);
+}
+.pop p{
+    color: #338EF7;
+}
+.btn{
+    color: red;
+}
