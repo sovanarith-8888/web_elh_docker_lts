@@ -14,11 +14,11 @@ const WaterFeature = ({ classSvg }: { classSvg: string | any }) => {
       xmlSpace="preserve"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -101,11 +101,11 @@ const ElectricFeature = ({classSvg}:{classSvg:string|any}) => {
       xmlSpace="preserve"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -185,11 +185,11 @@ const RoadFeature = ({ classSvg }: { classSvg: string | any }) => {
       xmlSpace="preserve"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -278,11 +278,11 @@ const GardenFeature = ({ classSvg }: { classSvg: string | any }) => {
       xmlSpace="preserve"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -394,11 +394,11 @@ const SecurFeature = ({ classSvg }: { classSvg: string | any }) => {
       xmlSpace="preserve"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -415,12 +415,12 @@ const SecurFeature = ({ classSvg }: { classSvg: string | any }) => {
               d="M8,0v22c5.2-1.3,9-6.4,9-12V4L8,0z M15,11c-0.5,4.1-3.3,7.8-7,8.9V11L15,11z"
             ></path>{" "}
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="#3367D6"
               d="M17,11h-2c0,0,0,0.3-0.1,0.6L17,11z"
             ></path>{" "}
             <polygon
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="#3367D6"
               points="-1,11 1,11 1,10.4 "
             ></polygon>{" "}
@@ -445,11 +445,11 @@ const GuardFeature = ({ classSvg }: { classSvg: string | any }) => {
       xmlSpace="preserve"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}

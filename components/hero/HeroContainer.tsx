@@ -2,7 +2,7 @@
 import { battambongParagraph, interParagraph, koulenHeader,vigaHeader, } from '@/app/[locale]/(user)/fonts';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
-import React, { useState } from 'react'
+import React from 'react'
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import "animate.css";
 import { Image } from '@nextui-org/react';
@@ -10,7 +10,6 @@ import BusinessUnit from '../business/BusinessUnit';
 
 const HeroContainer = () => {
   const translator = useTranslations("HeroSection");
-  const [isVideoLoaded, setIsVideoLoaded] = useState<boolean>(false);
   const param = useParams();
   const locale = param.locale;
   const langHeader =
