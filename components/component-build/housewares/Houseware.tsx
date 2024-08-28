@@ -18,11 +18,11 @@ const Houseware = ({items}: SubUnitItemType) => {
             style={{ height: "45px", width: "120px", fontSize: "16px" }}>
               {
                 item.properties.map((cardItem)=>(
-                  <HousewareCard itemCard={[
+                  <HousewareCard key={cardItem.iconItem} itemCard={
                     {
                       iconItem:cardItem.iconItem,descriptionItem:cardItem.descriptionItem
                     }
-                  ]}/>
+                  }/>
                 ))
               }
           

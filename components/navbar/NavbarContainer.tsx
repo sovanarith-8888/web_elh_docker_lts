@@ -21,6 +21,8 @@ import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { koulenHeader, vigaHeader } from "@/app/[locale]/(user)/fonts";
 import classes from "./navbar.module.css"
+import FindProperties from "./FindProperties";
+import classesF from "./find-properties.module.css";
 export default function NavbarContainer() {
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -152,7 +154,7 @@ export default function NavbarContainer() {
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={`py-1`}>
-                  <Link href={`/${locale}/web-underconstruction`}>
+                  <Link href={`https://east-resort.com/`} target="_blank">
                     <h3
                       className={`${langHeader} px-1 py-6 hover:text-[#199249]`}
                     >
@@ -164,7 +166,7 @@ export default function NavbarContainer() {
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={`py-1`}>
-                  <Link href={`/${locale}/web-underconstruction`}>
+                  <Link href={`https://www.eastmicro.com.kh/`} target="_blank">
                     <h3
                       className={`${langHeader} px-1 py-6 hover:text-[#199249]`}
                     >
@@ -177,7 +179,7 @@ export default function NavbarContainer() {
             </Dropdown>
 
             {/* Media */}
-            <Dropdown 
+            {/* <Dropdown 
             isOpen={isHoverMedia}
             onMouseLeave={() => setIsHoverMeia(false)}>
               <NavbarItem>
@@ -225,7 +227,15 @@ export default function NavbarContainer() {
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
-            </Dropdown>
+            </Dropdown> */}
+
+            <NavbarItem>
+              <Link href="https://www.facebook.com/bslandhomecareer" target="_blank" aria-current="page">
+                <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
+                  {translator("new")}
+                </h3>
+              </Link>
+            </NavbarItem>
 
             <NavbarItem>
               <Link href="https://www.facebook.com/bslandhomecareer" target="_blank" aria-current="page">
@@ -234,6 +244,8 @@ export default function NavbarContainer() {
                 </h3>
               </Link>
             </NavbarItem>
+
+
 
             <NavbarItem>
               <Link href="https://www.facebook.com/bslandhomecareer" target="_blank" aria-current="page">
@@ -253,6 +265,14 @@ export default function NavbarContainer() {
                   {translator("contactus")}
                 </h3>
               </Link>
+            </NavbarItem>
+
+            <NavbarItem>
+ 
+             <Link href={`/${locale}/projects`}>
+              <FindProperties/>
+             </Link>
+       
             </NavbarItem>
 
 

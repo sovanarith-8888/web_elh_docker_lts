@@ -6,7 +6,7 @@ import { battambongParagraph, interParagraph } from '@/app/[locale]/(user)/fonts
 import { SubUnitItemCardDefinition } from '@/lib/definitions';
 
 type subUnitItemsCard = {
-  itemCard: SubUnitItemCardDefinition[]
+  itemCard: SubUnitItemCardDefinition
 }
 
 const HousewareCard = ({itemCard}: subUnitItemsCard) => {
@@ -17,17 +17,16 @@ const HousewareCard = ({itemCard}: subUnitItemsCard) => {
 
   return (
     <div className={`${classes.cards}`}>
-      {
-        itemCard.map((item,index) => (
-          <div key={index} className={`${classes.card}`}>
+     
+          <div key={itemCard.iconItem} className={`${classes.card}`}>
             <ImageNextUI
-              src={`${item.iconItem}`}
+              src={`${itemCard.iconItem}`}
               alt="House ware properties"
               className="w-[38px] h-[38px] "
               borderRadius="none"
             />
             <p className={`${classes.tip} ${langParagraph} w-[220px] `}>
-              {item.descriptionItem}
+              {itemCard.descriptionItem}
             </p>
             <ImageNextUI
               src="/home-items/images/seen.png"
@@ -35,9 +34,7 @@ const HousewareCard = ({itemCard}: subUnitItemsCard) => {
               className="w-[28px] h-[28px]"
             />
           </div>
-        ))
-
-      }
+       
     </div>
   );
 }

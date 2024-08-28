@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Beautiful home for sale in Phnom Phen. Featuring 3 bedrooms, 2 bathrooms, and highlight unique features. Perfect for target audience. Contact us today for a viewing!",
 };
 
-export default async function RootLayout({
+export default async function LayoutLocation({
   children,
   params: { locale },
 }: Readonly<{

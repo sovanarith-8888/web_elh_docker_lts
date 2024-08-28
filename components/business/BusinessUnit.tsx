@@ -62,7 +62,7 @@ const BusinessUnit = () => {
               sub={translator("micro_unit.sub")}
               des={translator("micro_unit.des")}
               avatar="/resources/images/company/mfi.png"
-              link={`/${locale}/web-underconstruction`}
+              link={`https://www.eastmicro.com.kh/`}
             />
           </div>
         </div>
@@ -100,7 +100,7 @@ const BusinessUnit = () => {
               sub={translator("resort_unit.sub")}
               des={translator("resort_unit.des")}
               avatar="/resources/images/company/resort.png"
-              link={`/${locale}/web-underconstruction`}
+              link={`https://east-resort.com/`}
             />
           </div>
         </div>

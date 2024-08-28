@@ -1,6 +1,4 @@
 "use client";
-
-import { useEffect } from "react";
 import classes from "./style.module.css";
 const MediaContainer = () => {
   return (

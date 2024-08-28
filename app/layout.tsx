@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Please back to available page",
 };
 
-export default async function RootLayout({
+export default async function LayoutNotFound({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -74,7 +74,9 @@ const HeaderTitleContainer = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute right-8 ">
+
+      {/* Button close container */}
+      {/* <div className="absolute right-8 ">
         <Button
           onClick={handleHideHeader}
           variant="light"
@@ -82,7 +84,7 @@ const HeaderTitleContainer = () => {
         >
           <CloseSvg />
         </Button>
-      </div>
+      </div> */}
     </main>
   );
 };

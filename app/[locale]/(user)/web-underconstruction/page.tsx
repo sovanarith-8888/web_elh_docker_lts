@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import NotFound from '@/components/not-found/NotFound';
 import { useRouter } from 'next/navigation'
-const page = () => {
+const Page = () => {
   // router to push home page
   const router = useRouter()
 
@@ -23,4 +23,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

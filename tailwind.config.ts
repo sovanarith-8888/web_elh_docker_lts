@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import daisyui from "daisyui"
 const withMT = require("@material-tailwind/react/utils/withMT");
 const { nextui } = require("@nextui-org/react");
 const config = withMT( {
@@ -97,7 +98,7 @@ const config = withMT( {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), nextui()],
+  plugins: [require("tailwindcss-animate"), nextui(),daisyui],
 }) satisfies Config;
 
 export default config
