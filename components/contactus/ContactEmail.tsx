@@ -21,8 +21,8 @@ const ContactEmail = () => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <main className={`w-[60%] flex mt-12 ${classes.boxShadow} p-4 rounded`}>
-      <section className={`w-1/2 mt-2 pl-4`}>
+    <main className={`w-[100%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 mt-12 ${classes.boxShadow} p-4 rounded`}>
+      <section className={`w-full mt-2 pl-4`}>
         <h2 className={`${langHeader} text-logo`}>{translator("get")}</h2>
         <h3 className={`${langHeader}  mt-12`}>{translator("email")}</h3>
         <section className={` flex gap-2 items-center`}>
@@ -41,7 +41,7 @@ const ContactEmail = () => {
           </div>
         </section>
       </section>
-      <section className={`w-1/2 `}>
+      <section className={`w-full`}>
         <Form />
       </section>
     </main>

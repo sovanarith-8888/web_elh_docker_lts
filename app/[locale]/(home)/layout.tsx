@@ -1,15 +1,18 @@
-
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
-import { vigaHeader, interParagraph, koulenHeader, battambongParagraph } from "../(user)/fonts";
+import {
+  vigaHeader,
+  interParagraph,
+  koulenHeader,
+  battambongParagraph,
+} from "../(user)/fonts";
 import HeaderTitleContainer from "@/components/header/HeaderContainer";
 import NavbarContainer from "@/components/navbar/NavbarContainer";
 import MediaContainer from "@/components/video-show/MediaContainer";
 import FooterContainer from "@/components/footer/FooterContainer";
-
 
 export const metadata: Metadata = {
   title: "East Land and Home",
@@ -35,13 +38,13 @@ export default async function HomeLayout({
           <header className={`w-full`}>
             {/* Heaer */}
             <HeaderTitleContainer />
-            
+
             {/* <MediaContainer /> */}
-       
+            {/* Navbar */}
+            <NavbarContainer />
           </header>
-          <MediaContainer /> 
-           {/* Navbar */}
-           <NavbarContainer />
+          <MediaContainer />
+
           {children}
           {/* Footer */}
           <FooterContainer />

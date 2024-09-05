@@ -55,273 +55,273 @@ const PropertiesCataloge = () => {
       descriptionItem: translateElhFlat("flat.efh.kitchen"),
     },
   ];
-  const unitItemsFlatvh2: SubUnitItemCardDefinition[] =[
+  const unitItemsFlatvh2: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("flat.efh2.land")
+      descriptionItem: translateElhFlat("flat.efh2.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("flat.efh2.size")
+      descriptionItem: translateElhFlat("flat.efh2.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("flat.efh2.bedroom")
+      descriptionItem: translateElhFlat("flat.efh2.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("flat.efh2.living_rooms")
+      descriptionItem: translateElhFlat("flat.efh2.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("flat.efh2.bath_room")
+      descriptionItem: translateElhFlat("flat.efh2.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("flat.efh2.kitchen")
+      descriptionItem: translateElhFlat("flat.efh2.kitchen"),
     },
-  ]
+  ];
   const unitItemsFlatvh3: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("flat.efh3.land")
+      descriptionItem: translateElhFlat("flat.efh3.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("flat.efh3.size")
+      descriptionItem: translateElhFlat("flat.efh3.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("flat.efh3.bedroom")
+      descriptionItem: translateElhFlat("flat.efh3.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("flat.efh3.living_rooms")
+      descriptionItem: translateElhFlat("flat.efh3.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("flat.efh3.bath_room")
+      descriptionItem: translateElhFlat("flat.efh3.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("flat.efh3.kitchen")
+      descriptionItem: translateElhFlat("flat.efh3.kitchen"),
     },
-  ]
+  ];
   const unitItemsVilla: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh1.land")
+      descriptionItem: translateElhFlat("villa.vh1.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh1.size")
+      descriptionItem: translateElhFlat("villa.vh1.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh1.bedroom")
+      descriptionItem: translateElhFlat("villa.vh1.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh1.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh1.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh1.bath_room")
+      descriptionItem: translateElhFlat("villa.vh1.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh1.kitchen")
+      descriptionItem: translateElhFlat("villa.vh1.kitchen"),
     },
-  ]
+  ];
   // Villa VH2
   const unitItemsVillaVH2: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh2.land")
+      descriptionItem: translateElhFlat("villa.vh2.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh2.size")
+      descriptionItem: translateElhFlat("villa.vh2.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh2.bedroom")
+      descriptionItem: translateElhFlat("villa.vh2.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh2.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh2.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh2.bath_room")
+      descriptionItem: translateElhFlat("villa.vh2.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh2.kitchen")
+      descriptionItem: translateElhFlat("villa.vh2.kitchen"),
     },
-  ]
+  ];
   // Villa VH2A
-  const unitItemsVillaVH2A: SubUnitItemCardDefinition[] =[
+  const unitItemsVillaVH2A: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh2a.land")
+      descriptionItem: translateElhFlat("villa.vh2a.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh2a.size")
+      descriptionItem: translateElhFlat("villa.vh2a.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh2a.bedroom")
+      descriptionItem: translateElhFlat("villa.vh2a.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh2a.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh2a.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh2a.bath_room")
+      descriptionItem: translateElhFlat("villa.vh2a.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh2a.kitchen")
+      descriptionItem: translateElhFlat("villa.vh2a.kitchen"),
     },
-  ]
+  ];
   // Vh3
   const unitItemsVillaVH3: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh3.land")
+      descriptionItem: translateElhFlat("villa.vh3.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh3.size")
+      descriptionItem: translateElhFlat("villa.vh3.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh3.bedroom")
+      descriptionItem: translateElhFlat("villa.vh3.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh3.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh3.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh3.bath_room")
+      descriptionItem: translateElhFlat("villa.vh3.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh3.kitchen")
+      descriptionItem: translateElhFlat("villa.vh3.kitchen"),
     },
-  ]
+  ];
   // vh3a
   const unitItemsVillaVH3a: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh3a.land")
+      descriptionItem: translateElhFlat("villa.vh3a.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh3a.size")
+      descriptionItem: translateElhFlat("villa.vh3a.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh3a.bedroom")
+      descriptionItem: translateElhFlat("villa.vh3a.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh3a.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh3a.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh3a.bath_room")
+      descriptionItem: translateElhFlat("villa.vh3a.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh3a.kitchen")
+      descriptionItem: translateElhFlat("villa.vh3a.kitchen"),
     },
-  ]
+  ];
   //vh3b
   const unitItemsVillaVH3b: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh3b.land")
+      descriptionItem: translateElhFlat("villa.vh3b.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh3b.size")
+      descriptionItem: translateElhFlat("villa.vh3b.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.bedroom")
+      descriptionItem: translateElhFlat("villa.vh3b.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh3b.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.bath_room")
+      descriptionItem: translateElhFlat("villa.vh3b.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh3b.kitchen")
+      descriptionItem: translateElhFlat("villa.vh3b.kitchen"),
     },
-  ]
+  ];
   //vh5
   const unitItemsvillaVH5: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh3b.land")
+      descriptionItem: translateElhFlat("villa.vh3b.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh3b.size")
+      descriptionItem: translateElhFlat("villa.vh3b.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.bedroom")
+      descriptionItem: translateElhFlat("villa.vh3b.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh3b.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.bath_room")
+      descriptionItem: translateElhFlat("villa.vh3b.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh3b.kitchen")
+      descriptionItem: translateElhFlat("villa.vh3b.kitchen"),
     },
-  ]
+  ];
   //vh5
   const unitItemsvillaVHT: SubUnitItemCardDefinition[] = [
     {
       iconItem: "/home-items/images/land.png",
-      descriptionItem: translateElhFlat("villa.vh3b.land")
+      descriptionItem: translateElhFlat("villa.vh3b.land"),
     },
     {
       iconItem: "/home-items/images/house.png",
-      descriptionItem: translateElhFlat("villa.vh3b.size")
+      descriptionItem: translateElhFlat("villa.vh3b.size"),
     },
     {
       iconItem: "/home-items/images/bedroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.bedroom")
+      descriptionItem: translateElhFlat("villa.vh3b.bedroom"),
     },
     {
       iconItem: "/home-items/images/livingroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.living_rooms")
+      descriptionItem: translateElhFlat("villa.vh3b.living_rooms"),
     },
     {
       iconItem: "/home-items/images/bathroom.png",
-      descriptionItem: translateElhFlat("villa.vh3b.bath_room")
+      descriptionItem: translateElhFlat("villa.vh3b.bath_room"),
     },
     {
       iconItem: "/home-items/images/kitchen.png",
-      descriptionItem: translateElhFlat("villa.vh3b.kitchen")
+      descriptionItem: translateElhFlat("villa.vh3b.kitchen"),
     },
-  ]
+  ];
   // Image slide
   // EFH
   const efhImageSlide = [
@@ -378,11 +378,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh1_2.png",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh1Cataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh1.jpg",
     alt: "Flat of ELH",
-  }
+  };
   // Villa Slide and Cotaloge
   const villavh2Slides = [
     {
@@ -393,11 +393,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh2_2.png",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh2Cataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh2.jpg",
     alt: "Flat of ELH",
-  }
+  };
   const villavh2aSlides = [
     {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh2a_1.png",
@@ -407,11 +407,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh2a_2.png",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh2aCataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh2a.jpg",
     alt: "Flat of ELH",
-  }
+  };
   const villavh3Slides = [
     {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh3_1.jpg",
@@ -421,11 +421,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh3_2.jpg",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh3Cataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh3.jpg",
     alt: "Flat of ELH",
-  }
+  };
   const villavh3aSlides = [
     {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh3a_1.jpg",
@@ -435,11 +435,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh3a_2.jpg",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh3aCataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh3a.jpg",
     alt: "Flat of ELH",
-  }
+  };
   const villavh3bSlides = [
     {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh3b_1.png",
@@ -449,11 +449,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh3b_2.png",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh3bCataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh3b.jpg",
     alt: "Flat of ELH",
-  }
+  };
   const villavh5Slides = [
     {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh5_1.png",
@@ -463,11 +463,11 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vh5_2.png",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavh5Cataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vh5.jpg",
     alt: "Flat of ELH",
-  }
+  };
   const villavthSlides = [
     {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vth_1.jpg",
@@ -477,11 +477,83 @@ const PropertiesCataloge = () => {
       imgUrl: "/master_image_project/ELH/projects/villa/villa_vth_2.jpg",
       alt: "Villa of ELH",
     },
-  ]
+  ];
   const villavthCataloge = {
     imgUrl: "/master_image_project/ELH/cataloge/villa/cataloge_villa_vth.jpg",
     alt: "Flat of ELH",
-  }
+  };
+
+  // Land land
+  const landLandSlides = [
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_1.jpg",
+      alt: "Villa of ELH",
+    },
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_2.jpg",
+      alt: "Villa of ELH",
+    },
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_3.jpg",
+      alt: "Villa of ELH",
+    },
+  ];
+  const unitItemsLand: SubUnitItemCardDefinition[] = [{
+    iconItem: "/home-items/images/land.png",
+    descriptionItem: translateElhFlat("land.land_flat"),
+  }];
+  const landLandCataloge = {
+    imgUrl: "/master_image_project/ELH/cataloge/land/cataloge_land.jpg",
+    alt: "Flat of ELH",
+  };
+  // Land Villa
+  // Land
+  const landVillaSlides = [
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_1.jpg",
+      alt: "Villa of ELH",
+    },
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_2.jpg",
+      alt: "Villa of ELH",
+    },
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_3.jpg",
+      alt: "Villa of ELH",
+    },
+  ];
+  const unitItemsLandVilla: SubUnitItemCardDefinition[] = [{
+    iconItem: "/home-items/images/land.png",
+    descriptionItem: translateElhFlat("land.land_villa"),
+  }];
+  const landVillaCataloge = {
+    imgUrl: "/master_image_project/ELH/cataloge/land/cataloge_land_villa.jpg",
+    alt: "Flat of ELH",
+  };
+  // Land Villa
+  // Land
+  const landVySlides = [
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_1.jpg",
+      alt: "Villa of ELH",
+    },
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_2.jpg",
+      alt: "Villa of ELH",
+    },
+    {
+      imgUrl: "/master_image_project/ELH/projects/land/land_3.jpg",
+      alt: "Villa of ELH",
+    },
+  ];
+  const unitItemsLandVy: SubUnitItemCardDefinition[] = [{
+    iconItem: "/home-items/images/land.png",
+    descriptionItem: translateElhFlat("land.land_flat_vy"),
+  }];
+  const landVyCataloge = {
+    imgUrl: "/master_image_project/ELH/cataloge/land/cataloge_land_vy.jpg",
+    alt: "Flat of ELH",
+  };
   return (
     <section className={`w-[74%] m-auto mt-16`}>
       {/* ====== Main of Tap ======= */}
@@ -526,7 +598,8 @@ const PropertiesCataloge = () => {
                 <CatalogeTapProperties
                   slide={efh2ImageSlide}
                   items={unitItemsFlatvh2}
-                  cataloge={efh2ImageCataloge}/>
+                  cataloge={efh2ImageCataloge}
+                />
               </Tab>
               <Tab
                 key="efh3"
@@ -539,10 +612,11 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={efh3ImageSlide}
                   items={unitItemsFlatvh3}
-                  cataloge={efh3ImageCataloge}/>
+                  cataloge={efh3ImageCataloge}
+                />
               </Tab>
             </Tabs>
           </main>
@@ -588,7 +662,8 @@ const PropertiesCataloge = () => {
                 <CatalogeTapProperties
                   slide={villavh2Slides}
                   items={unitItemsVillaVH2}
-                  cataloge={villavh2Cataloge}/>
+                  cataloge={villavh2Cataloge}
+                />
               </Tab>
               <Tab
                 key="vh2a"
@@ -601,10 +676,11 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={villavh2aSlides}
                   items={unitItemsVillaVH2A}
-                  cataloge={villavh2aCataloge}/>
+                  cataloge={villavh2aCataloge}
+                />
               </Tab>
               <Tab
                 key="vh3"
@@ -617,10 +693,11 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={villavh3Slides}
                   items={unitItemsVillaVH3}
-                  cataloge={villavh3Cataloge}/>
+                  cataloge={villavh3Cataloge}
+                />
               </Tab>
               <Tab
                 key="vh3a"
@@ -633,10 +710,11 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={villavh3aSlides}
                   items={unitItemsVillaVH3a}
-                  cataloge={villavh3aCataloge}/>
+                  cataloge={villavh3aCataloge}
+                />
               </Tab>
               <Tab
                 key="vh3b"
@@ -649,10 +727,11 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={villavh3bSlides}
                   items={unitItemsVillaVH3b}
-                  cataloge={villavh3bCataloge}/>
+                  cataloge={villavh3bCataloge}
+                />
               </Tab>
               <Tab
                 key="vh5"
@@ -665,10 +744,11 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={villavh5Slides}
                   items={unitItemsvillaVH5}
-                  cataloge={villavh5Cataloge}/>
+                  cataloge={villavh5Cataloge}
+                />
               </Tab>
               <Tab
                 key="vth"
@@ -681,26 +761,77 @@ const PropertiesCataloge = () => {
                 style={{ height: "40px", width: "120px", fontSize: "16px" }}
                 className={`${langParagraph}`}
               >
-                 <CatalogeTapProperties
+                <CatalogeTapProperties
                   slide={villavthSlides}
                   items={unitItemsvillaVHT}
-                  cataloge={villavthCataloge}/>
+                  cataloge={villavthCataloge}
+                />
               </Tab>
             </Tabs>
           </main>
         </Tab>
+        {/* Land */}
         <Tab
           key="land"
           title={translator("land​")}
           style={{ height: "40px", width: "120px", fontSize: "16px" }}
           className={`${langParagraph}`}
         >
-          <Card>
-            <CardBody>
-              int occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </CardBody>
-          </Card>
+          <main className="w-full mt-2">
+            <Tabs aria-label="Options" placement="start">
+              <Tab
+                key="Land"
+                title={
+                  <div className="flex items-center justify-evenly gap-2 w-[100px]">
+                    <GalleryIcon />
+                    <p>Land</p>
+                  </div>
+                }
+                style={{ height: "40px", width: "120px", fontSize: "16px" }}
+                className={`${langParagraph}`}
+              >
+                <CatalogeTapProperties
+                  slide={landLandSlides}
+                  items={unitItemsLand}
+                  cataloge={landLandCataloge}
+                />
+              </Tab>
+              <Tab
+                key="villa"
+                title={
+                  <div className="flex items-center justify-evenly gap-2 w-[100px]">
+                    <GalleryIcon />
+                    <p>Villa</p>
+                  </div>
+                }
+                style={{ height: "40px", width: "120px", fontSize: "16px" }}
+                className={`${langParagraph}`}
+              >
+                <CatalogeTapProperties
+                  slide={landVillaSlides}
+                  items={unitItemsLandVilla}
+                  cataloge={landVillaCataloge}
+                />
+              </Tab>
+              <Tab
+                key="vh2a"
+                title={
+                  <div className="flex items-center justify-evenly gap-2 w-[90px]">
+                    <GalleryIcon />
+                    <p>VY</p>
+                  </div>
+                }
+                style={{ height: "40px", width: "120px", fontSize: "16px" }}
+                className={`${langParagraph}`}
+              >
+                <CatalogeTapProperties
+                  slide={landVySlides}
+                  items={unitItemsLandVy}
+                  cataloge={landVyCataloge}
+                />
+              </Tab>
+            </Tabs>
+          </main>
         </Tab>
       </Tabs>
     </section>

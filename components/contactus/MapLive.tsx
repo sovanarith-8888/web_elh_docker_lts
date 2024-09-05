@@ -5,7 +5,9 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 const MapLive = () => {
   const options = {
     mapId: "f870b9ae79c58b9b",
-    title: "you are here"
+    title: "you are here",
+    draggableCursor: 'default', // Cursor style when hovering over the map
+    draggingCursor: 'move'
   }
   const center = {
     lat: 11.544067280876929,

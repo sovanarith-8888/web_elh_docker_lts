@@ -10,6 +10,11 @@
     "lang": "ប្តូរភាសា",
     "preferlang": "Prefer language to"
   },
+  "promotions":{
+    "title": "Our promotion is a limited-time offer",
+    "description": "Our promotion is a limited-time offer, giving you the chance to enjoy incredible savings on our business.",
+    "more": " Don’t miss out on this exclusive deal—act now before it's gone!"
+  },
   "Navbar": {
     "COMMENT_DESCRITION": "📢📢📢 Navbar 📢📢📢",
     "home": "HOME",
@@ -27,7 +32,7 @@
     "new_blog": "BLOG",
     "carrer": "CARRER",
     "contactus": "CONTACT US",
-    "find_properties": "OUR PROPERTIES",
+    "find_properties": "FIND PROPERTIES",
     "company": "Company"
   },
   "END_PUBLIC": {

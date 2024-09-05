@@ -22,13 +22,19 @@ const FooterContainer = () => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <footer className={`w-[100%] py-12 bg-logo mt-32`}>
-      <main className="w-[74%] m-auto flex justify-between">
+    <footer className={`w-[100%] py-12 bg-logo mt-32 overflow-hidden`}>
+      <main className="w-full lg:w-[74%] m-auto flex sm:flex-col md:flex-col lg:flex-row justify-between">
+        <div className="hidden lg:block px-2 lg:px-0">
         <FooterLogo />
+        </div>
+        
         <FooterInformation />
         <FooterMenu />
       </main>
       <hr className="border-white w-[74%] m-auto mt-12" />
+      <div className="sm:inline lg:hidden xl:hidden">
+        <FooterLogo/>
+      </div>
       {/* Main footer buttom */}
       <main className="w-[74%] m-auto flex justify-center mt-8 ">
         <small className={`text-center ${langParagraph}`}>

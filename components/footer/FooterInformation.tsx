@@ -19,7 +19,7 @@ const FooterInformation = () => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <div>
+    <div className=" w-full sm:w-full px-2 text-justify lg:px-40">
       <h2 className={`${langHeader} text-gold`}>
         {translator("elhHeadOffice")}
       </h2>

@@ -28,14 +28,14 @@ const VisionCard = ({ avatar, title, description }: VisionCardType) => {
     <div className={`${classes.card}`}>
       <div className={`${classes.svg}`}>
         <Image src={avatar} alt="vision" />
-        <h3 className={`${langHeader}`}>{title}</h3>
+        <h3 className={`${langHeader} text-center`}>{title}</h3>
       </div>
 
       <div
         className={`${classes.cardContent} flex flex-col justify-start text-start`}
       >
         <div className="flex gap-2">
-          <p className={`${classes.cardTitle} ${langHeader} flex`}>{title} </p>
+          <p className={`${classes.cardTitle} ${langHeader} flex `}>{title} </p>
           <Image
             src="/vision/images/verify.png"
             alt="verify"
@@ -43,7 +43,7 @@ const VisionCard = ({ avatar, title, description }: VisionCardType) => {
             height={24}
           />
         </div>
-        <p className={`${classes.cardDescription} ${langParagraph}`}>
+        <p className={`${classes.cardDescription} ${langParagraph} b`}>
           {description}
         </p>
         <Verify />

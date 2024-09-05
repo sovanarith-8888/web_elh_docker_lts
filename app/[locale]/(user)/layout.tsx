@@ -13,6 +13,7 @@ import FooterContainer from "@/components/footer/FooterContainer";
 const inter = Inter({ subsets: ["latin"] });
 import Head from "next/head"
 
+// for all
 
 export const metadata: Metadata = {
   title: "Our project",
@@ -32,12 +33,25 @@ export default async function CommonLayout({
     <html lang={locale}>
 
       <body
-        className={`${vigaHeader.variable} ${interParagraph.variable} ${koulenHeader.variable} ${battambongParagraph.variable}`}
+        className={`${vigaHeader.variable} relative ${interParagraph.variable} ${koulenHeader.variable} ${battambongParagraph.variable}`}
       >
 
         <NextIntlClientProvider messages={messages}>
-          <HeaderTitleContainer />
-          {/* <NavbarContainer /> */}
+          {/* Container Header  Navbar */}
+          <header className={`w-full`}>
+            {/* Heaer */}
+            <HeaderTitleContainer />
+
+            {/* <MediaContainer /> */}
+            {/* Navbar */}
+            <NavbarContainer />
+          </header>
+          {/* <MediaContainer /> */}
+          {/* <HeaderTitleContainer />
+          <div >
+          <NavbarContainer />
+          </div> */}
+         
           {children}
 
           <FooterContainer />

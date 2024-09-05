@@ -1,7 +1,9 @@
 "use client";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   interParagraph,
   vigaHeader,
@@ -18,26 +20,34 @@ const AboutQuote = () => {
     locale === "kh" ? koulenHeader.className : vigaHeader.className;
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1200
+      });
+    }, []);
+    
   return (
-    <section className="w-full flex mt-16">
+    <section className="w-full lg:px-[13%] flex flex-wrap mt-16 px-4">
       {/* Text */}
-      <div className="w-1/2 ">
+      <div className="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
         <br />
-        <h2 className={`${langHeader} `}>{translator("message_chairman")}</h2>
+        <h2 className={`${langHeader} `} data-aos="zoom-out-up">{translator("message_chairman")}</h2>
         <br />
         <p
+        data-aos="zoom-out-up"
           className={`${langParagraph} indent-12 text-justify leading-[1.6em]`}
         >
           {translator("chairmain_des")}
         </p>
         <br />
-        <h1 className={`${langHeader} text-logo`}>
+        <h1 className={`${langHeader} text-logo`} data-aos="zoom-out-up">
           {translator("chairmain_name")}
         </h1>
-        <h2 className={`${langHeader}`}>{translator("chairmain_pos")}</h2>
+        <h2 className={`${langHeader}`} data-aos="zoom-out-up">{translator("chairmain_pos")}</h2>
       </div>
       {/* Image */}
-      <div className="w-1/2 flex justify-center">
+      <div className="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2  flex justify-center">
         <Image
           src="/content/images/Boss/Hea.png"
           width={320}

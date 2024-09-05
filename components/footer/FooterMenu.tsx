@@ -14,7 +14,7 @@ const FooterMenu = () => {
     const langParagraph =
       locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <div>
+    <div className="hidden lg:block">
       <h2 className={`${langHeader} text-gold`}>
         {translator("company")}
       </h2> 
