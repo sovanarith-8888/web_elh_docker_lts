@@ -12,7 +12,7 @@ type CarouseListType = {
 const CarouseSlide = ({images}: CarouseListType) => {
   return (
     <>
-      <Carousel transition={{ duration: 1 }} className="rounded-xl">
+      {/* <Carousel transition={{ duration: 1 }} className="rounded-xl">
         {images.length > 0 ? (
           <img
             src={images[0].src}
@@ -30,7 +30,7 @@ const CarouseSlide = ({images}: CarouseListType) => {
             className="w-full h-full object-cover"
           />
         ))}
-      </Carousel>
+      </Carousel> */}
     </>
   );
 };

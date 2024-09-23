@@ -22,8 +22,8 @@ const FeatureOfProject = () => {
   return (
     <div className={`w-[100%] m-auto mt-32`}>
       <h2 className={`${langHeader} text-logo`}>{translator("feature")}</h2>
-      <div className={`${classes.card}`}>
-        <ul>
+      <div className={`${classes.card} `}>
+        <ul className="w-full flex justify-start items-center flex-wrap gap-8">
           {/* Water */}
           <li className={`${classes.isoPro}`}>
             <span></span>

@@ -2,7 +2,7 @@
   "PUBLIC": {
     "NONE": "🍺🍺🍺 Static Content 🍺🍺🍺"
   },
-  "read_more":{
+  "read_more": {
     "read": "Read more"
   },
   "Lang": {
@@ -10,10 +10,52 @@
     "lang": "ប្តូរភាសា",
     "preferlang": "Prefer language to"
   },
-  "promotions":{
+  "promotions": {
     "title": "Our promotion is a limited-time offer",
     "description": "Our promotion is a limited-time offer, giving you the chance to enjoy incredible savings on our business.",
     "more": " Don’t miss out on this exclusive deal—act now before it's gone!"
+  },
+  "csr": {
+    "activity": "ACTIVITY",
+    "certi": "CERTIFICATES",
+    "title": "Our Philosophy",
+    "des": "The vision and mission of the company’s founders are actively involved in social development work. Furthermore, East Lane Home has played a significant role in promoting and contributing to various social initiatives, such as regular blood donations in the One Blood, One Life program and financial contributions to the Cambodian Red Cross to celebrate the 161st World Red Cross and Red Crescent Day on May 8, 2024. In addition, East Lane Home has participated in building roads in several provinces and has provided internship and job opportunities to many students."
+  },
+  "our_pro":{
+    "title": "Discover Your Dream Property and Explore Our Real Estate Projects",
+    "des": "Explore our comprehensive real estate platform, showcasing a diverse range of properties and projects. From luxurious homes to cozy apartments, our website offers detailed listings and valuable insights to help you find your perfect property. Browse through our curated collection of real estate projects and stay updated on the latest developments. Whether you're looking to buy, rent, or invest, we provide the information and tools you need to make informed decisions and discover your dream property."
+  },
+  "certificates": {
+    "community": "Community Pillar",
+    "com_des_001":"Certificate of Attendance for INNOVATIVE TRANSNATIONAL REAL ESTATE INVESTMENTS",
+    "com_des_1": "Certificate of Appreciation from Cambodia Red Cross for USD 20,000 donation",
+    "com_des_2": "Certificate of Appreciation from EDC for USD 10,000 donation",
+    "com_des_004":"Certificate of Appreciation from Cambodian Oknha Association For Donation of USD 10,000",
+    "com_des_008":"Certificate of Appreciation from Kandal Administration",
+    "com_des_last":"Certificate of Appreciation fro Tmor Da Ler Pagoda for donation os USD 3500",
+    "enviromental": "Enviromental Pillar",
+    "com_des_3": "Certificate of Appreciation from Svay Chrum District Governor for Other Expenses donation",
+    "education": "Education Pillar",
+    "com_des_4": "Certificate of Appreciation from Chairman of BS LAND & HOME Co., Ltd. for providing a special time for a study visit as BS LAND & HOME Co., Ltd",
+    "com_des_5": "Certificate of Appreciation from ន.អ.ប for Rice 2TON donation",
+    "com_des_6": "Certificate of Appreciation from khsach Kandal District Governor for USD 2,000 donation",
+    "com_des_7": "Certificate of Appreciation from Battambang Chamber of Commerce",
+    "healthcare": "Healthcare & Well-begin Pillar",
+    "com_des_8": "Certificate of Appreciation from Kantha Bopha Foundation",
+    "com_des_9": "Certificate of Appreciation from Kandal District Governor for the construction of 2,000 meters of road",
+    "com_des_10": "Certificate of Appreciation from Kantha Bopha Foundation"
+  },
+  "activity": {
+    "act_1": "Opening ceremony for Prek Chek Fonan Techo",
+    "des_1": "Join us in celebrating the Opening Ceremony of the Prek Chek FUNAN Techo which will take place on August 5, 2024!",
+    "act_2": "Blood donation program One Blood, One Life",
+    "des_2": "The management and staff of East Land and Home have successfully collected a total of 46 blood donation packages.",
+    "act_3": "Studying and Visit BS LAND & HOME Co., Ltd",
+    "des_3": "Providing a special time for a study visit BS LAND & HOME Co., Ltd. for 50 students from our Higher Diploma Degree Program",
+    "act_4": "Visit to the officers",
+    "des_4": "Visit to the front line police officer at Ta Moan temple",
+    "act_5": "Health Trips of ONE BIKE ONE HEALTH",
+    "des_5": "Participation of staff trips on occasion of ONE BIKE ONE HEALTH"
   },
   "Navbar": {
     "COMMENT_DESCRITION": "📢📢📢 Navbar 📢📢📢",
@@ -246,7 +288,7 @@
   },
   "elh_catalog": {
     "flat": "Flat",
-    "land​": "Land",
+    "land": "Land",
     "villa": "Villa"
   },
   "esc_catalog": {
@@ -290,9 +332,9 @@
     "bath_room": "BathRoom"
   },
   "ELH": "=========================================================################======================================================",
-  "elh":{
+  "elh": {
     "flat": {
-      "efh":{
+      "efh": {
         "land": "Land Size 5.2m X 16m",
         "size": "House Size 4.2m X 12m",
         "bedroom": "bedRooms X 2",
@@ -300,7 +342,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "efh2":{
+      "efh2": {
         "land": "Land Size 4.2m X 17m",
         "size": "House Size 4.2m X 12m",
         "bedroom": "BedRooms X 2",
@@ -308,7 +350,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "efh3":{
+      "efh3": {
         "land": "Land Size 4.2m X 17m",
         "size": "House Size 4.2m X 12m",
         "bedroom": "BedRooms X 2",
@@ -317,13 +359,13 @@
         "kitchen": "Kitchen X 1"
       }
     },
-    "land":{
+    "land": {
       "land_flat": "Land Size 5m X 20m",
-      "land_villa":"Land Size 20m X 20m",
-      "land_flat_vy":"Land Size 5m X 20m"
+      "land_villa": "Land Size 20m X 20m",
+      "land_flat_vy": "Land Size 5m X 20m"
     },
-    "villa":{
-      "vh1":{
+    "villa": {
+      "vh1": {
         "land": "Land Size 5.2m X 16m",
         "size": "House Size 4.2m X 8m",
         "bedroom": "BedRooms X 3",
@@ -331,7 +373,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "vh2":{
+      "vh2": {
         "land": "Land Size 4.5m X 14m",
         "size": "House Size 4.5m X 7.7m",
         "bedroom": "BedRooms X 2",
@@ -339,7 +381,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "vh2a":{
+      "vh2a": {
         "land": "Land Size 4.5m X 14m",
         "size": "House Size 4.5m X 7.7m",
         "bedroom": "BedRooms X 2",
@@ -347,7 +389,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "vh3":{
+      "vh3": {
         "land": "Land Size 4.2m X 12m",
         "size": "House Size 4.2m X 8m",
         "bedroom": "BedRooms X 2",
@@ -355,7 +397,7 @@
         "bath_room": "BathRoom X 2",
         "kitchen": "Kitchen X 1"
       },
-      "vh3a":{
+      "vh3a": {
         "land": "Land Size 4.2m X 12m",
         "size": "House Size 4.2m X 8m",
         "bedroom": "BedRooms X 2",
@@ -363,49 +405,65 @@
         "bath_room": "BathRoom X 2",
         "kitchen": "Kitchen X 1"
       },
-      "vh3b":{
+      "vh3b": {
         "land": "Land Size 4.2m X 12m",
         "size": "House Size 4.2m X 8m",
         "bedroom": "BedRooms X 2",
         "living_rooms": "Living Room X 1",
         "bath_room": "BathRoom X 2",
+        "kitchen": "Kitchen X 1"
+      },
+      "vh5": {
+        "land": "Land Size 4.5m X 10m",
+        "size": "House Size 4.5m X 7.5m",
+        "bedroom": "BedRooms X 2",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 2",
+        "kitchen": "Kitchen X 1"
+      },
+      "vth": {
+        "land": "Land Size 7.5m X 16m",
+        "size": "House Size 6m X 8.5m",
+        "bedroom": "BedRooms X 3",
+        "living_rooms": "Living Room X 1",
+        "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       }
     }
   },
   "EPL": "##############################################################################################################################################",
-  "epl_tap":{
+  "epl_tap": {
     "land_flat": "Land for Flat",
     "land_villa": "Land for Villa"
   },
-  "epl_land":{
+  "epl_land": {
     "epl_flat": "Land Size 4.2m X 20m",
     "epl_villa": "Land Size 20m X 20m"
   },
-  "dh":{
-    "dh_tap":{
+  "dh": {
+    "dh_tap": {
       "land_flat": "Land for Flat",
       "land_villa": "Land for Villa"
     },
-    "dh_size":{
+    "dh_size": {
       "dh_flat": "Land Size 4.2m X 20m",
       "dh_villa": "Land Size 8m X 14m"
     }
   },
   "EMC_3": "##############################################################################################################################################",
-  "emc3":{
-    "emc3_tap":{
+  "emc3": {
+    "emc3_tap": {
       "1bed": "1 Bedroom",
       "2bed": "2 Bedroom"
     },
-    "emc3_1bed":{
+    "emc3_1bed": {
       "land": "Room Size 40.13sqm",
       "bedroom": "BedRooms X 1",
       "living_rooms": "Living Room X 1",
       "bath_room": "BathRoom X 1",
       "kitchen": "Kitchen X 1"
     },
-    "emc3_2bed":{
+    "emc3_2bed": {
       "land": "Room Size 80.28sqm",
       "bedroom": "BedRooms X 2",
       "living_rooms": "Living Room X 1",
@@ -414,19 +472,19 @@
     }
   },
   "EMC_2": "##############################################################################################################################################",
-  "emc2":{
-    "emc2_tap":{
+  "emc2": {
+    "emc2_tap": {
       "1bed": "1 Bedroom",
       "2bed": "2 Bedroom"
     },
-    "emc2_1bed":{
+    "emc2_1bed": {
       "land": "Room Size 34sqm",
       "bedroom": "BedRooms X 1",
       "living_rooms": "Living Room X 1",
       "bath_room": "BathRoom X 1",
       "kitchen": "Kitchen X 1"
     },
-    "emc2_2bed":{
+    "emc2_2bed": {
       "land": "Room Size 80.38sqm",
       "bedroom": "BedRooms X 2",
       "living_rooms": "Living Room X 1",
@@ -435,40 +493,40 @@
     }
   },
   "EMC_1": "##############################################################################################################################################",
-  "emc1":{
-    "emc1_tap":{
+  "emc1": {
+    "emc1_tap": {
       "1bed": "1 Bedroom",
       "2bed": "2 Bedroom",
       "store": "Store"
     },
-    "emc1_1bed":{
+    "emc1_1bed": {
       "land": "Room Size 28.3sqm",
       "bedroom": "BedRooms X 1",
       "living_rooms": "Living Room X 1",
       "bath_room": "BathRoom X 1",
       "kitchen": "Kitchen X 1"
     },
-    "emc1_2bed":{
+    "emc1_2bed": {
       "land": "Room Size 71.3sqm",
       "bedroom": "BedRooms X 2",
       "living_rooms": "Living Room X 1",
       "bath_room": "BathRoom X 2",
       "kitchen": "Kitchen X 1"
     },
-    "emc1_store":{
+    "emc1_store": {
       "store": "Store Size 8.52sqm"
     }
   },
   "ESC_condo": "##############################################################################################################################################",
-  "esc":{
-    "esc_tap":{
+  "esc": {
+    "esc_tap": {
       "bungalow": "Bungalow",
       "flat": "Flat",
       "land": "Land",
       "villa": "Villa"
     },
-    "bugalow_items":{
-      "bk":{
+    "bugalow_items": {
+      "bk": {
         "land": "Land Size 5m X 15m",
         "size": "House Size 5m X 7.2m",
         "bedroom": "BedRooms X 1",
@@ -490,8 +548,8 @@
         "kitchen": "Kitchen X 1"
       }
     },
-    "flat_items":{
-      "sheo":{
+    "flat_items": {
+      "sheo": {
         "land": "Land Size 4.2m X 18m",
         "size": "House Size 4.2m X 12m",
         "bedroom": "BedRooms X 2",
@@ -533,18 +591,18 @@
       }
     },
     "land_items": {
-      "land":{
+      "land": {
         "land": "Land Size 20m X 20m"
       },
-      "villa":{
+      "villa": {
         "land": "Land Size 20m X 20m"
       },
-      "flat":{
+      "flat": {
         "land": "Land Size 5m X 20m"
       }
     },
-    "villa_items":{
-      "la":{
+    "villa_items": {
+      "la": {
         "land": "Land Size 5.2m X 16m",
         "size": "House Size 5.2m X 8m",
         "bedroom": "BedRooms X 3",
@@ -552,7 +610,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "lb":{
+      "lb": {
         "land": "Land Size 4.2m X 16m",
         "size": "House Size 4.2m X 7.7m",
         "bedroom": "BedRooms X 2",
@@ -560,7 +618,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "vta":{
+      "vta": {
         "land": "Land Size 5.8m X 16m",
         "size": "House Size 6.3m X 8.5m",
         "bedroom": "BedRooms X 3",
@@ -571,34 +629,34 @@
     }
   },
   "ESP": "=======================================================================================",
-  "esp":{
-    "esp_tap":{
+  "esp": {
+    "esp_tap": {
       "condo": "Condo",
       "shop_house": "Shop House"
     },
-    "condo_items":{
-      "2br_kp":{
+    "condo_items": {
+      "2br_kp": {
         "land": "Room Size 103sqm",
         "bedroom": "BedRooms X 2",
         "living_rooms": "Living Room X 1",
         "bath_room": "BathRoom X 2",
         "kitchen": "Kitchen X 1"
       },
-      "std_kp":{
+      "std_kp": {
         "land": "Room Size 45sqm",
         "living_rooms": "Living Room X 1",
         "bedroom": "BedRooms X 1",
         "bath_room": "BathRoom X 1",
         "kitchen": "Kitchen X 1"
       },
-      "2br_kr":{
+      "2br_kr": {
         "land": "Room Size 95sqm",
         "bedroom": "BedRooms X 2",
         "living_rooms": "Living Room X 1",
         "bath_room": "BathRoom X 1",
         "kitchen": "Kitchen X 1"
       },
-      "std_kr":{
+      "std_kr": {
         "land": "Room Size 45sqm",
         "living_rooms": "Living Room X 1",
         "bedroom": "BedRooms X 1",
@@ -606,24 +664,52 @@
         "kitchen": "Kitchen X 1"
       }
     },
-    "shop_house":{
-        "land": "Land Size 4.2m X 20m",
-        "size": "House Size 4.2m X 14m",
-        "bedroom": "BedRooms X 4",
-        "living_rooms": "Living Room X 1",
-        "bath_room": "BathRoom X 5",
-        "kitchen": "Kitchen X 1"
+    "shop_house": {
+      "land": "Land Size 4.2m X 20m",
+      "size": "House Size 4.2m X 14m",
+      "bedroom": "BedRooms X 4",
+      "living_rooms": "Living Room X 1",
+      "bath_room": "BathRoom X 5",
+      "kitchen": "Kitchen X 1"
     }
   },
-  "KEC_":"====================================================================",
-  "ekc":{
-    "ekc_tap":{
+  "ess": {
+    "ess_tap": {
+      "1bed": "1BeedRoom",
+      "2bed": "2BeedRoom",
+      "std": "Studio"
+    },
+    "1bed": {
+      "size": "House Size 77.5sqm",
+      "bedroom": "BedRooms X 1",
+      "living_rooms": "Living Room X 1",
+      "bath_room": "BathRoom X 1",
+      "kitchen": "Kitchen X 1"
+    },
+    "2bed": {
+      "size": "House Size 105.5sqm",
+      "bedroom": "BedRooms X 2",
+      "living_rooms": "Living Room X 1",
+      "bath_room": "BathRoom X 2",
+      "kitchen": "Kitchen X 1"
+    },
+    "std": {
+      "size": "House Size 39.6sqm",
+      "bedroom": "BedRooms X 1",
+      "living_rooms": "Living Room X 1",
+      "bath_room": "BathRoom X 1",
+      "kitchen": "Kitchen X 1"
+    }
+  },
+  "KEC_": "====================================================================",
+  "ekc": {
+    "ekc_tap": {
       "flat": "Flat",
       "land": "Land",
       "villa": "Villa"
     },
-    "flat_items":{
-      "ksf1":{
+    "flat_items": {
+      "ksf1": {
         "land": "Land Size 4.2m X 16m",
         "size": "House Size 4.2m X 16m",
         "bedroom": "BedRooms X 2",
@@ -631,7 +717,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "ksf2":{
+      "ksf2": {
         "land": "Land Size 4,2 X 12m",
         "size": "House Size 4.2m X 18m",
         "bedroom": "BedRooms X 2",
@@ -639,7 +725,7 @@
         "bath_room": "BathRoom X 3",
         "kitchen": "Kitchen X 1"
       },
-      "ksv1":{
+      "ksv1": {
         "land": "Land Size 5.2m X 16m",
         "size": "House Size 5.2m X 8m",
         "bedroom": "BedRooms X 3",
@@ -648,22 +734,22 @@
         "kitchen": "Kitchen X 1"
       }
     },
-    "land_items":{
-      "ksl1":{
+    "land_items": {
+      "ksl1": {
         "land": "Land Size 5m X 22m"
       },
-      "ksl3":{
+      "ksl3": {
         "land": "Land Size 4.2m X 17m"
       },
-      "villa":{
+      "villa": {
         "land": "Land Size 7m X 20m"
       },
-      "flat":{
+      "flat": {
         "land": "Land Size 5m X 20m"
       }
     },
-    "villa_items":{
-      "ksv3":{
+    "villa_items": {
+      "ksv3": {
         "land": "Land Size 11m X 18.2m",
         "size": "House Size 8m X 8m",
         "bedroom": "BedRooms X 3",
@@ -674,14 +760,14 @@
     }
   },
   "ENC_": "============================================================================================",
-  "enc":{
-    "enc_tap":{
+  "enc": {
+    "enc_tap": {
       "bungalow": "Bungalow",
       "house": "House",
       "land": "Land",
       "villa": "Villa"
     },
-    "bunglow_items":{
+    "bunglow_items": {
       "k1b1": {
         "land": "Land Size 7.5m X 18.2m",
         "size": "House Size 5.5m X 7.5m",
@@ -718,7 +804,7 @@
         "kitchen": "Kitchen X 1"
       }
     },
-    "house_items":{
+    "house_items": {
       "k1s2": {
         "land": "Land Size 4.2m X 18.2m",
         "size": "House Size 4.2m X 12m",
@@ -744,17 +830,17 @@
         "kitchen": "Kitchen X 1"
       }
     },
-    "land_items":{
-      "k1l1":{
+    "land_items": {
+      "k1l1": {
         "land": "Land Size 5m X 20mm"
       },
-      "k1l2":{
+      "k1l2": {
         "land": "Land Size 7m X 16mm"
       }
     },
-    "villa_items":{
-      "k1v4":{
-       "land": "Land Size 17m X 18mm",
+    "villa_items": {
+      "k1v4": {
+        "land": "Land Size 17m X 18mm",
         "size": "House Size 13.8m X 9.6m",
         "bedroom": "BedRooms X 4",
         "living_rooms": "Living Room X 1",

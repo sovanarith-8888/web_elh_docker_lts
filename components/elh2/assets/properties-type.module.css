@@ -1,0 +1,125 @@
+/* From Uiverse.io by abrahamcalsin */
+.planCard {
+  background: #fff;
+  width: 100%;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 0.4rem;
+  border-bottom: 4px solid #199249;
+  box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+  z-index: 30;
+}
+
+.planCard h2 {
+  margin-bottom: 15px;
+}
+
+.planCard h2 span {
+  display: block;
+  margin-top: -4px;
+}
+
+.etiquetPrice {
+  position: relative;
+  background: #199249;
+  width: 100%;
+  margin-left: 2.33rem;
+  padding: 0.2rem 1.2rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.etiquetPrice p {
+  margin: 0;
+  padding-top: 0.4rem;
+  display: flex;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.etiquetPrice p:before {
+  content: "";
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquetPrice p:after {
+  content: "";
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.div {
+  position: absolute;
+  bottom: -23px;
+  right: 0px;
+  width: 0px;
+  height: 0;
+  border-top: 13px solid #199249;
+  border-bottom: 10px solid transparent;
+  border-right: 13px solid transparent;
+  z-index: -99;
+}
+
+.benefitsList {
+  margin-top: 16px;
+}
+
+.benefitsList ul {
+  padding: 0;
+  font-size: 14px;
+}
+
+.benefitsList ul li {
+  color: #4d4d4d;
+  list-style: none;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefitsList ul li svg {
+  width: 0.9rem;
+  fill: currentColor;
+}
+
+.benefitsList ul li span {
+  font-weight: 300;
+}
+
+/* .buttonGetPlan {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.buttonGetPlan a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000446;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.buttonGetPlan a:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+}
+
+.buttonGetPlan .svgRocket {
+  margin-right: 10px;
+  width: 0.9rem;
+  fill: currentColor;
+} */

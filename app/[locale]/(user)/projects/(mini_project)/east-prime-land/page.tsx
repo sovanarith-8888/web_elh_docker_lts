@@ -1,121 +1,118 @@
-'use client'
-import AroundPlan from '@/components/component-build/feature/AroundPlan'
-import FetureDynamic from '@/components/component-build/feature/FetureDynamic'
-import LocationMap from '@/components/component-build/location-map/LocationMap'
-import { NearbyDefinitions } from '@/lib/definitions'
-import { useTranslations } from 'next-intl'
-import { useParams } from 'next/navigation'
-import React from 'react'
-import { battambongParagraph, interParagraph, koulenHeader, vigaHeader } from "@/app/[locale]/(user)/fonts";
-import { Tab, Tabs } from '@nextui-org/react'
-import LandForFlatTap from '@/components/east-prime-land/taps/LandForFlatTap'
-import LandForVillaTap from '@/components/east-prime-land/taps/LandForVillaTap'
-type FeatureType = {
-  image?: string | undefined,
-  des?: string | undefined
-}
+"use client";
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import React from "react";
+import {
+  battambongParagraph,
+  interParagraph,
+  koulenHeader,
+  vigaHeader,
+} from "@/app/[locale]/(user)/fonts";
+import FeatureNearby from "@/components/component-build/mixFeatureNearby/FeatureNearby";
+import PropertiesDynamic from "@/components/component-build/properties/PropertiesDynamic";
+import ImageNextUI from "@/components/component-build/image-next-ui/ImageNextUI";
+import CarouselByProject from "@/components/component-build/CarouselSlide/CarouselByProject";
 
 const EastPrimeLandPage = () => {
+  const translatLocation = useTranslations("project_plans");
+  const translateEpl = useTranslations("epl_tap");
+  const translateVilla = useTranslations("epl_land");
   const translatProperties = useTranslations("properties");
-  const translatePrimeLandAds = useTranslations("project_plans");
-  const translateNearby = useTranslations("nearby")
-  const translatorFeature = useTranslations("features");
-  const translateEplTap = useTranslations("epl_tap");
   const param = useParams();
   const locale = param.locale;
   const langHeader =
     locale === "kh" ? koulenHeader.className : vigaHeader.className;
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
-  
-    // Water | Road ...
-  const features: FeatureType[] = [
-    {
-      image: "/feature/images/ទឹក6.png",
-      des: translatorFeature("water")
-    },
-    {
-      image: "/feature/images/ភ្លើង1.png",
-      des: translatorFeature("electric")
-    },
-    {
-      image: "/feature/images/លូ២.png",
-      des: translatorFeature("road")
-    },
-    {
-      image: "/feature/images/road5.png",
-      des: translatorFeature("water")
-    },
-  ]
 
-  // market | school | hospital | Bank
-  const nearbyPotential: NearbyDefinitions[] = [
-    {
-      src: "/featureAround/images/market150.png",
-      alt: "Market",
-      des: translateNearby("market"),
-    },
-    {
-      src: "/featureAround/images/school150.png",
-      alt: "School",
-      des: translateNearby("uni"),
-    },
-    {
-      src: "/featureAround/images/hospital150.png",
-      alt: "Hospitals",
-      des: translateNearby("hospital"),
-    },
-    {
-      src: "/featureAround/images/bank150.png",
-      alt: "Bank",
-      des: translateNearby("bank"),
-    },
-  ]
+  // Land for villa
+  const land_villa = {
+    title: translatLocation("east_primeland"),
+    types: translateEpl("land_villa"),
+    unit: "Villa",
+    images: [
+      "/master_image_project/EPL/projects/land_1.jpg",
+      "/master_image_project/EPL/projects/land_1.jpg",
+      "/master_image_project/EPL/projects/land_1.jpg",
+    ],
+    items: [
+      {
+        icon: "/home-items/images/land.png",
+        iconTitle: translateVilla("epl_villa"),
+      },
+    ],
+    cataloge: "/master_image_project/EPL/cataloge/cataloge_villa.jpg",
+    layout: "",
+  };
+  // Land for villa
+  const land_flat = {
+    title: translatLocation("east_primeland"),
+    types: translateEpl("land_flat"),
+    unit: "Flat",
+    images: [
+      "/master_image_project/EPL/projects/land_1.jpg",
+      "/master_image_project/EPL/projects/land_1.jpg",
+      "/master_image_project/EPL/projects/land_1.jpg",
+    ],
+    items: [
+      {
+        icon: "/home-items/images/land.png",
+        iconTitle: translateVilla("epl_flat"),
+      },
+    ],
+    cataloge: "/master_image_project/EPL/cataloge/cataloge_land.jpg",
+    layout: "",
+  };
+  const imageProjects = [
+    "/master_image_project/EDH/land/land_1.jpg",
+    "/master_image_project/EDH/land/land_2.jpg",
+    "/master_image_project/EDH/land/land_3.jpg",
+  ];
   return (
-    <main className={`w-[74%] m-auto mt-32`}>
+    <main className={`w-full`}>
+      {/* Background Image */}
+      <section className="w-full h-[72vh]">
+        {/* <ImageNextUI
+          src="/master_image_project/ELH/background.jpg"
+          className="w-[100vw] h-[72vh]  rounded-none object-cover"
+        /> */}
+         <CarouselByProject images={imageProjects}/>
+      </section>
+      <h1 className={`text-logo ${langHeader} px-4 lg:px-[10%] mt-12`}>
+        {translatProperties("property")}
+      </h1>
 
-      {/* <BannerProject /> */}
-      <div className="m-auto w-[100%]  mt-16">
-        <h1 className={`text-logo ${langHeader}`}>
-          {translatProperties("property")}
-        </h1>
+      {/* land for villa*/}
+      <div className="divider divider-start mt-8 divider-success px-4 lg:px-[10%]">
+        <h3 className={`text-logo ${langHeader}`}>
+          {translateEpl("land_villa")}
+        </h3>
       </div>
-      <div className="m-auto w-[100%] py-2 mt-8">
-        <div className="flex w-full flex-col">
-          <Tabs aria-label="Options" size="lg">
-            <Tab
-              key="land_flat"
-              title={translateEplTap("land_flat")}
-              style={{ height: "45px", width: "120px", fontSize: "16px" }}
-              className={`${langParagraph}`}
-            >
-              {/* khos name for flat */}
-              <LandForVillaTap/>
-            </Tab>
-            <Tab
-              key="land_vill"
-              title={translateEplTap("land_villa")}
-              style={{ height: "45px", width: "120px", fontSize: "16px" }}
-              className={`${langParagraph}`}
-            >
-              <LandForFlatTap/>
-            </Tab>
-          </Tabs>
-        </div>
+      <div
+        className={`px-4 lg:px-[10%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-wrap mt-8`}
+      >
+        <PropertiesDynamic {...land_villa} />
       </div>
-      {/* Feature of Projecct */}
-      <FetureDynamic features={features}/>
-
-      {/* Nearby Potential */}
-      <AroundPlan images={nearbyPotential} />
-
-      {/* Address Location Map */}
-      <LocationMap
-        location={translatePrimeLandAds("east_primeland_location")}
-        imageMap='/map/images/elh.jpg'
+      {/* land for flat*/}
+      <div className="divider divider-start mt-8 divider-success px-4 lg:px-[10%]">
+        <h3 className={`text-logo ${langHeader}`}>
+          {translateEpl("land_flat")}
+        </h3>
+      </div>
+      <div
+        className={`px-4 lg:px-[10%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-wrap mt-8`}
+      >
+        <PropertiesDynamic {...land_flat} />
+      </div>
+      <FeatureNearby
+        // lat={11.595669664265985}
+        // lng={104.95908570245213}
+        locationTitle={translatLocation("east_primeland_location")}
+        imageMap={"/map/images/epl.jpg"}
+        //urlLiveLocation={url}
       />
     </main>
-  )
-}
+  );
+};
 
-export default EastPrimeLandPage
+export default EastPrimeLandPage;

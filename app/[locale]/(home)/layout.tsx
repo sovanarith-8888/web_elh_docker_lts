@@ -1,3 +1,4 @@
+
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
@@ -13,6 +14,7 @@ import HeaderTitleContainer from "@/components/header/HeaderContainer";
 import NavbarContainer from "@/components/navbar/NavbarContainer";
 import MediaContainer from "@/components/video-show/MediaContainer";
 import FooterContainer from "@/components/footer/FooterContainer";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
   title: "East Land and Home",
@@ -28,6 +30,7 @@ export default async function HomeLayout({
   params: { locale: string };
 }>) {
   const messages = await getMessages();
+ 
   return (
     <html lang={locale}>
       <body

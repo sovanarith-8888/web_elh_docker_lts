@@ -2,7 +2,7 @@ import { Image } from '@nextui-org/react'
 import React from 'react'
 
 type ImageType = {
-  src: string;
+  src?: string;
   alt?: string;
   width?: number | undefined;
   height?: number | undefined;

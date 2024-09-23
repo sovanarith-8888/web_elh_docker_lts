@@ -11,8 +11,8 @@ const MapLocation = ({lat,lng}: any) => {
     draggingCursor: 'move'
   }
   const center = {
-    lat: 11.639579701449126,
-    lng: 104.98476231952276
+    lat: lat,
+    lng: lng
   };
   const containerStyle = {
     height: '600px',
@@ -32,6 +32,10 @@ const MapLocation = ({lat,lng}: any) => {
       });
     }
   }, []);
+
+  if(lat === undefined || lng === undefined){
+    return <p>No location data provided.</p>
+  }
 
   return (
     <Tooltip content="I am a tooltip">

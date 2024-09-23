@@ -31,7 +31,7 @@ const ContactUs = () => {
           className="h-[35vh] w-[100vh] lg:h-[72vh] lg:w-[100vw]  rounded-none object-cover"
         />
       </section>
-      <div className={`px-4 lg:px-[13%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 ls:grid-cols-1 gap-14`}>
+      <div className={`px-4 lg:px-[11%] mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 ls:grid-cols-1 gap-14`}>
       <h1 className={`text-logo ${langHeader} `} data-aos="zoom-out">{translator("conact")}</h1>
       <p className={``} data-aos="zoom-out">{translator("query")}</p>
       <div data-aos="zoom-out"><ContactCall/></div>

@@ -29,21 +29,22 @@ const FooterMenu = () => {
       <Link href={`/${locale}/projects`} target="_blank" className={`${langParagraph}`}>
       <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("unit_elh")}</p>
       </Link>
-      <Link href={`/${locale}/web-underconstruction`} className={`${langParagraph}`}>
+      <Link href={`https://east-resort.com/`} className={`${langParagraph}`}>
       <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("unit_resort")}</p>
       </Link>
-      <Link href={`/${locale}/web-underconstruction`} className={`${langParagraph}`}>
+      <Link target="_blank" href={`https://www.eastmicro.com.kh/`} className={`${langParagraph}`}>
       <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("unit_micro")}</p>
-      </Link>
-      <Link href={`/${locale}/web-underconstruction`} className={`${langParagraph}`}>
-      <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("new_news")}</p>
-      </Link>
-      <Link href={`/${locale}/web-underconstruction`} className={`${langParagraph}`}>
-      <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("gallery")}</p>
       </Link>
       <Link href="https://www.facebook.com/bslandhomecareer" className={`${langParagraph}`} target="_blank">
       <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("carrer")}</p>
       </Link>
+      <Link href={`/${locale}/news`} className={`${langParagraph}`}>
+      <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("new_news")}</p>
+      </Link>
+      <Link href={`/${locale}/csr`} className={`${langParagraph}`}>
+      <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("csr")}</p>
+      </Link>
+      
       <Link href={`/${locale}/contact-us`} className={`${langParagraph}`}>
       <p className={`${langParagraph} hover:bg-[#15803d] rounded px-2 text-white leading-[3rem]`}>{translator("contactus")}</p>
       </Link>

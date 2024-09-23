@@ -43,7 +43,7 @@ const CardUnit = ({title, sub, des, avatar,link}: UnitType) => {
   return (
     // hvr-sweep-to-top
     <Card className="w-full lg:h-[270px] p-0 " radius="none">
-      <div className="p-6 h-[290px] lg-[270px]">
+      <div className="p-6 h-[320px] lg-[270px]">
         <CardHeader className="justify-between">
           <div className="flex gap-5">
             <Avatar isBordered radius="full" size="lg" src={avatar} data-aos="zoom-out-up"/>

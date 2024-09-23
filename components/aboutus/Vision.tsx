@@ -30,7 +30,7 @@ const Vision = () => {
     
   return (
     <>
-    <section className={`px-4 lg:px-[13%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`}>
+    <section className={`px-4 lg:px-[11%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`}>
     <div className="w-full" data-aos="zoom-out-up">
       <VisionCard
         avatar="/vision/images/eye.png"

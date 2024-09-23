@@ -4,14 +4,19 @@ import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
-import { vigaHeader, interParagraph, koulenHeader, battambongParagraph } from "@/app/[locale]/(user)/fonts";
+import {
+  vigaHeader,
+  interParagraph,
+  koulenHeader,
+  battambongParagraph,
+} from "@/app/[locale]/(user)/fonts";
 import HeaderTitleContainer from "@/components/header/HeaderContainer";
 import NavbarContainer from "@/components/navbar/NavbarContainer";
 import MediaContainer from "@/components/video-show/MediaContainer";
 import { Suspense } from "react";
 import FooterContainer from "@/components/footer/FooterContainer";
 const inter = Inter({ subsets: ["latin"] });
-import Head from "next/head"
+import Head from "next/head";
 
 // for all
 
@@ -31,11 +36,10 @@ export default async function CommonLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-
+      <head></head>
       <body
         className={`${vigaHeader.variable} relative ${interParagraph.variable} ${koulenHeader.variable} ${battambongParagraph.variable}`}
       >
-
         <NextIntlClientProvider messages={messages}>
           {/* Container Header  Navbar */}
           <header className={`w-full`}>
@@ -51,13 +55,11 @@ export default async function CommonLayout({
           <div >
           <NavbarContainer />
           </div> */}
-         
-          {children}
 
+          {children}
           <FooterContainer />
         </NextIntlClientProvider>
       </body>
-
     </html>
   );
 }

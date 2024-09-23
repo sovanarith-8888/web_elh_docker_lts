@@ -33,11 +33,11 @@ const News = () => {
     <main className={`w-full`}>
       <section className="w-full">
         <ImageNextUI
-          src="/background/news.jpg"
+          src="/background/new2.jpg"
           className="h-[35vh] w-[100vh] lg:h-[72vh] lg:w-[100vw]  rounded-none object-cover"
         />
       </section>
-      <section className={`mt-32 px-4 lg:px-[13%]`}>
+      <section className={`mt-32 px-4 lg:px-[11%]`}>
         <div className="text-justify lg:text-center">
           <h1 className={`${langHeader} text-logo`} data-aos="zoom-out">
             {translator("title")}
@@ -52,7 +52,7 @@ const News = () => {
           </p>
         </div>
       </section>
-      <section className="px-4 lg:px-[13%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-32">
+      <section className="px-4 lg:px-[11%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-32">
         <div className="w-full" data-aos="zoom-out">
           <ImageNextUI
             data-aos="zoom-out"

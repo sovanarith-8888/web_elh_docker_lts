@@ -71,7 +71,7 @@ export default function NavbarContainer() {
     <>
       {/* <div className="w-full bg-transparent-navbar absolute top-[35px] left-0"> */}
        
-        <Navbar disableAnimation className={`${isFixed ? "fixed" : 'absolute top-[35px] left-0' } w-[100%]  bg-transparent-navbar px-[13%]  h-[104px] m-auto flex justify-between items-center`}>
+        <Navbar disableAnimation className={`${isFixed ? "fixed" : 'absolute top-[35px] left-0' } w-[100%]  bg-transparent-navbar px-[11%]  h-[104px] m-auto flex justify-between items-center`}>
 
           <NavbarContent>
             <NavbarMenuToggle

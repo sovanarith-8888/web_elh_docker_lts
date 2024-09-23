@@ -7,9 +7,14 @@ const config = withMT( {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    'node_modules/react-daisyui/dist/**/*.js',
+    'node_modules/preline/dist/*.js',
+
   ],
   prefix: "",
   theme: {

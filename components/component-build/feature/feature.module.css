@@ -2,7 +2,6 @@
   /* max-width: fit-content;
   border-radius: 15px; */
   background-color: transparent;
-  display: flex;
   /* flex-direction: column;
   align-content: flex-start;
   justify-content: center; */
@@ -19,7 +18,7 @@
   background: rgba(173, 173, 173, 0.05);
 }
 
-.card ul {
+/* .card ul {
   display: flex;
   list-style: none;
   gap: 5rem;
@@ -28,7 +27,7 @@
   align-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-}
+} */
 
 .card ul li {
   cursor: pointer;

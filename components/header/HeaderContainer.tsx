@@ -47,7 +47,7 @@ const HeaderTitleContainer = () => {
       <main
         className={`
       h-[70px] bg-[#cf87e9] lg:h-[35px] lg:bg-[#D980FA]
-      w-full sm:w-full md:w-full lg:px-[13%] py-2 lg:py-2
+      w-full sm:w-full md:w-full lg:px-[11%] py-2 lg:py-2
       flex sm:flex-col md:flex-col lg:flex-row justify-between lg:items-center
       flex-wrap
       gap-1 lg:gap-0

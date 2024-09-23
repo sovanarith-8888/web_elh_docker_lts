@@ -1,31 +1,27 @@
 /* From Uiverse.io by Li-Deheng */
 .btnConteiner {
-    display: flex;
-    justify-content: center;
-    --color-text: #ffffff;
-    --color-background: #199249;
-    --color-outline: #199249;
-    --color-shadow: #199249;
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #199249;
+  --color-outline: #199249;
+  --color-shadow: #199249;
 }
 
 .btnContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    padding: 0px 15px;
-    text-decoration: none;
-    color: var(--color-text);
-    transition: 1s;
-    border-radius: 100px;
-    box-shadow: 0 0 0.2em 0 var(--color-background);
-    background-color: var(--color-background);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 12px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+  background-color: var(--color-background);
 }
-.title{
-    color: white;
-    font-size: 18px;
-}
-.btnContent:hover,
+/* .btnContent:hover,
 .btnContent:focus {
     transition: 0.5s;
     -webkit-animation: btn-content 1s;
@@ -33,78 +29,85 @@
     outline: 0.1em solid transparent;
     outline-offset: 0.2em;
     box-shadow: 0 0 0.4em 0 var(--color-background);
+    background-color: red !important;
+} */
+.title {
+  width: auto !important;
+  color: white;
+  font-size: 1.6rem;
+  /* font-size: 18px; */
 }
 
 .btnContent .iconArrow {
-    transition: 0.5s;
-    margin-right: 0px;
-    transform: scale(0.6);
-    margin-bottom: 6px;
+  transition: 0.5s;
+  margin-right: -7px;
+  transform: scale(0.6);
+  margin-bottom: 6px;
 }
 
-.btnContent:hover .iconArrow {
-    transition: 0.5s;
-    margin-right: 25px;
+.btnContent .iconArrow {
+  transition: 0.5s;
+  margin-right: 5px;
 }
 
 .iconArrow {
-    width: 20px;
-    margin-left: 15px;
-    position: relative;
-    top: 6%;
+  width: 20px;
+  margin-left: 5px;
+  position: relative;
+  top: 6%;
 }
 
 /* SVG */
 #arrowIconOne {
-    transition: 0.4s;
-    transform: translateX(-60%);
+  transition: 0.4s;
+  transform: translateX(-60%);
 }
 
 #arrowIconTwo {
-    transition: 0.5s;
-    transform: translateX(-30%);
+  transition: 0.5s;
+  transform: translateX(-30%);
 }
 
-.btnContent:hover #arrowIconThree {
-    animation: color_anim 1s infinite 0.2s;
+.btnContent #arrowIconThree {
+  animation: color_anim 1s infinite 0.2s;
 }
 
-.btnContent:hover #arrowIconOne {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.6s;
+.btnContent #arrowIconOne {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
 }
 
-.btnContent:hover #arrowIconTwo {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.4s;
+.btnContent #arrowIconTwo {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
 }
 
 /* SVG animations */
 @keyframes color_anim {
-    0% {
-        fill: white;
-    }
+  0% {
+    fill: white;
+  }
 
-    50% {
-        fill: var(--color-background);
-    }
+  50% {
+    fill: var(--color-background);
+  }
 
-    100% {
-        fill: white;
-    }
+  100% {
+    fill: white;
+  }
 }
 
 /* Button animations */
 @-webkit-keyframes btnContent {
-    0% {
-        outline: 0.2em solid var(--color-background);
-        outline-offset: 0;
-    }
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
 }
 
 @keyframes btnContent {
-    0% {
-        outline: 0.2em solid var(--color-background);
-        outline-offset: 0;
-    }
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
 }

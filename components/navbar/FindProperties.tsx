@@ -12,8 +12,8 @@ const FindProperties = () => {
   const translator = useTranslations("Navbar");
   return (
     /* From Uiverse.io by Li-Deheng */
-    <div className={`${classes.btnConteiner}`}>
-      <div className={`${classes.btnContent}`}>
+    <div className={`${classes.btnConteiner} `}>
+      <div className={`${classes.btnContent} w-[215px] mb-2 md:mb-0 lg:w-fit ml-[-10px] bg-green-400`}>
         <span className={`${langHeader} ${classes.title}`}>
           {translator("find_properties")}
         </span>

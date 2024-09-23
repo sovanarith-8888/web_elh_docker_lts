@@ -29,7 +29,7 @@ const AroundPlan = ({images}: NearByListType) => {
     <div className={`w-[100%] m-auto mt-32`}>
       <h2 className={`${langHeader} text-logo`}>{nearBy("nearby")}</h2>
       <div className={`${classes.card}`}>
-        <ul>
+        <ul className="w-full flex justify-start items-center flex-wrap gap-8">
           {/* Road */}
           {images.map((image) => (
             <li key={image.des} className={`${classes.isoPro}`}>

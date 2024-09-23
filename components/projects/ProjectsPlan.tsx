@@ -1,18 +1,25 @@
 'use client'
-import React from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React,{useEffect} from 'react'
 import ProjectcardTitle from './ProjectcardTitle';
 import ProjectImage from './ProjectImage';
 import { useTranslations } from 'next-intl';
 
 const ProjectsPlan = () => {
   const translator = useTranslations("project_plans");
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
   return (
-    <main className={`w-full flex flex-wrap`}>
+    <main className={`lg:px-[8%] w-full row-gap-4 grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 flex-wrap`}>
       {/* 1 ELH */}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px]`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ELH.png" url="projects/eastland-and-home"/>
-        </div>
+        </div> 
         <div className="w-[100%] mt-2">
           <ProjectcardTitle
             title={translator("east_land")}
@@ -23,7 +30,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 2 ESC */}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px] `} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ESC.jpg" url="projects/east-sihaknouk-city"/>
         </div>
@@ -37,7 +44,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 3 East Natural City*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px]`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ENC.jpg" url="projects/east-natural-city"/>
         </div>
@@ -51,7 +58,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 4 East Keansvay City*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px]`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/EKC.png" url="projects/east-keansvay-city"/>
         </div>
@@ -65,7 +72,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 5 East Sihaknouk Park*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px]`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ESP.jpg" url="projects/east-sihaknouk-park"/>
         </div>
@@ -79,7 +86,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 6 East SenSok Condominium*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px] `} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/ESC.jpg" url="projects/east-sensok-condominium"/>
         </div>
@@ -93,7 +100,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 7 East Mini Condo 1*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px] `} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/MF.jpg" url="projects/east-mini-condo-1"/>
         </div>
@@ -107,7 +114,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 8 East Mini Condo 2*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px]`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/MC.jpg" url="projects/east-mini-condo-2"/>
         </div>
@@ -121,7 +128,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 9 East Mini Condo 3*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px] px-4`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/MP.jpg" url="projects/east-mini-condo-3"/>
         </div>
@@ -135,7 +142,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 10 East Land Svay Chrum*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px] px-4`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/DH.jpg" url="projects/east-land-svaychrum"/>
         </div>
@@ -149,7 +156,7 @@ const ProjectsPlan = () => {
       </div>
 
       {/* 11 East Prime Land*/}
-      <div className={`w-1/3 h-[440px] px-4`}>
+      <div className={`w-full h-[440px] px-4`} data-aos="zoom-in">
         <div className="w-[100%]">
           <ProjectImage src="/resources/images/projects/EPL.jpg" url="projects/east-prime-land" />
         </div>

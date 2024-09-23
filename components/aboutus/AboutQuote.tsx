@@ -28,7 +28,7 @@ const AboutQuote = () => {
     }, []);
     
   return (
-    <section className="w-full lg:px-[13%] flex flex-wrap mt-16 px-4">
+    <section className="w-full lg:px-[11%] flex flex-wrap mt-16 px-4">
       {/* Text */}
       <div className="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
         <br />

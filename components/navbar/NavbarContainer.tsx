@@ -73,15 +73,15 @@ export default function NavbarContainer() {
           isFixed
             ? "fixed top-[0] left-0 bg-green-500 z-50"
             : "absolute mt[70px] lg:top-[35px] left-0"
-        } px-2 lg:px-[13%]  bg-transparent-navbar navbar  h-[104px] z-50`}
+        } px-2 lg:px-[11%]  bg-transparent-navbar navbar  h-[104px] z-50`}
       >
-        <div className="navbar-start">
+        <div className="navbar-start b">
           <div className="dropdown">
-            <div tabIndex={1} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={1} role="button" className="mb-4 rounded-sm text-white lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-[20px] w-[20px] mr-8"
-                fill="none"
+                className="h-[30px] w-[30px] mr-4 "
+                fill="red"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
@@ -190,7 +190,7 @@ export default function NavbarContainer() {
         </div>
 
         {/* Default */}
-        <div className="navbar-center hidden lg:flex justify-center lg:mr-[70px]">
+        <div className="navbar-center hidden lg:flex justify-center lg:mr-[0px]  ">
           <ul className="menu menu-horizontal px-1 gap-6">
             <Link href="/" aria-current="page">
               <h3 className={`${langHeader} hover:text-[#199249] text-white`}>
@@ -276,7 +276,7 @@ export default function NavbarContainer() {
           </ul>
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end  flex">
           <Link href={`/${locale}/projects`}>
             <FindProperties />
           </Link>

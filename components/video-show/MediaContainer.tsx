@@ -1,9 +1,10 @@
 "use client";
 import classes from "./style.module.css";
 const MediaContainer = () => {
+
   return (
     <div className={`${classes.video}`}>
-      <video autoPlay loop muted className="w-[100%]">
+      <video autoPlay loop muted className="w-[100%]" playsInline preload="auto">
         <source src={"/_next-video/video.mp4"} type="video/mp4" />
       </video>
     </div>

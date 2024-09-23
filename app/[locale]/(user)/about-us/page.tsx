@@ -24,14 +24,14 @@ const AboutUs = () => {
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
     <main
-      className={`w-full`}
+      className={`w-full mt-60`}
     >
-      <section className="w-full">
+      {/* <section className="w-full">
         <ImageNextUI
           src="/background/aboutus.png"
           className="h-[35vh] w-[100vh] lg:h-[72vh] lg:w-[100vw]  rounded-none object-cover"
         />
-      </section>
+      </section> */}
       <AboutQuote/>
       <Vision/>
       <Timeline/>

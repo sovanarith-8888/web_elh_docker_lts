@@ -12,8 +12,8 @@ import { LocationLocalSvg } from "@/components/footer/InfoIcons";
 import { Tooltip } from "@nextui-org/react";
 
 type LocationMapType = {
-  location: string;
-  imageMap: string;
+  location?: string;
+  imageMap?: string;
   urlLocation?: string;
 };
 

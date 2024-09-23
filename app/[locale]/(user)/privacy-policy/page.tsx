@@ -16,7 +16,7 @@ const page = () => {
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
   return (
-    <main className={`mt-16 m-auto w-[74%]`}>
+    <main className={`m-auto w-[74%] mt-64`}>
       <h1 className={`${langHeader} text-logo`}>Privacy Policy</h1>
       <p className={`${langParagraph} text-gray-800 text-[16px]`}>
         Welcome to East Land and Home . This Privacy Policy explains how we
