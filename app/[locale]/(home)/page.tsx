@@ -9,7 +9,7 @@ export default function Home() {
     // Scroll down 40px when the page loads
     if (window.innerWidth >= 1024) {
       // Scroll down 40px when the page loads
-      window.scrollTo({ top: 510, behavior: 'smooth' });
+      window.scrollTo({ top: 310, behavior: 'smooth' });
     }
   }, []);
   return (

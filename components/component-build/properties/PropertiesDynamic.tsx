@@ -22,7 +22,7 @@ import {
 import Verify from "@/components/projects/Verify";
 import ImageNextUI from "../image-next-ui/ImageNextUI";
 import Link from "next/link";
-import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
+// import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 
 type ItemsCardType = {
   icon?: string;

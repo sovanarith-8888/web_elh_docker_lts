@@ -41,7 +41,7 @@ const BusinessUnit = () => {
               title={translator("elh_unit.title")}
               sub={translator("elh_unit.sub")}
               des={translator("elh_unit.des")}
-              avatar="/resources/images/company/estate.png"
+              avatar="/resources/images/Company/estate.png"
               link={`/${locale}/projects`}
             />
           </div>
@@ -50,7 +50,7 @@ const BusinessUnit = () => {
           <div className={`bg-logo p-7 w-fit rounded-[16px]`} data-aos="zoom-in-up">
             <Image
               isZoomed
-              src="/resources/images/company/estate.png"
+              src="/resources/images/Company/estate.png"
               alt="Project ELH"
               style={{ width: "430px" }}
             />
@@ -65,7 +65,7 @@ const BusinessUnit = () => {
           <div className={`bg-logo p-7 w-fit rounded-[16px]`} data-aos="zoom-in-up">
             <Image
               isZoomed
-              src="/resources/images/company/mfi.png"
+              src="/resources/images/Company/mfi.png"
               alt="Project ELH"
               style={{ width: "430px" }}
             />
@@ -108,7 +108,7 @@ const BusinessUnit = () => {
           <div className={`bg-logo p-7 w-fit rounded-[16px]`} data-aos="zoom-in-up" data-aos-duration="500">
             <Image
               isZoomed
-              src="/resources/images/company/resort.png"
+              src="/resources/images/Company/resort.png"
               alt="Project ELH"
               style={{ width: "430px" }}
             />

@@ -4,7 +4,7 @@ const MediaContainer = () => {
 
   return (
     <div className={`${classes.video}`}>
-      <video autoPlay loop muted className="w-[100%]" playsInline preload="auto">
+      <video autoPlay loop muted className="w-[100%]" playsInline>
         <source src={"/_next-video/video.mp4"} type="video/mp4" />
       </video>
     </div>
