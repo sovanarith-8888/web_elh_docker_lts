@@ -74,6 +74,7 @@ const PropertiesDynamic = ({
         >
           {images?.map((url, index) => (
             <div
+            
               id={"" + index + 1}
               className={`carousel-item w-[90%] relative`}
               key={index}
@@ -106,7 +107,7 @@ const PropertiesDynamic = ({
           className={`${classes.benefitsList}  w-full grid grid-cols-1 gap-2 md:grid-cols-2`}
         >
           {items?.map((item, index) => (
-            <div className="h-[80px] bordered border-1 flex flex-col justify-center items-center">
+            <div key={index} className="h-[80px] bordered border-1 flex flex-col justify-center items-center">
               <div>
                 <ImageNextUI
                   src={`${item.icon}`}

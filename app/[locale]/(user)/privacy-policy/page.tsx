@@ -8,7 +8,7 @@ import {
   vigaHeader,
 } from "@/app/[locale]/(user)/fonts";
 
-const page = () => {
+const Page = () => {
     const param = useParams();
     const locale = param.locale;
   const langHeader =
@@ -75,4 +75,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

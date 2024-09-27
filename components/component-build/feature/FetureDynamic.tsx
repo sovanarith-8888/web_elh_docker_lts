@@ -32,8 +32,8 @@ const FetureDynamic = ({ features }: FeatureLists) => {
       <div className={`${classes.card}`}>
         <ul>
           {
-            features.map(feature => (
-              <li className={`${classes.isoPro}`}>
+            features.map((feature,index) => (
+              <li className={`${classes.isoPro}`} key={index}>
                 <span></span>
                 <span></span>
                 <span></span>

@@ -25,7 +25,7 @@ const CatalogeTapProperties = (
       <div className="w-full flex">
         <div className="w-1/2 h-[430px] bg-[#cffafe] rounded-[16px] carousel carousel-center space-x-4 p-4">
           {slide.map((item, index) => (
-            <div className="carousel-item">
+            <div className="carousel-item" key={index}>
               <ImageNextUI
                 src={item.imgUrl}
                 alt={item.alt}
