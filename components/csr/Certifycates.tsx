@@ -78,7 +78,7 @@ const Certifycates = () => {
       <div className="w-full bordered border-1 p-1 gap-2" data-aos="zoom-in">
         <ImageNextUI
           data-aos="zoom-out"
-          src="/certificates/cert003.PNG"
+          src="/certificates/cert003.png"
           className="w-full  rounded-none object-cover"
         />
         <br />
@@ -95,7 +95,7 @@ const Certifycates = () => {
       <div className="w-full bordered border-1 p-1 gap-2" data-aos="zoom-in">
         <ImageNextUI
           data-aos="zoom-out"
-          src="/certificates/cert2.PNG"
+          src="/certificates/cert2.png"
           className="w-full  rounded-none object-cover"
         />
         <br />
@@ -111,7 +111,7 @@ const Certifycates = () => {
       <div className="w-full bordered border-1 p-1 gap-2" data-aos="zoom-in">
         <ImageNextUI
           data-aos="zoom-out"
-          src="/certificates/cert10.PNG"
+          src="/certificates/cert10.png"
           className="w-full  rounded-none object-cover"
         />
         <br />
