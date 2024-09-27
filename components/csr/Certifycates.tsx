@@ -86,7 +86,7 @@ const Certifycates = () => {
           <h3 className={`text-justify ${langHeader}`}>
             {translator("education")}
           </h3>
-          <ImageNextUI src="/certificates/1.png" className="w-[20px]" />
+          <ImageNextUI src="/certificates/1.PNG" className="w-[20px]" />
         </div>
         <p className={`${langParagraph}`}>{translator("com_des_004")}</p>
       </div>
