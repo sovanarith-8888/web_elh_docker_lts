@@ -80,7 +80,7 @@ const BusinessUnit = () => {
               title={translator("micro_unit.title")}
               sub={translator("micro_unit.sub")}
               des={translator("micro_unit.des")}
-              avatar="/resources/images/company/mfi.png"
+              avatar="/resources/images/Company/mfi.png"
               link={`https://www.eastmicro.com.kh/`}
             />
           </div>
@@ -99,7 +99,7 @@ const BusinessUnit = () => {
               title={translator("resort_unit.title")}
               sub={translator("resort_unit.sub")}
               des={translator("resort_unit.des")}
-              avatar="/resources/images/company/resort.png"
+              avatar="/resources/images/Company/resort.png"
               link={`https://east-resort.com/`}
             />
           </div>
