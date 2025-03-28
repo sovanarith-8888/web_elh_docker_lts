@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import KhFlag from "../flag/KhFlag";
+import EnFlag from "../flag/EnFlag";
 import {
   Navbar,
   NavbarBrand,
@@ -17,17 +19,21 @@ import {
 } from "@nextui-org/react";
 import { ChevronDown } from "./IconMenu";
 import { Logo } from "./Logo";
-import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { koulenHeader, vigaHeader } from "@/app/[locale]/(user)/fonts";
 import classes from "./navbar.module.css";
 import FindProperties from "./FindProperties";
+import { useParams, usePathname, useRouter } from "next/navigation";
+
 
 export default function NavbarContainer() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isHoverUnit, setIsHoverUnit] = React.useState(false);
   const [isHoverMedia, setIsHoverMeia] = React.useState(false);
-
+  const pathname = usePathname();
+  const router = useRouter();
+  const [isKh, setIsKh] = useState<boolean>(false);
+const urlFull = `${pathname}`;
   const menuItems = [
     "Profile",
     "Dashboard",
@@ -65,19 +71,31 @@ export default function NavbarContainer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
+    function handleClickLang(isKh: boolean) {
+      const url = urlFull.substring(4);
+      if (isKh) {
+        router.push(`/en/${url}`);
+      } else {
+        router.push(`/kh/${url}`);
+      }
+      setIsKh(!isKh);
+    }
   return (
     <>
       <div
         className={`${
           isFixed
             ? "fixed top-[0] left-0 bg-green-500 z-50"
-            : "absolute mt[70px] lg:top-[35px] left-0"
+            : "absolute mt-[0px] lg:top-[0px] left-0"
         } px-2 lg:px-[11%]  bg-transparent-navbar navbar  h-[104px] z-50`}
       >
         <div className="navbar-start b">
           <div className="dropdown">
-            <div tabIndex={1} role="button" className="mb-4 rounded-sm text-white lg:hidden">
+            <div
+              tabIndex={1}
+              role="button"
+              className="mb-4 rounded-sm text-white lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-[30px] w-[30px] mr-4 "
@@ -99,94 +117,103 @@ export default function NavbarContainer() {
               tabIndex={1}
               className="w-[240px] menu menu-lg dropdown-content  bg-transparent-navbar rounded-box z-[50] mt-16 py-4  p-2 shadow gap-6"
             >
-            <Link href="/" aria-current="page">
-              <h3 className={`${langHeader} hover:text-[#199249] text-white`}>
-                {translator("home")}
-              </h3>
-            </Link>
-            <Link color="foreground" href={`/${locale}/about-us`}>
-              <h3 className={`${langHeader} hover:text-[#199249] text-white text-wrap`}>
-                {translator("aboutus")}
-              </h3>
-            </Link>
-            <li>
-              <details>
-                <summary>
-                  <h3
-                    className={`${langHeader} hover:text-[#199249] text-white`}
-                  >
-                    {translator("business_unit")}
-                  </h3>
-                </summary>
-                {/* bg-transparent-navbar  */}
-                <ul className="px-8 w-fit py-4 flex flex-col text-white rounded-lg">
-                  <Link href={`/${locale}/projects`}>
+              <Link href="/" aria-current="page">
+                <h3 className={`${langHeader} hover:text-[#199249] text-white`}>
+                  {translator("home")}
+                </h3>
+              </Link>
+              <Link color="foreground" href={`/${locale}/about-us`}>
+                <h3
+                  className={`${langHeader} hover:text-[#199249] text-white text-wrap`}
+                >
+                  {translator("aboutus")}
+                </h3>
+              </Link>
+              <li>
+                <details>
+                  <summary>
                     <h3
-                      className={`${langHeader} px-1 py-6 hover:text-[#199249] pr-6 text-white`}
+                      className={`${langHeader} hover:text-[#199249] text-white`}
                     >
-                      {translator("unit_elh")}
+                      {translator("business_unit")}
                     </h3>
-                  </Link>
-                  <Link href={`https://east-resort.com/`} target="_blank">
-                    <h3
-                      className={`${langHeader} px-1 py-6 hover:text-[#199249] text-white`}
+                  </summary>
+                  {/* bg-transparent-navbar  */}
+                  <ul className="px-8 w-fit py-4 flex flex-col text-white rounded-lg">
+                    <Link href={`/${locale}/projects`}>
+                      <h3
+                        className={`${langHeader} px-1 py-6 hover:text-[#199249] pr-6 text-white`}
+                      >
+                        {translator("unit_elh")}
+                      </h3>
+                    </Link>
+                    <Link href={`https://east-resort.com/`} target="_blank">
+                      <h3
+                        className={`${langHeader} px-1 py-6 hover:text-[#199249] text-white`}
+                      >
+                        {translator("unit_resort")}
+                      </h3>
+                    </Link>
+                    <Link
+                      href={`https://www.eastmicro.com.kh/`}
+                      target="_blank"
                     >
-                      {translator("unit_resort")}
-                    </h3>
-                  </Link>
-                  <Link href={`https://www.eastmicro.com.kh/`} target="_blank">
-                    <h3
-                      className={`${langHeader} px-1 py-6 hover:text-[#199249] text-white`}
-                    >
-                      {translator("unit_micro")}
-                    </h3>
-                  </Link>
-                </ul>
-              </details>
-            </li>
+                      <h3
+                        className={`${langHeader} px-1 py-6 hover:text-[#199249] text-white`}
+                      >
+                        {translator("unit_micro")}
+                      </h3>
+                    </Link>
+                  </ul>
+                </details>
+              </li>
 
-            <Link
-              href="https://www.facebook.com/bslandhomecareer"
-              target="_blank"
-              aria-current="page"
-            >
-              <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
-                {translator("carrer")}
-              </h3>
-            </Link>
-            <Link
-              href={`/${locale}/news`}
-              target="_blank"
-              aria-current="page"
-            >
-              <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
-                {translator("new")}
-              </h3>
-            </Link>
-            <Link
-              href={`/${locale}/csr`}
-              target="_blank"
-              aria-current="page"
-            >
-              <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
-                {translator("csr")}
-              </h3>
-            </Link>
+              <Link
+                href="https://www.facebook.com/bslandhomecareer"
+                target="_blank"
+                aria-current="page"
+              >
+                <h3
+                  className={`${langHeader}  hover:text-[#199249] text-white`}
+                >
+                  {translator("carrer")}
+                </h3>
+              </Link>
+              <Link
+                href={`/${locale}/news`}
+                target="_blank"
+                aria-current="page"
+              >
+                <h3
+                  className={`${langHeader}  hover:text-[#199249] text-white`}
+                >
+                  {translator("new")}
+                </h3>
+              </Link>
+              <Link href={`/${locale}/csr`} target="_blank" aria-current="page">
+                <h3
+                  className={`${langHeader}  hover:text-[#199249] text-white`}
+                >
+                  {translator("csr")}
+                </h3>
+              </Link>
 
-            <Link
-              color="foreground"
-              href={`/${locale}/contact-us`}
-              className={`${langHeader}`}
-            >
-              <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
-                {translator("contactus")}
-              </h3>
-            </Link>
-          </ul>
+              <Link
+                color="foreground"
+                href={`/${locale}/contact-us`}
+                className={`${langHeader}`}
+              >
+                <h3
+                  className={`${langHeader}  hover:text-[#199249] text-white`}
+                >
+                  {translator("contactus")}
+                </h3>
+              </Link>
+            </ul>
             {/* => End Phone */}
           </div>
 
-          <Logo/>
+          <Logo />
         </div>
 
         {/* Default */}
@@ -246,20 +273,12 @@ export default function NavbarContainer() {
                 {translator("carrer")}
               </h3>
             </Link>
-            <Link
-              href={`/${locale}/news`}
-              target=""
-              aria-current="page"
-            >
+            <Link href={`/${locale}/news`} target="" aria-current="page">
               <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
                 {translator("new")}
               </h3>
             </Link>
-            <Link
-              href={`/${locale}/csr`}
-              target=""
-              aria-current="page"
-            >
+            <Link href={`/${locale}/csr`} target="" aria-current="page">
               <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
                 {translator("csr")}
               </h3>
@@ -273,6 +292,12 @@ export default function NavbarContainer() {
                 {translator("contactus")}
               </h3>
             </Link>
+            <Button
+              onClick={() => handleClickLang(isKh)}
+              className="p-0 outline-none mr-4"
+            >
+              {isKh === true ? <EnFlag /> : <KhFlag />}
+            </Button>
           </ul>
         </div>
 

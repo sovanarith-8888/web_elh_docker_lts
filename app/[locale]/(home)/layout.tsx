@@ -40,8 +40,7 @@ export default async function HomeLayout({
           {/* Container Header  Navbar */}
           <header className={`w-full`}>
             {/* Heaer */}
-            <HeaderTitleContainer />
-
+            {/* <HeaderTitleContainer /> */}
             {/* <MediaContainer /> */}
             {/* Navbar */}
             <NavbarContainer />
