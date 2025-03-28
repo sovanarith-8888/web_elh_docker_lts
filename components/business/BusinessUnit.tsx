@@ -73,7 +73,7 @@ const BusinessUnit = () => {
         </div>
         <div className={`w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 mt-12`}>
           <h2 className={`${langHeader} text-logo text-start`}>
-            {translator("east_title")}
+            {translator("mfi_title")}
           </h2>
           <div className="mt-4">
             <CardUnit
@@ -92,7 +92,7 @@ const BusinessUnit = () => {
       <div className="flex sm:flex-col md:flex-col lg:flex-row xl:flex-row mt-32 flex-wrap overflow-hidden">
       <div className={`w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 mt-12`}>
           <h2 className={`${langHeader} text-logo text-start px-6`}>
-            {translator("east_title")}
+            {translator("resort_title")}
           </h2>
           <div className="mt-4">
             <CardUnit
