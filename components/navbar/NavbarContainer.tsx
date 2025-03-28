@@ -165,6 +165,12 @@ const urlFull = `${pathname}`;
                       </h3>
                     </Link>
                   </ul>
+                  <Button
+                    onClick={() => handleClickLang(isKh)}
+                    className="p-0 outline-none mr-4"
+                  >
+                    {isKh === true ? <EnFlag /> : <KhFlag />}
+                  </Button>
                 </details>
               </li>
 
