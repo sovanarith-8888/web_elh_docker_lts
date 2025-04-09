@@ -33,8 +33,10 @@ const HeaderTitleContainer = () => {
   const translator = useTranslations("Footer");
   const translatorLang = useTranslations("Lang");
 
-  function handleClickLang(isKh: boolean) {
-    const url = urlFull.substring(4);
+  //csKh: boolean
+  function handleClickLang() {
+    //const url = urlFull.substring(4);
+    const url = urlFull.replace(/^\/(kh|en)\//, "");
     if (isKh) {
       router.push(`/en/${url}`);
     } else {
@@ -54,26 +56,25 @@ const HeaderTitleContainer = () => {
     `}
       >
         <div className="flex w-full lg:w-1/2 justify-start">
-        <div>
-        <AnimatedGradientText>
-            <span
-              className={cn(
-                `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent p-1
+          <div>
+            <AnimatedGradientText>
+              <span
+                className={cn(
+                  `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent p-1
             ${formatKhParagraph} ${langParagraph}`
-              )}
-            >
-              {translator("topTitle")}
-            </span>
-          </AnimatedGradientText>
-        </div>
-          
+                )}
+              >
+                {translator("topTitle")}
+              </span>
+            </AnimatedGradientText>
+          </div>
         </div>
         <div className="flex w-full lg:w-1/2  gap-4 justify-end px-2 lg:px-0">
           <p className={`${langParagraph} hidden xl:block`}>
             {translatorLang("preferlang")}
           </p>
           <Button
-            onClick={() => handleClickLang(isKh)}
+            onClick={() => handleClickLang()}
             className="p-0 outline-none"
           >
             {isKh === true ? <EnFlag /> : <KhFlag />}
