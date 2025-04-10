@@ -42,7 +42,8 @@ const HeaderTitleContainer = () => {
     } else {
       router.push(`/kh/${url}`);
     }
-    setIsKh(!isKh);
+    //setIsKh(!isKh);
+    setIsKh((prev) => !prev);
   }
   return (
     <>
