@@ -37,12 +37,14 @@ const HeaderTitleContainer = () => {
   const handleClickLang =  () =>{
     //const url = urlFull.substring(4);
     //setIsKh(!isKh);
-    setIsKh((prev) => !prev);
+    //setIsKh((prev) => !prev);
     const url = urlFull.replace(/^\/(kh|en)\//, "");
     if (isKh) {
       router.push(`/en/${url}`);
+      setIsKh(true);
     } else {
       router.push(`/kh/${url}`);
+      setIsKh(false);
     }
   }
   return (
