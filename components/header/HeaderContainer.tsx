@@ -34,16 +34,16 @@ const HeaderTitleContainer = () => {
   const translatorLang = useTranslations("Lang");
 
   //csKh: boolean
-  function handleClickLang() {
+  const handleClickLang =  () =>{
     //const url = urlFull.substring(4);
+    //setIsKh(!isKh);
+    setIsKh((prev) => !prev);
     const url = urlFull.replace(/^\/(kh|en)\//, "");
     if (isKh) {
       router.push(`/en/${url}`);
     } else {
       router.push(`/kh/${url}`);
     }
-    //setIsKh(!isKh);
-    setIsKh((prev) => !prev);
   }
   return (
     <>
@@ -75,10 +75,10 @@ const HeaderTitleContainer = () => {
             {translatorLang("preferlang")}
           </p>
           <Button
-            onClick={() => handleClickLang()}
+            onClick={handleClickLang}
             className="p-0 outline-none"
           >
-            {isKh === true ? <EnFlag /> : <KhFlag />}
+            {isKh == true ? <EnFlag /> : <KhFlag />}
           </Button>
         </div>
       </main>
