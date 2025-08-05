@@ -189,7 +189,7 @@ const Carrer = () => {
             </ul>
           </section>
         </AccordionItem>
-        <Spacer y={2} />
+
         {/* 2 */}
         <AccordionItem
           key="2"
@@ -251,7 +251,7 @@ const Carrer = () => {
             </ul>
           </section>
         </AccordionItem>
-        <Spacer y={2} />
+
         {/* 3 */}
         <AccordionItem
           key="3"
@@ -274,7 +274,7 @@ const Carrer = () => {
               {job3.jobType}
             </Chip>
             <Chip color="success" variant="flat" className="p-4">
-              Hiring: {job3.numberOfHiring}
+              Hiring: {job.numberOfHiring}
             </Chip>
           </div>
           title=<p className="text-2xl font-bold "> {job3.title}</p>
@@ -310,7 +310,7 @@ const Carrer = () => {
             </ul>
           </section>
         </AccordionItem>
-        <Spacer y={2} />
+
         {/* 4 */}
         <AccordionItem
           key="4"
@@ -333,7 +333,7 @@ const Carrer = () => {
               {job4.jobType}
             </Chip>
             <Chip color="success" variant="flat" className="p-4">
-              Hiring: {job3.numberOfHiring}
+              Hiring: {job4.numberOfHiring}
             </Chip>
           </div>
           title=<p className="text-2xl font-bold "> {job4.title}</p>
