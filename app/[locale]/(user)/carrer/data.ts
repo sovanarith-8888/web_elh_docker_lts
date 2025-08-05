@@ -1,0 +1,41 @@
+// data/careers.ts
+export const careers = [
+  {
+    title: "Sales Consultant Executive",
+    businessUnit: "East Land and Home",
+    closingDate: "30-Aug-2025",
+    jobType: "Full time",
+    numberOfHiring: 1,
+    description: [
+      "Uses strong consultative sales skill to convince customer",
+      "Provide full pack of product detail & benefits to close sales.",
+      "Contact to customers by phone",
+      "Recruit agency level 2 and support their sale activities",
+      "Follow up with both new and old customers",
+      "Solve problem that effect to sales activities",
+      "Make report for superior (Weekly and monthly)",
+      "Other job is assigned by superior/manager",
+    ],
+    requirements: [
+      "University Degree, Sale & Marketing field",
+      "At least 2 years of work experience in Sale or related field",
+      "Experience in real estate or relate field",
+      "Good in English Communication",
+      "Able to use basic computer skills (MS Office)",
+      "Knowledge how to tracking on workflow by using system and design and analysist report and data",
+      "Design plan and execute the plan",
+      "Good in communication and interpersonal skills",
+      "Effective team and relationship building",
+      "Good knowledge in consultation, coaching and advisory",
+      "Work under pressure and flexible",
+      "Strong commitment",
+      "Strong negotiation skills",
+      "Good at solving problem and customer support",
+    ],
+    contact: {
+      phones: ["085 230 168", "085 227 168", "086 584 168", "086 764 168"],
+      email: "recruitment@eastlandandhome.com",
+      telegram: "085 227 168",
+    },
+  },
+];
