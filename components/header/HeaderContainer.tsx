@@ -10,19 +10,22 @@ import {
   useRouter,
 } from "next/navigation";
 import "@/app/globals.css";
+//import { useRouter } from 'next/router';
 import {
   battambongParagraph,
   interParagraph,
 } from "@/app/[locale]/(user)/fonts";
 import KhFlag from "../flag/KhFlag";
 import EnFlag from "../flag/EnFlag";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const HeaderTitleContainer = () => {
   const [isHided, setIsHided] = useState<boolean>(false);
-  const [isKh, setIsKh] = useState<boolean>(false);
-  const pathname = usePathname();
   const router = useRouter();
+  const [isKh, setIsKh] = useState<boolean>(false);
+
+  const pathname = usePathname();
+
   const urlFull = `${pathname}`;
   const param = useParams();
   const locale = param.locale;
@@ -33,20 +36,34 @@ const HeaderTitleContainer = () => {
   const translator = useTranslations("Footer");
   const translatorLang = useTranslations("Lang");
 
+  // Sync state with route changes
+  // useEffect(() => {
+  //   const handleRouteChange = (url: string) => {
+  //     setIsKh(url.startsWith("/kh/"));
+  //   };
+
+  //   router.events.on("routeChangeComplete", handleRouteChange);
+  //   return () => router.events.off("routeChangeComplete", handleRouteChange);
+  // }, []);
+
   //csKh: boolean
-  const handleClickLang =  () =>{
+  const handleClickLang = () => {
     //const url = urlFull.substring(4);
     //setIsKh(!isKh);
     //setIsKh((prev) => !prev);
     const url = urlFull.replace(/^\/(kh|en)\//, "");
-    if (isKh) {
+    console.log("URL" + url);
+    alert(url)
+    const newLang = isKh ? "en" : "kh";
+     router.push(`/${newLang}/${url}`);
+    /*if (isKh) {
       router.push(`/en/${url}`);
       setIsKh(true);
     } else {
       router.push(`/kh/${url}`);
       setIsKh(false);
-    }
-  }
+    }*/
+  };
   return (
     <>
       <main
@@ -76,10 +93,7 @@ const HeaderTitleContainer = () => {
           <p className={`${langParagraph} hidden xl:block`}>
             {translatorLang("preferlang")}
           </p>
-          <Button
-            onClick={handleClickLang}
-            className="p-0 outline-none"
-          >
+          <Button onClick={handleClickLang} className="p-0 outline-none">
             {isKh == true ? <EnFlag /> : <KhFlag />}
           </Button>
         </div>

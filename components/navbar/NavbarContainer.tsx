@@ -175,7 +175,7 @@ const urlFull = `${pathname}`;
               </li>
 
               <Link
-                href="https://www.facebook.com/bslandhomecareer"
+                href={`/${locale}/carrer`}
                 target="_blank"
                 aria-current="page"
               >
@@ -270,11 +270,7 @@ const urlFull = `${pathname}`;
               </details>
             </li>
 
-            <Link
-              href="https://www.facebook.com/bslandhomecareer"
-              target="_blank"
-              aria-current="page"
-            >
+            <Link href={`/${locale}/carrer`} target="_blank" aria-current="page">
               <h3 className={`${langHeader}  hover:text-[#199249] text-white`}>
                 {translator("carrer")}
               </h3>
