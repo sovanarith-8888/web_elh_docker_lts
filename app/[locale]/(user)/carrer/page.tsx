@@ -1,5 +1,6 @@
 'use client'
 import { careers } from "@/app/[locale]/(user)/carrer/data";
+import { careers2 } from "@/app/[locale]/(user)/carrer/data";
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import React from 'react'
@@ -29,10 +30,15 @@ import {
   CheckCircle2,
   ListChecks,
   FileText,
+  Calendar,
+  Briefcase,
 } from "lucide-react";
 
 const Carrer = () => {
   const job = careers[0]; // Just take the first job
+  const job2 = careers2[0]; // Just take the first job from careers2
+  const job3 = careers2[1]; // Just take the second job from careers2
+  const job4 = careers2[2]; // Just take the third job from careers2
   const translator = useTranslations("AboutUs");
   const param = useParams();
   const locale = param.locale;
@@ -183,21 +189,19 @@ const Carrer = () => {
             </ul>
           </section>
         </AccordionItem>
-      </Accordion>
-
-      <Spacer y={2} />
-      <Card shadow="none" className="w-full">
-        <CardHeader className="flex flex-col items-start gap-2">
-          <p className="text-2xl font-bold ">{job.title}</p>
-
-          <div className="flex flex-wrap gap-3 mt-2">
+        <Spacer y={2} />
+        {/* 2 */}
+        <AccordionItem
+          key="2"
+          aria-label="Accordion 1"
+          subtitle=<div className="flex flex-wrap gap-3 mt-2">
             <Chip
               startContent={<CalendarIcon size={16} />}
               color="primary"
               variant="flat"
               className="p-4"
             >
-              Closing: {job.closingDate}
+              Closing: 30-Aug-2025
             </Chip>
             <Chip
               startContent={<BriefcaseIcon size={16} />}
@@ -211,11 +215,11 @@ const Carrer = () => {
               Hiring: {job.numberOfHiring}
             </Chip>
           </div>
-        </CardHeader>
-
-        <Divider />
-
-        <CardBody className="space-y-6 pt-4">
+          title=<p className="text-2xl font-bold ">
+            {" "}
+            Merchant Operations Supervisor
+          </p>
+        >
           {/* Description Section */}
           <section>
             <div className="flex items-center gap-2 mb-2">
@@ -223,7 +227,7 @@ const Carrer = () => {
               <h2 className="text-lg font-semibold">Job Description</h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
-              {job.description.map((line, i) => (
+              {job2.description.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
                   <Pin size={18} className="mt-0.5 text-primary" />
                   <span>{line}</span>
@@ -231,7 +235,6 @@ const Carrer = () => {
               ))}
             </ul>
           </section>
-
           {/* Requirements Section */}
           <section>
             <div className="flex items-center gap-2 mb-2">
@@ -239,7 +242,7 @@ const Carrer = () => {
               <h2 className="text-lg font-semibold">Requirements</h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
-              {job.requirements.map((line, i) => (
+              {job2.requirements.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
                   <CheckCircle2 size={18} className="mt-0.5 text-success" />
                   <span>{line}</span>
@@ -247,35 +250,126 @@ const Carrer = () => {
               ))}
             </ul>
           </section>
-
-          {/* Application Section */}
+        </AccordionItem>
+        <Spacer y={2} />
+        {/* 3 */}
+        <AccordionItem
+          key="3"
+          aria-label="Accordion 1"
+          subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <Chip
+              startContent={<CalendarIcon size={16} />}
+              color="primary"
+              variant="flat"
+              className="p-4"
+            >
+              Closing: {job3.closingDate}
+            </Chip>
+            <Chip
+              startContent={<BriefcaseIcon size={16} />}
+              color="primary"
+              variant="flat"
+              className="p-4"
+            >
+              {job3.jobType}
+            </Chip>
+            <Chip color="success" variant="flat" className="p-4">
+              Hiring: {job3.numberOfHiring}
+            </Chip>
+          </div>
+          title=<p className="text-2xl font-bold "> {job3.title}</p>
+        >
+          {/* Description Section */}
           <section>
-            <p className="text-lg font-semibold mb-2">📬 How to Apply</p>
-            <div className="space-y-1">
-              <p className="flex items-center gap-2 text-default-600">
-                <MailIcon size={18} />
-                <a
-                  href={`mailto:${job.contact.email}`}
-                  className="text-blue-600 underline"
-                >
-                  {job.contact.email}
-                </a>
-              </p>
-              <p className="flex items-center gap-2 text-default-600">
-                <MessageCircleIcon size={18} /> Telegram: {job.contact.telegram}
-              </p>
-              <p className="flex items-center gap-2 text-default-600">
-                <PhoneIcon size={18} /> Phone:
-              </p>
-              <ul className="list-disc pl-6 text-default-600">
-                {job.contact.phones.map((phone, i) => (
-                  <li key={i}>{phone}</li>
-                ))}
-              </ul>
+            <div className="flex items-center gap-2 mb-2">
+              <FileText size={20} className="text-primary" />
+              <h2 className="text-lg font-semibold">Job Description</h2>
             </div>
+            <ul className="list-disc pl-6 text-default-600 space-y-1">
+              {job3.description.map((line, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-700">
+                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
           </section>
-        </CardBody>
-      </Card>
+          {/* Requirements Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-2">
+              <ListChecks size={20} className="text-success" />
+              <h2 className="text-lg font-semibold">Requirements</h2>
+            </div>
+            <ul className="list-disc pl-6 text-default-600 space-y-1">
+              {job3.requirements.map((line, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-700">
+                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </AccordionItem>
+        <Spacer y={2} />
+        {/* 4 */}
+        <AccordionItem
+          key="4"
+          aria-label="Accordion 1"
+          subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <Chip
+              startContent={<CalendarIcon size={16} />}
+              color="primary"
+              variant="flat"
+              className="p-4"
+            >
+              Closing: {job4.closingDate}
+            </Chip>
+            <Chip
+              startContent={<BriefcaseIcon size={16} />}
+              color="primary"
+              variant="flat"
+              className="p-4"
+            >
+              {job4.jobType}
+            </Chip>
+            <Chip color="success" variant="flat" className="p-4">
+              Hiring: {job3.numberOfHiring}
+            </Chip>
+          </div>
+          title=<p className="text-2xl font-bold "> {job4.title}</p>
+        >
+          {/* Description Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-2">
+              <FileText size={20} className="text-primary" />
+              <h2 className="text-lg font-semibold">Job Description</h2>
+            </div>
+            <ul className="list-disc pl-6 text-default-600 space-y-1">
+              {job4.description.map((line, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-700">
+                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+          {/* Requirements Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-2">
+              <ListChecks size={20} className="text-success" />
+              <h2 className="text-lg font-semibold">Requirements</h2>
+            </div>
+            <ul className="list-disc pl-6 text-default-600 space-y-1">
+              {job4.requirements.map((line, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-700">
+                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </AccordionItem>
+      </Accordion>
     </div>
   );
 }
