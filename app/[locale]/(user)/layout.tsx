@@ -44,7 +44,7 @@ export default async function CommonLayout({
           {/* Container Header  Navbar */}
           <header className={`w-full`}>
             {/* Heaer */}
-            <HeaderTitleContainer />
+            {/* <HeaderTitleContainer /> */}
 
             {/* <MediaContainer /> */}
             {/* Navbar */}
