@@ -117,7 +117,14 @@ const Carrer = () => {
     //   </div>
     // </main>
     <div className="mt-60 max-w-5xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-logo ">{job.businessUnit}</h1>
+      <div className="text-center mb-10">
+        <h1 className="text-4xl font-bold text-logo ">
+          Careers at {job.businessUnit}
+        </h1>
+        <p className="">
+          We’re looking for passionate people to join our team.
+        </p>
+      </div>
       <Accordion>
         <AccordionItem
           key="1"
