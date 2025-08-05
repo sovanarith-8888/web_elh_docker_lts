@@ -32,6 +32,9 @@ import {
   FileText,
   Calendar,
   Briefcase,
+  Mail,
+  MessageCircle,
+  Phone,
 } from "lucide-react";
 
 const Carrer = () => {
@@ -370,6 +373,36 @@ const Carrer = () => {
           </section>
         </AccordionItem>
       </Accordion>
+      {/* Contact Section */}
+      <Divider className="my-20" />
+  
+      <section >
+        <h3 className="text-lg font-semibold mb-2">📬 How to Apply</h3>
+        <div className="space-y-1 text-gray-700">
+          <p className="flex items-center gap-2">
+            <Mail size={18} />
+            <a
+              href={`mailto:${job.contact.email}`}
+              className="text-blue-600 underline"
+            >
+              {job.contact.email}
+            </a>
+          </p>
+          <p className="flex items-center gap-2">
+            <MessageCircle size={18} /> Telegram: {job.contact.telegram}
+          </p>
+          <p className="flex items-center gap-2">
+            <Phone size={18} /> Phone:
+          </p>
+          <ul className="list-disc pl-6">
+            {job.contact.phones.map((phone, i) => (
+              <li key={i} className="">
+                <p>{phone}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </div>
   );
 }
