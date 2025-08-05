@@ -117,12 +117,71 @@ const Carrer = () => {
     //   </div>
     // </main>
     <div className="mt-60 max-w-5xl mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold text-logo ">{job.businessUnit}</h1>
+      <Accordion>
+        <AccordionItem
+          key="1"
+          aria-label="Accordion 1"
+          subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <Chip
+              startContent={<CalendarIcon size={16} />}
+              color="primary"
+              variant="flat"
+              className="p-4"
+            >
+              Closing: {job.closingDate}
+            </Chip>
+            <Chip
+              startContent={<BriefcaseIcon size={16} />}
+              color="primary"
+              variant="flat"
+              className="p-4"
+            >
+              {job.jobType}
+            </Chip>
+            <Chip color="success" variant="flat" className="p-4">
+              Hiring: {job.numberOfHiring}
+            </Chip>
+          </div>
+          title=<p className="text-2xl font-bold ">{job.title}</p>
+        >
+          {/* Description Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-2">
+              <FileText size={20} className="text-primary" />
+              <h2 className="text-lg font-semibold">Job Description</h2>
+            </div>
+            <ul className="list-disc pl-6 text-default-600 space-y-1">
+              {job.description.map((line, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-700">
+                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+          {/* Requirements Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-2">
+              <ListChecks size={20} className="text-success" />
+              <h2 className="text-lg font-semibold">Requirements</h2>
+            </div>
+            <ul className="list-disc pl-6 text-default-600 space-y-1">
+              {job.requirements.map((line, i) => (
+                <li key={i} className="flex items-start gap-2 text-gray-700">
+                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </AccordionItem>
+      </Accordion>
+
+      <Spacer y={2} />
       <Card shadow="none" className="w-full">
         <CardHeader className="flex flex-col items-start gap-2">
           <p className="text-2xl font-bold ">{job.title}</p>
-          <p className="text-default-500 font-bold text-logo">
-            {job.businessUnit}
-          </p>
 
           <div className="flex flex-wrap gap-3 mt-2">
             <Chip
