@@ -1,4 +1,74 @@
+const JOBS = [
+  {
+    id: "J-1001",
+    title: "Merchant Operations Supervisor",
+    businessUnit: "Construction & Real Estate",
+    division: "IT",
+    Officer: "Mid",
+    location: "Phnom Penh",
+    summary: "Own APIs for auth, billing, and internal services.",
+  },
+];
 // data/careers.ts
+export const businessUnit = {
+  title: "Search by Bussiness Unit",
+  items: [
+    "All",
+    "Construction & Real Estate",
+    "Property Management",
+    "East Stone Factory ",
+    "East Resort ",
+    "East Resort",
+    "East Farm ",
+    "East Bean Coffee ",
+    "East Buy",
+  ],
+};
+
+export const jobDivision = {
+  title: "Search by Division",
+  items: [
+    "All",
+    "Credit and Customer Service",
+    "Finance and Accounting",
+    "HR and Admin",
+    "IT",
+    "Legal and Corporate Affairs",
+    "Marketing",
+    "Project Management",
+    "Property and Facility Management",
+    "Propertry Leasing",
+    "Purchase",
+    "Sales Management",
+    "Technical Management",
+    "Warehouse",
+  ],
+};
+export const jobLevel = {
+  title: "Search by Job Level ",
+  items: [
+    "All",
+    "Officer",
+    "Executive",
+    "Clerk",
+    "Supervisor",
+    "Manager",
+    "Director",
+  ],
+};
+export const jobTitle = {
+  title: "Search by Job Title",
+  items: [
+    "Bussinnes admin",
+    "Sale",
+    "Marketing",
+    "Operation",
+    "Finance",
+    "IT",
+    "Human Resource",
+  ],
+};
+
 export const careers = [
   {
     title: "Sales Consultant Executive",
@@ -40,7 +110,6 @@ export const careers = [
   },
 ];
 
-
 // data/careers.ts
 export interface Career {
   title: string;
@@ -77,7 +146,7 @@ export const careers2: Career[] = [
       "2+ years in merchant operations or similar role",
       "Strong leadership and decision-making skills",
       "Excellent communication and interpersonal skills",
-      "Ability to work in a fast-paced environment"
+      "Ability to work in a fast-paced environment",
     ],
   },
   {
@@ -91,7 +160,7 @@ export const careers2: Career[] = [
       "Provide full product details and benefits",
       "Contact and follow up with customers by phone",
       "Prepare weekly/monthly sales reports",
-      "Other tasks assigned by manager"
+      "Other tasks assigned by manager",
     ],
     requirements: [
       "University Degree in Sales & Marketing",
@@ -99,7 +168,7 @@ export const careers2: Career[] = [
       "Experience in real estate is a plus",
       "Strong communication and interpersonal skills",
       "Able to use MS Office and track workflows",
-      "Good problem-solving and customer support"
+      "Good problem-solving and customer support",
     ],
   },
   {
@@ -115,7 +184,7 @@ export const careers2: Career[] = [
       "Recruit and train agency level 2",
       "Manage sales team and report daily",
       "Negotiate and advise clients on property sales",
-      "Promote property listings and conduct site visits"
+      "Promote property listings and conduct site visits",
     ],
     requirements: [
       "University Degree in Sales & Marketing",
@@ -123,7 +192,7 @@ export const careers2: Career[] = [
       "Experience in real estate is a must",
       "Strong English communication skills",
       "Proficient in MS Office",
-      "Ability to manage teams, coach, and close deals"
+      "Ability to manage teams, coach, and close deals",
     ],
-  }
+  },
 ];

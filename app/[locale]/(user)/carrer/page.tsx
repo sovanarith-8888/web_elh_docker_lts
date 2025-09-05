@@ -1,47 +1,52 @@
-'use client'
-import { careers } from "@/app/[locale]/(user)/carrer/data";
+"use client";
+import {
+  businessUnit,
+  careers,
+  jobDivision,
+  jobLevel,
+} from "@/app/[locale]/(user)/carrer/data";
 import { careers2 } from "@/app/[locale]/(user)/carrer/data";
-import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
-import React from 'react'
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import React from "react";
 import {
   interParagraph,
   vigaHeader,
   battambongParagraph,
   koulenHeader,
 } from "../fonts";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Divider,
-  Chip,
-  Spacer,
-  Accordion,
-  AccordionItem,
-} from "@nextui-org/react";
+import { Divider, Chip, Accordion, AccordionItem } from "@nextui-org/react";
 import {
   BriefcaseIcon,
   CalendarIcon,
-  PhoneIcon,
-  MailIcon,
-  MessageCircleIcon,
   Pin,
   CheckCircle2,
   ListChecks,
   FileText,
-  Calendar,
-  Briefcase,
   Mail,
   MessageCircle,
   Phone,
+  UsersRound,
+  Building2,
+  FileSearch2,
+  SquareDot,
+  Blocks,
+  FolderTree,
 } from "lucide-react";
 
 const Carrer = () => {
+  // Removed redundant redeclaration of businessUnit
+  //const businessUnitName = businessUnit[0]; // Assuming you want the first business unit
   const job = careers[0]; // Just take the first job
   const job2 = careers2[0]; // Just take the first job from careers2
   const job3 = careers2[1]; // Just take the second job from careers2
   const job4 = careers2[2]; // Just take the third job from careers2
+  const bsUnits = businessUnit.items;
+  const bsUnitTitle = businessUnit.title;
+  const jbLevels = jobLevel.items;
+  const jbLevelTitle = jobLevel.title;
+  const jbDivisions = jobDivision.items;
+  const jbDivisionTitle = jobDivision.title;
   const translator = useTranslations("AboutUs");
   const param = useParams();
   const locale = param.locale;
@@ -49,7 +54,7 @@ const Carrer = () => {
     locale === "kh" ? koulenHeader.className : vigaHeader.className;
   const langParagraph =
     locale === "kh" ? battambongParagraph.className : interParagraph.className;
-    const defaultContent =
+  const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
   return (
     // <main className={` mt-60`}>
@@ -125,7 +130,7 @@ const Carrer = () => {
     //     </Card>
     //   </div>
     // </main>
-    <div className="mt-60 max-w-5xl mx-auto px-4 py-8">
+    <div className="mt-60 w-[80%]  mx-auto px-2 py-8 ">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-logo ">
           Careers at {job.businessUnit}
@@ -134,11 +139,94 @@ const Carrer = () => {
           We’re looking for passionate people to join our team.
         </p>
       </div>
-      <Accordion>
+      <h2>All</h2>
+      <div className="text-center mb-10">
+        <Accordion
+          // className="w-full space-y-4"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"
+          variant="splitted"
+        >
+          {/* Search by Business Unit */}
+          <AccordionItem
+            className="border border-2 "
+            key="15"
+            aria-label="Search by Business Unit"
+            subtitle=<div className="flex flex-wrap gap-3 mt-2">
+              <Building2 className="w-10 h-10 text-success" />{" "}
+              {/* 👈 Your icon */}
+            </div>
+            title=<p className="text-2xl font-bold ">{bsUnitTitle}</p>
+          >
+            {/* Description Section */}
+            <section>
+              <ul className="list-disc pl-6 text-default-600 space-y-1">
+                {bsUnits.map((line, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-700">
+                    <SquareDot size={18} className="mt-0.5 text-primary" />
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </AccordionItem>
+
+          {/* Search by Job Level */}
+          <AccordionItem
+            className="border border-2 "
+            key="166"
+            aria-label="Search by Job Level"
+            subtitle=<div className="flex flex-wrap gap-3 mt-2">
+              <Blocks className="w-10 h-10 text-success" /> {/* 👈 Your icon */}
+            </div>
+            title=<p className="text-2xl font-bold ">{jbLevelTitle}</p>
+          >
+            {/* Description Section */}
+            <section>
+              <ul className="list-disc pl-6 text-default-600 space-y-1">
+                {jbLevels.map((line, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-700">
+                    <SquareDot size={18} className="mt-0.5 text-primary" />
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </AccordionItem>
+
+          {/* Search by Job Division */}
+          <AccordionItem
+            className="border border-2 "
+            key="17"
+            aria-label="Search by Business Unit"
+            subtitle=<div className="flex flex-wrap gap-3 mt-2">
+              <FolderTree className="w-10 h-10 text-success" />{" "}
+              {/* 👈 Your icon */}
+            </div>
+            title=<p className="text-2xl font-bold ">{jbDivisionTitle}</p>
+          >
+            {/* Description Section */}
+            <section>
+              <ul className="list-disc pl-6 text-default-600 space-y-1">
+                {jbDivisions.map((line, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-700">
+                    <SquareDot size={18} className="mt-0.5 text-primary" />
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </AccordionItem>
+        </Accordion>
+      </div>
+
+      <Accordion className="w-full space-y-4" variant="splitted">
         <AccordionItem
+          className="border border-2  "
           key="1"
           aria-label="Accordion 1"
           subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <UsersRound className="w-10 h-10 text-success" />{" "}
+            {/* 👈 Your icon */}
             <Chip
               startContent={<CalendarIcon size={16} />}
               color="primary"
@@ -164,13 +252,15 @@ const Carrer = () => {
           {/* Description Section */}
           <section>
             <div className="flex items-center gap-2 mb-2">
-              <FileText size={20} className="text-primary" />
-              <h2 className="text-lg font-semibold">Job Description</h2>
+              <FileText size={20} className="text-success" />
+              <h2 className="text-lg font-semibold text-success">
+                Job Description
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job.description.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <SquareDot size={18} className="mt-0.5 text-primary" />
                   <span>{line}</span>
                 </li>
               ))}
@@ -180,12 +270,14 @@ const Carrer = () => {
           <section>
             <div className="flex items-center gap-2 mb-2">
               <ListChecks size={20} className="text-success" />
-              <h2 className="text-lg font-semibold">Requirements</h2>
+              <h2 className="text-lg font-semibold text-success">
+                Requirements
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job.requirements.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <SquareDot size={18} className="mt-0.5 " />
                   <span>{line}</span>
                 </li>
               ))}
@@ -195,9 +287,11 @@ const Carrer = () => {
 
         {/* 2 */}
         <AccordionItem
+          className="border border-2-3"
           key="2"
           aria-label="Accordion 1"
           subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <UsersRound className="w-10 h-10 text-success" />{" "}
             <Chip
               startContent={<CalendarIcon size={16} />}
               color="primary"
@@ -226,13 +320,15 @@ const Carrer = () => {
           {/* Description Section */}
           <section>
             <div className="flex items-center gap-2 mb-2">
-              <FileText size={20} className="text-primary" />
-              <h2 className="text-lg font-semibold">Job Description</h2>
+              <FileText size={20} className="text-success" />
+              <h2 className="text-lg font-semibold text-success">
+                Job Description
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job2.description.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <SquareDot size={18} className="mt-0.5 text-primary" />
                   <span>{line}</span>
                 </li>
               ))}
@@ -242,12 +338,14 @@ const Carrer = () => {
           <section>
             <div className="flex items-center gap-2 mb-2">
               <ListChecks size={20} className="text-success" />
-              <h2 className="text-lg font-semibold">Requirements</h2>
+              <h2 className="text-lg font-semibold text-success">
+                Requirements
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job2.requirements.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <SquareDot size={18} className="mt-0.5 " />
                   <span>{line}</span>
                 </li>
               ))}
@@ -260,6 +358,7 @@ const Carrer = () => {
           key="3"
           aria-label="Accordion 1"
           subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <UsersRound className="w-10 h-10 text-success" />{" "}
             <Chip
               startContent={<CalendarIcon size={16} />}
               color="primary"
@@ -285,13 +384,15 @@ const Carrer = () => {
           {/* Description Section */}
           <section>
             <div className="flex items-center gap-2 mb-2">
-              <FileText size={20} className="text-primary" />
-              <h2 className="text-lg font-semibold">Job Description</h2>
+              <FileText size={20} className="text-success" />
+              <h2 className="text-lg font-semibold text-success">
+                Job Description
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job3.description.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <SquareDot size={18} className="mt-0.5 " />
                   <span>{line}</span>
                 </li>
               ))}
@@ -301,12 +402,14 @@ const Carrer = () => {
           <section>
             <div className="flex items-center gap-2 mb-2">
               <ListChecks size={20} className="text-success" />
-              <h2 className="text-lg font-semibold">Requirements</h2>
+              <h2 className="text-lg font-semibold text-success">
+                Requirements
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job3.requirements.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <SquareDot size={18} className="mt-0.5 " />
                   <span>{line}</span>
                 </li>
               ))}
@@ -319,6 +422,7 @@ const Carrer = () => {
           key="4"
           aria-label="Accordion 1"
           subtitle=<div className="flex flex-wrap gap-3 mt-2">
+            <UsersRound className="w-10 h-10 text-success" />{" "}
             <Chip
               startContent={<CalendarIcon size={16} />}
               color="primary"
@@ -344,13 +448,15 @@ const Carrer = () => {
           {/* Description Section */}
           <section>
             <div className="flex items-center gap-2 mb-2">
-              <FileText size={20} className="text-primary" />
-              <h2 className="text-lg font-semibold">Job Description</h2>
+              <FileText size={20} className=" text-success" />
+              <h2 className="text-lg font-semibold text-success">
+                Job Description
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job4.description.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <Pin size={18} className="mt-0.5 text-primary" />
+                  <SquareDot size={18} className="mt-0.5 text-primary" />
                   <span>{line}</span>
                 </li>
               ))}
@@ -360,12 +466,14 @@ const Carrer = () => {
           <section>
             <div className="flex items-center gap-2 mb-2">
               <ListChecks size={20} className="text-success" />
-              <h2 className="text-lg font-semibold">Requirements</h2>
+              <h2 className="text-lg font-semibold text-success">
+                Requirements
+              </h2>
             </div>
             <ul className="list-disc pl-6 text-default-600 space-y-1">
               {job4.requirements.map((line, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle2 size={18} className="mt-0.5 text-success" />
+                  <SquareDot size={18} className="mt-0.5" />
                   <span>{line}</span>
                 </li>
               ))}
@@ -375,8 +483,8 @@ const Carrer = () => {
       </Accordion>
       {/* Contact Section */}
       <Divider className="my-20" />
-  
-      <section >
+
+      <section>
         <h3 className="text-lg font-semibold mb-2">📬 How to Apply</h3>
         <div className="space-y-1 text-gray-700">
           <p className="flex items-center gap-2">
@@ -405,6 +513,6 @@ const Carrer = () => {
       </section>
     </div>
   );
-}
+};
 
 export default Carrer;
